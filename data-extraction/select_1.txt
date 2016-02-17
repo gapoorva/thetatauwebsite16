@@ -1,0 +1,13 @@
+userid
+first_name
+last_name
+email_address
+status
+nickname
+roll
+position2
+birthday_month
+birthday_day
+birthday_year
+big_id
+pledge_class

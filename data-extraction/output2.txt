@@ -1,0 +1,37 @@
+pledge_class_id|pledge_class_number|pledge_class_name|semester|year|
+1              |0                  |Founders         |Winter  |1997|
+8              |4                  |Epsilon          |Fall    |2000|
+4              |0                  |Alpha            |Fall    |1998|
+5              |1                  |Beta             |Winter  |1999|
+6              |2                  |Gamma            |Fall    |1999|
+7              |3                  |Delta            |Winter  |2000|
+9              |5                  |Zeta             |Winter  |2001|
+10             |6                  |Eta              |Fall    |2001|
+11             |7                  |Theta            |Winter  |2002|
+12             |8                  |Iota             |Fall    |2002|
+13             |9                  |Kappa            |Winter  |2003|
+14             |10                 |Lambda           |Fall    |2003|
+15             |11                 |Mu               |Winter  |2004|
+16             |12                 |Nu               |Fall    |2004|
+17             |13                 |Xi               |Winter  |2005|
+18             |14                 |Omicron          |Fall    |2005|
+19             |15                 |Pi               |Winter  |2006|
+20             |16                 |Rho              |Fall    |2006|
+21             |17                 |Sigma            |Winter  |2007|
+22             |18                 |Tau              |Fall    |2007|
+23             |19                 |Upsilon          |Winter  |2008|
+24             |20                 |Phi              |Fall    |2008|
+25             |21                 |Chi              |Winter  |2009|
+26             |22                 |Psi              |Fall    |2009|
+28             |23                 |Omega            |Winter  |2010|
+30             |12                 |Gamma Beta       |Fall    |2010|
+31             |12                 |Delta Beta       |Winter  |2011|
+32             |12                 |Epsilon Beta     |Fall    |2011|
+33             |12                 |Beta Gamma       |Fall    |2010|
+34             |12                 |Zeta Beta        |Winter  |2012|
+35             |0                  |Transfer         |Winter  |0   |
+36             |28                 |Eta Beta         |Fall    |2012|
+37             |29                 |Theta Beta       |Fall    |2013|
+38             |72                 |Iota Beta        |Winter  |2014|
+41             |82                 |Kappa Beta       |Fall    |2014|
+42             |92                 |Lambda Beta      |Winter  |2015|

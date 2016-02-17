@@ -1,0 +1,5 @@
+pledge_class_id
+pledge_class_number
+pledge_class_name
+semester
+year
