@@ -1,0 +1,310 @@
+first_name        |last_name       |email_address               |phone       |cell        |
+Michael           |Quinn           |mjquinn@umich.edu           |--          |--          |
+Maggie            |(Reed) Myers    |reedml@umich.edu            |--          |734-330-9551|
+Kate              |Gunberg         |kate.gunberg@gmail.com      |--          |616-450-3405|
+Paul              |Conlin          |pconlin@umich.edu           |--          |734-474-3700|
+Greg              |Fischer         |Greg.A.Fischer@gmail.com    |--          |412-721-6465|
+Monika            |Patel           |patelmn@umich.edu           |--          |774-254-3794|
+Joe               |Fairchild       |jfairchi@umich.edu          |--          |312-608-5655|
+Darrin            |Tracy           |darrin.tracy@gmail.com      |646-770-0776|312-576-9406|
+Dan               |Jensen          |dbzero@umich.edu            |734-930-5868|248-219-6127|
+Larisa            |Ensign          |ensignlm@umich.edu          |586-549-2729|--          |
+Suzanne           |Rauch           |smrauch@gmail.com           |425-424-0380|734-812-0694|
+Sara              |Quintana        |squintan@gmail.edu          |702-518-5160|702-426-7797|
+Justin            |Washburn        |jjwashbu@umich.edu          |--          |734-306-1006|
+Quan (Kevin)      |Zhu             |quanz@umich.edu             |--          |--          |
+Russell           |Burkhard        |rburkhar@umich.edu          |810-650-7088|--          |
+Kiran             |Dashairya       |kdashair@gmail.com          |--          |734-837-5696|
+Patrick           |Doll            |pdoll@umich.edu             |--          |734-644-2985|
+Amanda            |Graor           |angraor@umich.edu           |--          |734-730-0760|
+Jessica           |Kron            |jlkron@umich.edu            |--          |313-570-5334|
+David             |Pinkney         |dpinkney@umich.edu          |--          |--          |
+Erica             |Schmidt         |emschmid@umich.edu          |--          |734-516-0113|
+Jeff              |Grimm           |jcgrimm@umich.edu           |--          |734-646-6343|
+Michelle          |Albright        |malbrigh@gmail.com          |--          |734-748-0084|
+Rebecca           |Stoloff         |stoloreb@umich.edu          |--          |732-236-4756|
+David             |Preston         |davemich@umich.edu          |--          |248-790-9454|
+Aaron             |Kluck           |akluck@gmail.com            |--          |517-304-1270|
+Mark              |Thomas          |mark.thomas.jr@gmail.com    |312-725-2940|--          |
+Philip            |Kofahl          |kofahlum@umich.edu          |--          |734-272-2335|
+Becky             |Sherman         |rmsherm@gmail.com           |--          |734-891-7922|
+Alex              |Kotula          |ahkotula@gmail.com          |--          |612-868-3109|
+Matt              |Byom            |mjbyom@umich.edu            |--          |408-410-7691|
+Matt              |Bowman          |mmbowman@umich.edu          |--          |517-449-8329|
+Adam              |Schrems         |schremsa@umich.edu          |--          |--          |
+Sarah             |Barr            |sbarr@umich.edu             |--          |734-945-8453|
+Joel              |Donoghue        |jmdonogh@umich.edu          |--          |269-369-5493|
+Danielle          |Boyle (White)   |danielle.parrott@gmail.com  |777-233-6737|--          |
+Kate              |Maher           |maherk@umich.edu            |--          |--          |
+Andrew            |Danielsky       |andredan@umich.edu          |--          |616-250-7061|
+Theodore          |Ketai           |tketai@gmail.com            |734-355-5688|734-355-5688|
+Jacob             |Milliken        |jamilliken@aep.com          |--          |269-876-9502|
+Kathryn           |Blodgett        |katsb@gatech.edu            |--          |561-601-5370|
+Erin              |Robbins         |robbins.erin@gmail.com      |--          |517-896-3136|
+Courtney          |Martin          |cmarti@umich.edu            |--          |810-287-1823|
+Ben               |Friedland       |benfried@umich.edu          |--          |734-358-7086|
+Carl              |Fischer         |Carl.Fischer.IV@gmail.com   |937-458-3736|937-212-1182|
+Cullen            |Worthem Jr.     |cworthem@umich.edu          |734-710-2963|734-276-6783|
+Julian            |Broggio         |jbroggio@hotmail.com        |--          |--          |
+Ryan              |Sekela          |rsekela1@visteon.com        |--          |--          |
+Derek             |Sorensen        |derekdcs@umich.edu          |773-244-6537|--          |
+Ryan              |Meder           |rmeder@engin.umich.edu      |--          |--          |
+Jason             |Bailey          |jjbailey08@gmail.com        |--          |248-707-9028|
+Aaron             |Furman          |afurman@umich.edu           |--          |--          |
+Matt              |Feustel         |mfeustel@umich.edu          |--          |734-417-8116|
+Drew              |Batchelder      |andrew.c.batchelder@lmco.com|817-874-5951|817-874-5951|
+Mark              |Ascione         |mcascione@gmail.com         |--          |734-904-0007|
+Angie             |Olsofsky        |aolosfsk@yahoo.com          |--          |734-516-9491|
+Julianne          |Schaefer        |jhschaef@yahoo.com          |--          |260-494-5998|
+Dave              |Moenssen        |david.moenssen@honeywell.com|--          |--          |
+Todd              |Moilanen        |todd_moilanen@hotmail.com   |--          |--          |
+Darin             |Cepeda          |decepda@austin.rr.com       |--          |--          |
+Stan              |Bisgaier        |stanb@ufl.edu               |--          |--          |
+Beth              |(Tuttle) Gardner|tuttleelizabeth@hotmail.com |--          |810-210-2486|
+John              |Myers           |jpmyers@umich.edu           |--          |734-223-9365|
+Dan               |Allen           |dwallen@umich.edu           |--          |517-599-3359|
+Philip            |Waligora        |phil.waligora@gmail.com     |425-424-0380|--          |
+Matthew           |Olsofsky        |molsofsk@umich.edu          |--          |734-834-6564|
+Gregory           |Sabo            |gsabo@umich.edu             |--          |--          |
+Tanuj             |Mehta           |mehtat@hotmail.com          |847-722-5439|--          |
+Mark              |Giska           |mgiska@umich.edu            |--          |734-751-9203|
+Jack              |Stepanian       |stepania@umich.edu          |--          |734-223-0861|
+Andy              |Valiquett       |avalique@umich.edu          |--          |--          |
+Nityanan          |Tapia           |nityanantapia@hotmail.com   |914-668-5675|734-883-1141|
+Javed             |Jinnah          |jjinnah@umich.edu           |571-643-4689|571-643-4689|
+Jonas             |Daunoravicius   |jdaunora@gmail.com          |--          |708-359-6335|
+Latha             |Mellentine      |lravindr@gmail.com          |732-637-9508|--          |
+Ray               |Tervol          |jrtervol@yahoo.com          |804-360-0226|804-314-9012|
+Christopher       |Van Ittersum    |cvanitt@umich.edu           |--          |--          |
+Mark              |Peraino         |mperaino@umich.edu          |--          |--          |
+Beth              |Kilbourne       |bkilbour@umich.edu          |--          |--          |
+James             |Mellentine      |umichjim@gmail.com          |703-483-9188|--          |
+Marvin            |Riley           |mracer314@yahoo.com         |--          |734-678-4816|
+Reid              |Bronson         |rbronson@umich.edu          |214-280-9624|--          |
+Bayly             |Wheeler         |bsw@duke.edu                |919-475-4605|--          |
+Christina         |Sadler          |cdsadler@umich.edu          |--          |989-245-2656|
+Eli               |Busen           |ebusen@gmail.com            |--          |424-903-9740|
+Patrick           |Liu             |ltrick@umich.edu            |--          |646-712-4080|
+Megan             |Brown           |meganelb@umich.edu          |--          |--          |
+Francis           |Szalay          |fszalay@gmail.com           |--          |571-314-1620|
+Lauren            |Furlong         |furlongl@umich.edu          |--          |--          |
+James             |Bloomsburgh     |jamesbl@umich.edu           |--          |734-476-7129|
+Jennifer          |Dolan           |jldolan@umich.edu           |734-565-3091|517-648-2698|
+Jennifer          |Sutherland      |jsuther@umich.edu           |--          |248-703-2702|
+Michelle          |Zenczak         |mezen@umich.edu             |--          |440-823-9182|
+Heetal            |Patel           |hnpatel@umich.edu           |--          |734-507-5204|
+Kurt              |Oster           |kurt.oster@gmail.com        |--          |812-249-5728|
+Hillary           |Kast            |hkast@umich.edu             |--          |--          |
+James             |Glantz          |jamesrg@umich.edu           |--          |248-421-5159|
+Matthew           |Rodriguez       |mwrod@umich.edu             |--          |734-837-9370|
+Nicole            |Kizy            |nkizy@umich.edu             |248-737-4859|248-496-1854|
+Kendra            |Sass            |sassyk@umich.edu            |--          |248-202-2927|
+Stephanie         |Iatrow          |smiatrow@umich.edu          |--          |734-649-9559|
+Kelly             |Sanderson       |kjsand@umich.edu            |--          |989-430-8970|
+Nate              |LaFave          |nathan.lafave@gmail.com     |--          |989-450-0367|
+Jim               |Freeman         |freemaja@gmail.com          |248-767-7705|--          |
+AJ                |Frantz          |ajfrantz@umich.edu          |--          |313-231-1906|
+Eily              |Clemens         |clemense@umich.edu          |--          |248-302-4398|
+Jennifer          |Gehle           |jengehle@umich.edu          |--          |517-294-6604|
+Miriam            |Scherkenbach    |mirim@umich.edu             |--          |512-796-4810|
+Cindy             |Wang            |weitung@umich.edu           |--          |--          |
+Nick              |McGrail         |grailo@umich.edu            |--          |319-899-3760|
+Vincent           |Verdeschi       |vinnyv@umich.edu            |--          |516-398-2059|
+Tanvi             |Singh           |stanvi@umich.edu            |--          |248-982-5938|
+Phillip           |Clark           |phillip.a.clark@gmail.com   |734-565-5879|919-308-4689|
+Kristin           |Dannemiller     |kadann@umich.edu            |--          |513-240-2198|
+Alex              |Mead            |armead@umich.edu            |--          |616-901-2479|
+Christopher       |Muhich          |cmuhich@gmail.com           |--          |313-806-6595|
+Karan             |Patel           |khpatel@umich.edu           |--          |248-613-5309|
+Kristopher        |Schilling       |kjschill@umich.edu          |--          |517-740-7835|
+Karen             |Hall            |kphall@umich.edu            |--          |571-314-1626|
+Phillip           |Poisson         |ppoisson@umich.edu          |--          |248-770-4958|
+Rosa              |Abani           |rabani@umich.edu            |--          |734-717-6292|
+Brittany          |Flaherty        |britflah@umich.edu          |--          |412-576-5661|
+Chelsea           |Ellis           |chelseae@umich.edu          |--          |--          |
+Casady            |Wyckoff         |cwyckoff@umich.edu          |--          |517-316-5821|
+Asha              |D'Cunha         |adcunha@umich.edu           |734-243-0146|734-731-7698|
+David             |Genevich        |genevich@umich.edu          |--          |248-404-8479|
+Stephanie         |Praus           |smpraus@umich.edu           |--          |716-698-3307|
+Todd              |Bueschen        |tabuesch@umich.edu          |--          |609-213-5164|
+Robert            |Appel           |rgappel@gmail.com           |--          |248-933-0971|
+Jessica           |Rilly           |jrilly@umich.edu            |--          |248-835-6152|
+Jessica           |Fong            |jwfong@umich.edu            |--          |225-588-2825|
+Steven            |Batchelor       |sbatch@umich.edu            |810-569-4093|--          |
+Marcus            |Lewis           |marcmarc@umich.edu          |--          |517-414-6049|
+Rachel            |Eggert          |rmeggert@umich.edu          |--          |248-376-7020|
+Ryan              |McKee           |ryanmckee87@gmail.com       |--          |586-863-6693|
+Audra             |Osborne         |audosbo@umich.edu           |--          |734-735-1613|
+Rohan             |Biswas          |rbiswas@umich.edu           |--          |--          |
+Liz               |Boettner        |eaboett@umich.edu           |--          |845-661-1004|
+Margaret          |Chang           |changmar@umich.edu          |--          |--          |
+Nicholas          |Clay            |nclay@umich.edu             |--          |313-670-3036|
+Jeremy            |Dall            |dallj@umich.edu             |--          |616-915-0676|
+Ryan              |Ethier          |ryaneth@umich.edu           |--          |860-817-8518|
+Veronica          |Ward            |vward@umich.edu             |810-300-3314|--          |
+Shannon           |McDevitt        |samcdev@umich.edu           |313-881-9542|313-467-4358|
+Rachel            |Peterson        |rapete@umich.edu            |--          |219-742-2498|
+Philip            |Rose            |rosephi@umich.edu           |--          |269-274-7553|
+Ishaan            |Shah            |ishaanjs@umich.edu          |--          |734-846-4293|
+Kathryn           |Siuniak         |siukathr@umich.edu          |248-842-4399|248-842-4399|
+Jillian           |VandePutte      |jmvan@umich.edu             |--          |586-610-2330|
+Maggie            |Hwang           |hwangm@umich.edu            |--          |248-840-6912|
+Aaron             |Avila           |aavila@umich.edu            |810-326-0039|810-434-4854|
+Jason             |Fernandez       |jgfernan@umich.edu          |--          |734-272-1964|
+Bethany           |Glesner         |bethanyg27@gmail.com        |--          |989-430-0349|
+Meghan            |Joki            |megjoki@gmail.com           |--          |248-935-1003|
+Max               |Kotula          |maxkotu@umich.edu           |--          |952-334-7724|
+Waiman            |Liu             |waimanl@umich.edu           |--          |269-830-6148|
+Kunal             |Mehta           |kunalm@umich.edu            |--          |248-345-8749|
+Catherine         |Patterson       |catpat@umich.edu            |--          |--          |
+Lyndsey           |Pohl            |lapohl@umich.edu            |--          |517-204-9304|
+Caitlin           |Schultz         |ccschul@umich.edu           |--          |724-355-9316|
+Ethan             |Stark           |emstark@umich.edu           |--          |818-274-8592|
+Michael           |Qin             |mikeqin@umich.edu           |--          |617-584-1717|
+Andy              |Brown           |andybrwn@umich.edu          |--          |734-812-9820|
+A.J.              |Carter          |carteraj@umich.edu          |248-956-0452|248-974-7037|
+Doug              |McEwan          |dmcewan@umich.edu           |--          |517-599-8575|
+Heather           |Dorer           |hdorer@umich.edu            |810-623-9613|810-623-9613|
+Josh              |Miyamoto        |jtmi@umich.edu              |231-238-8005|231-420-5215|
+Laura             |Crookston       |lcrook@umich.edu            |--          |269-370-0003|
+Mary              |Winsemius       |mwinsemi@umich.edu          |--          |231-903-7707|
+Abby              |Grajek          |aagrajek@umich.edu          |248-380-1643|248-982-1494|
+Aarthi            |Arab            |aarthara@umich.edu          |--          |248-345-7159|
+Antonio           |Osorio          |aosorio@umich.edu           |--          |512-431-5160|
+Molly             |Flynn           |flynnmo@umich.edu           |--          |678-548-4816|
+Jason             |Brendel         |jbrendel87@gmail.com        |--          |734-765-1675|
+James             |Swift           |jrswift@umich.edu           |--          |616-264-0123|
+Nicholas          |Montes          |njmontes@umich.edu          |--          |248-935-9206|
+Nathan            |Klamerus        |nklamerus@gmail.com         |906-493-5925|906-748-1095|
+Thomas            |Indeck          |tindeck@umich.edu           |--          |847-722-4572|
+Marc              |Hensel          |mhensel@umich.edu           |--          |--          |
+Kristina          |Kim             |kriskim@umich.edu           |--          |--          |
+Caitlin           |Cramer          |ccram@umich.edu             |--          |248-229-8615|
+Cameron           |Miller          |cmillera@umich.edu          |--          |248-860-5734|
+Eda               |Soybay          |esoybay@umich.edu           |--          |734-546-0632|
+Greg              |McEwan          |gmcewan@umich.edu           |--          |517-599-8320|
+Kamal             |Knight          |kamalk@umich.edu            |--          |301-704-8890|
+Kyle              |Faircloth       |kfairc@umich.edu            |757-739-8686|--          |
+Melanie           |Faibish         |mfaibish@umich.edu          |--          |631-697-0625|
+Michelle          |Fernandes       |michfern@umich.edu          |--          |248-974-5205|
+Malvika           |Bhatia          |malvikab@umich.edu          |734-846-3771|764-846-3771|
+George            |Ajine-Basil     |ajinebge@umich.edu          |--          |586-808-0906|
+Abigail           |Senyk           |asenyk@umich.edu            |517-648-3445|--          |
+Breanna           |Luckett         |coolbre@umich.edu           |--          |734-686-7746|
+Celine            |Saucier         |csaucier@umich.edu          |989-941-1472|989-941-1472|
+Geetika           |Bhatia          |gbhatia@umich.edu           |--          |734-926-7667|
+Rianna            |Harris          |harrisri@umich.edu          |--          |856-246-2931|
+Joseph            |Martoglio       |jmartog@umich.edu           |908-370-8610|--          |
+Alexander         |Ng              |alexng@umich.edu            |--          |248-787-8851|
+Carolyn           |Price           |ccprice@umich.edu           |973-975-3776|--          |
+Charlotte         |Campbell        |cecamp@umich.edu            |--          |847-212-8526|
+Mara              |Watson          |maramae@umich.edu           |--          |269-290-8264|
+Nina              |Abani           |nabani@umich.edu            |734-330-9390|734-330-9390|
+Nathaniel         |Blase           |nataaron@umich.edu          |--          |262-993-7372|
+Naz               |Ozen            |ncozen@umich.edu            |--          |734-730-9909|
+Rahul             |Lakhani         |rlakhani@umich.edu          |734-926-7255|--          |
+Rohan             |Sawalka         |rohansaw@umich.edu          |734-389-9865|734-565-3434|
+Scott             |Deittrick       |shdeitt@umich.edu           |269-491-0682|--          |
+Brandon           |Sims            |simsbl@umich.edu            |--          |248-672-2863|
+Vivek             |Thanabal        |thanav@umich.edu            |--          |860-941-9513|
+Dominic           |Lanni           |domlanni@umich.edu          |--          |248-935-3863|
+Erek              |Walker          |erekn@umich.edu             |--          |--          |
+Kathleen          |Chou            |kachou@umich.edu            |248-879-9677|248-925-7880|
+Kristin           |Lemley          |kelemley@umich.edu          |--          |585-409-1707|
+Kyle              |Wolok           |kwolok@umich.edu            |--          |248-752-4343|
+Elizabeth         |DeMonte         |ldemonte@umich.edu          |--          |734-645-7493|
+Lisandra          |Pagan           |lispag@umich.edu            |608-234-2532|--          |
+Natalie           |Brown           |natbrwn@umich.edu           |--          |303-815-7598|
+Sara              |Ali             |saraali@umich.edu           |--          |630-414-6257|
+Astrid            |Santiago        |stridas@umich.edu           |786-208-8569|--          |
+Sylvia            |Chen            |siya101@gmail.com           |--          |734-560-8797|
+Alison            |Banka           |albanka@umich.edu           |--          |231-670-7901|
+Yanet             |Zepeda          |zepeda@umich.edu            |914-426-1694|--          |
+Chrissy           |Looney          |clooney@umich.edu           |--          |--          |
+Ryan              |Kreiter         |rkreiter@umich.edu          |--          |586-222-9022|
+Ryan              |Bell            |ryanbell@umich.edu          |--          |810-275-2106|
+Ellen             |Horste          |ehorste@umich.edu           |--          |--          |
+Richard           |Ozdowy          |reozdowy@umich.edu          |--          |--          |
+Rebecca           |Malinas         |malinare@umich.edu          |--          |248-912-7100|
+Mitchell          |Thumme          |thumme@umich.edu            |--          |989-980-8259|
+Jackie            |Jo              |jackiejiao3@gmail.com       |--          |734-604-9125|
+Meredith          |Monticello      |monticme@umich.edu          |--          |248-880-1765|
+Justin            |Koehler         |justingk@umich.edu          |650-521-3507|--          |
+Julia             |Zarina          |jumilton@umich.edu          |--          |--          |
+Alan              |Duanmu          |duanmua@umich.edu           |734-883-3330|--          |
+Tanay             |Nerurkar        |tanayn@umich.edu            |--          |703-409-0833|
+Matthew           |Land            |meland@umich.edu            |--          |--          |
+Allie             |Czubko          |aczubko@umich.edu           |--          |734-474-0698|
+Alexandros        |Lancaster       |alancast@umich.edu          |--          |814-933-9111|
+Austin            |Rovinski        |rovinski@umich.edu          |--          |248-914-2960|
+Christa           |Gibara          |christag@umich.edu          |586-296-7506|586-601-6374|
+Daoxia            |Ding            |dingding@umich.edu          |--          |734-604-9869|
+Emily             |Burns           |emjburns@umich.edu          |734-945-2220|734-945-2220|
+Jesse             |Streicher       |jessewst@umich.edu          |--          |319-240-7612|
+Ki-Joo            |Sung            |sungkj@umich.edu            |--          |231-903-7753|
+Kunal             |Naik            |kunaln@umich.edu            |--          |732-284-8546|
+Lauren            |Pollard         |lcpol@umich.edu             |--          |248-974-5480|
+Nicholas          |Simopoulos      |isaak@umich.edu             |586-256-3016|--          |
+Robin             |Choi            |rhchoi@umich.edu            |--          |--          |
+Ritong            |Han             |rhsunnie@umich.edu          |231-736-9455|--          |
+Krishnan          |Manivannan      |nkhm@umich.edu              |--          |--          |
+Sijie             |Ruan            |ruansj@umich.edu            |734-834-8441|734-834-8441|
+Srishti           |Pillutla        |srishtip@umich.edu          |--          |248-935-0307|
+Cassandra         |Cook            |cascook@umich.edu           |--          |--          |
+Minnae            |Chabwera        |minnaepc@umich.edu          |757-344-1680|--          |
+Kimberly          |Louie           |louk@umich.edu              |--          |--          |
+Ryan              |Patin           |repatin@umich.edu           |734-397-5766|734-377-8118|
+Jai               |Koh             |jaiyeong@umich.edu          |--          |--          |
+Corryn            |Cawley          |cawleyc@umich.edu           |--          |--          |
+Gabrielle         |Belok           |gabelok@umich.edu           |--          |--          |
+Bo-ying           |Fu              |botatoes@umich.edu          |--          |702-326-5885|
+Zachary           |Klaver          |zmklav@umich.edu            |--          |517-204-5183|
+Jiaxin            |Wang            |jiaxin@umich.edu            |--          |--          |
+Marie             |Angle           |mmangle@umich.edu           |--          |650-218-4255|
+Emily             |Chang           |emichang@umich.edu          |--          |734-272-1314|
+Emily             |Klouda          |ebklouda@umich.edu          |--          |--          |
+Apoorva           |Gupta           |gapoorva@umich.edu          |248-860-6707|248-860-6707|
+Sachin            |Jain            |sachinkj@umich.edu          |--          |--          |
+Brianna           |Juhrend         |bjuhrend@umich.edu          |--          |530-391-5805|
+Kiah              |Lowe            |lowekiah@umich.edu          |734-787-2734|--          |
+Dan               |Lee             |jimsiang@umich.edu          |--          |248-318-2310|
+Andrew            |Ao              |aoaoaoa@umich.edu           |248-880-8229|--          |
+Howard            |Hsu             |haohsu@umich.edu            |--          |--          |
+Tyler             |Kemerer         |tkem@umich.edu              |--          |989-860-4047|
+Jason             |Leung           |jasleung@umich.edu          |--          |248-921-0613|
+Molly             |Ma              |yuanm@umich.edu             |--          |--          |
+Kristina          |Pan             |xiaobpan@umich.edu          |--          |--          |
+Srividhya (Srivdi)|Sridhar         |vidhyasr@umich.edu          |--          |--          |
+Andrew            |McCaughna       |andyjm@umich.edu            |--          |517-420-6269|
+Chanmee           |Chung           |chanmeec@umich.edu          |--          |--          |
+Christopher       |McDonald        |cmmcd@umich.edu             |--          |248-462-2067|
+Clarissa          |Baumgarten      |cmbaums@umich.edu           |--          |--          |
+David             |Hodgson         |dahodge@umich.edu           |248-330-5392|--          |
+Derin             |Ozen            |derino@umich.edu            |--          |--          |
+Emily             |Upton           |emiupton@umich.edu          |--          |--          |
+John              |Damrath IV      |damjohn@umich.edu           |--          |--          |
+Jordan            |Ridenour        |jordandr@umich.edu          |248-930-7581|--          |
+Joseph            |Gussert         |jgussert@umich.edu          |--          |231-942-2982|
+Kevin             |Jou             |kevinjou@umich.edu          |--          |--          |
+Nathan            |Louie           |nxlouie@umich.edu           |--          |--          |
+Nicholas          |Ricci           |nricci@umich.edu            |--          |--          |
+Patrick           |Wan             |patwan@umich.edu            |--          |734-846-7306|
+Rachel            |Levenson        |ralevens@umich.edu          |--          |--          |
+Steven            |Do              |sjdo@umich.edu              |--          |--          |
+Travis            |Burch           |trburch@umich.edu           |217-390-6696|217-390-6696|
+Vikas             |Venugopal       |venugovi@umich.edu          |248-349-3498|248-924-8188|
+Yusun             |Kim             |kimyusun@umich.edu          |--          |201-655-1281|
+Zachary           |Lask            |zlask@umich.edu             |--          |--          |
+Jeremy            |Chen            |jeremylc@umich.edu          |--          |--          |
+Jamie             |Gaulzetti       |jgaulzet@umich.edu          |--          |--          |
+Liz               |Goulston        |lizsgoul@umich.edu          |--          |--          |
+Will              |Horner          |willhorn@umich.edu          |--          |--          |
+Jenny             |Huh             |jennyhuh@umich.edu          |--          |--          |
+Cigdem            |Kokenoz         |ckokenoz@umich.edu          |--          |--          |
+Lucas             |Marks           |lhmarks@umich.edu           |--          |--          |
+Jared             |Molesky         |jmolesky@umich.edu          |--          |--          |
+Francine          |Penikis         |fpenikis@umich.edu          |--          |--          |
+Sanjay            |Subramanian     |sanjsub@umich.edu           |--          |732-610-4592|
+Aditya            |Tammana         |atammana@umich.edu          |--          |--          |
+Matthew           |Waldman         |mwald@umich.edu             |--          |--          |
+Troyer            |Wallace-Evans   |troywe@umich.edu            |--          |847-644-7752|
