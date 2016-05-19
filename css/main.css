@@ -1,0 +1,25 @@
+body {
+  padding-top: 60px;
+  background: gray;
+}
+
+.jumbotron {
+  background: rgba(255, 255, 255, .30);
+}
+
+#quote {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#inner {
+  padding-bottom: 50px;
+}
+
+.footer {
+  background: rgba(255, 255, 255, .30);
+}
+
+#footer-row {
+  padding-top: 10px;
+}
