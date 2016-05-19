@@ -1,0 +1,17 @@
+userid
+first_name
+last_name
+email_address
+status
+phone
+cell
+public_phone
+public_cell
+nickname
+roll
+position2
+birthday_month
+birthday_day
+birthday_year
+big_id
+pledge_class
