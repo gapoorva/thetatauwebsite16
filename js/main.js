@@ -1,14 +1,14 @@
 //# OF MAST SLIDES
-var MAST_SLIDES = 2;
-var MAST_CYCLE_TIME = 7000;
+var MAST_CYCLE_TIME = 3000;
 
 function cycleMastSlides() {
-	var mast = $('.masthead');
-	for(var i = 0; i < MAST_SLIDES; ++i) {
-		var thismast = 'mast' + (i+1).toString();
-		var nextmast = 'mast' + ((i+1)%MAST_SLIDES + 1).toString();
-		if(mast.hasClass(thismast)) {
-			mast.removeClass(thismast).addClass(nextmast);
+	var mast_imgs = $('.masthead-img');
+
+	for(var i = 0; i < mast_imgs.size(); ++i) {
+		if(mast_imgs.eq(i).hasClass('show-masthead-img')) {
+			var nextmast = (i+1)%mast_imgs.size();
+			mast_imgs.eq(i).removeClass('show-masthead-img');
+			mast_imgs.eq(nextmast).addClass('show-masthead-img');
 			break;
 		}
 	}

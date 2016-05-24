@@ -8,24 +8,53 @@ body {
 	src: url('vollkorn.ttf');
 }
 
-.masthead.mast1 {
-	height: calc(100vh - 50px);
-	background: url('../images/mast1.jpg') no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	background-color: #DE643C;
+.vollkorn {
+	font-family: vollkorn;
 }
 
-.masthead.mast2 {
+.masthead {
 	height: calc(100vh - 50px);
-	background: url('../images/mast2.jpg') no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
 	background-color: #DE643C;
+	position: relative;
+}
+
+.masthead-img {
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+.masthead-img.mast0 {
+	background: url('../images/mast1.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.masthead-img.mast1 {
+	background: url('../images/mast2.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.masthead .row, 
+.masthead .quote-block,
+.masthead h4,
+.masthead h5 {
+	z-index: 12;
+}
+
+.show-masthead-img {
+	opacity: 1;
 }
 
 .jumbotron {
@@ -69,6 +98,7 @@ body {
 .navbar, .navbar a {
 	background-color: #A80505;
 	color: #EFEFEF;
+	font-weight: bold;
 }
 
 .title-banner {
