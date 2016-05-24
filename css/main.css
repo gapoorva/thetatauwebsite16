@@ -1,11 +1,26 @@
 body {
   padding-top: 50px;
-  background: gray;
+  background: #F7F7F7;
 }
 
-.masthead {
+@font-face {
+	font-family: vollkorn;
+	src: url('vollkorn.ttf');
+}
+
+.masthead.mast1 {
 	height: calc(100vh - 50px);
 	background: url('../images/mast1.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	background-color: #DE643C;
+}
+
+.masthead.mast2 {
+	height: calc(100vh - 50px);
+	background: url('../images/mast2.jpg') no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -18,14 +33,15 @@ body {
 }
 
 #quote {
-  padding-top: 30%;
+  padding-top: 10%;
   padding-bottom: 30px;
   
 }
 
 .quote-block {
-	background-color: rgba(255,255,255,0.55);
+	background-color: rgba(160,5,5,0.55);
 	border-radius: 8px;
+	color: white;
 }
 
 #inner {
@@ -33,7 +49,7 @@ body {
 }
 
 .footer {
-  background: rgba(255, 255, 255, .30);
+  background: rgba(160, 160, 160, .30);
 }
 
 #footer-row {
@@ -42,12 +58,32 @@ body {
 
 .navbar-header button.navbar-toggle {
 	margin-right: 30px;
+	
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header button.navbar-toggle span.icon-bar {
+	border: 1px solid #EFEFEF;
+}
+
+.navbar, .navbar a {
+	background-color: #A80505;
+	color: #EFEFEF;
 }
 
 .title-banner {
 	position: relative;
+	padding: 2% 0;
 }
 
 .title-banner {
 	background-color: rgba(255,255,255,0.55);
+	color: #A80505;
+	font-weight: bold;
+	font-family: vollkorn;
+}
+
+.title-banner h1,
+.title-banner h2 {
+	word-wrap: break-word;
 }
