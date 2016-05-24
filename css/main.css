@@ -5,7 +5,7 @@ body {
 
 .masthead {
 	height: calc(100vh - 50px);
-	background: url('../images/mast1.jpg') no-repeat center center /*fixed*/;
+	background: url('../images/mast1.jpg') no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -13,16 +13,18 @@ body {
 	background-color: #DE643C;
 }
 
+.jumbotron {
+  background: rgba(255, 255, 255, .30);
+}
+
 #quote {
-  position: relative;
-  top: 55%;
+  padding-top: 30%;
+  padding-bottom: 30px;
+  
 }
 
 .quote-block {
-  padding: 5px;
-  margin: auto;
-  max-width: 50%;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.55);
 	border-radius: 8px;
 }
 
@@ -39,93 +41,13 @@ body {
 }
 
 .navbar-header button.navbar-toggle {
-	margin-right: 15px;
+	margin-right: 30px;
 }
-
-/* override bootstrap */
-.navbar-default {
-  background-color: gray;
-  border-color: gray;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: gray;
-}
-
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  color: black;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: red;
-  background-color: transparent;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: red;
-  background-color: transparent;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: black;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
-}
-
-.navbar-default .navbar-toggle:hover .icon-bar {
-    background-color: red;
-}
-
-.navbar-default .navbar-toggle:focus {
-  background: transparent;
-}
-
-.navbar-default .navbar-toggle:hover {
-    background-color: transparent;
-    border-color: red;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: red;
-  background-color: gray;
-}
-/* end override */
-
 
 .title-banner {
 	position: relative;
-	background-color: rgba(255,255,255,0.70);
 }
 
-@media (max-width: 767px) {
-  .quote-block {
-    max-width: 75%;
-  }
-}
-
-@media (max-width: 500px) {
-  #quote {
-    position: relative;
-    top: 45%;
-  }
-
-  .quote-block {
-    max-width: 75%;
-  }
-}
-
-@media (orientation: landscape) {
-  #quote {
-    position: relative;
-    top: 30%;
-  }
-
-  .quote-block {
-    padding: 2px;
-    max-width: 91%;
-  }
+.title-banner {
+	background-color: rgba(255,255,255,0.55);
 }
