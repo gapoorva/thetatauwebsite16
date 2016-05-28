@@ -1,5 +1,5 @@
 //# OF MAST SLIDES
-var MAST_CYCLE_TIME = 3000;
+var MAST_CYCLE_TIME = 3700;
 
 function cycleMastSlides() {
 	var mast_imgs = $('.masthead-img');
