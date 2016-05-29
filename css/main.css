@@ -19,7 +19,7 @@ body {
 }
 
 .poster-xs {
-	height: calc(67vh - 50px);
+	height: calc(54vh - 50px);
 	margin: 0 auto;
 }
 
