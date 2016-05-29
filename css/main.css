@@ -19,7 +19,7 @@ body {
 }
 
 .poster-xs {
-	height: calc(67vh - 50px);
+	height: calc(54vh - 50px);
 	margin: 0 auto;
 }
 
@@ -74,6 +74,8 @@ body {
 #quote {
   padding-top: 10%;
   padding-bottom: 30px;
+  width: 100%;
+  margin-left: 0;
   
 }
 
@@ -93,6 +95,11 @@ body {
 
 #footer-row {
   padding-top: 10px;
+  width: 100%;
+}
+
+nav {
+	width: calc(100vw);
 }
 
 .navbar-header button.navbar-toggle {
@@ -120,6 +127,8 @@ body {
 .title-banner {
 	position: relative;
 	padding: 2% 0;
+	width: 100%;
+	margin-left:0;
 }
 
 .title-banner {
