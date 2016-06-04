@@ -7,3 +7,7 @@
 	height: calc(100vh - 50px);
 	margin: 0 auto;
 }
+
+.well {
+	padding: 10px;
+}

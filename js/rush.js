@@ -30,14 +30,20 @@ function getRushCalendarEvents() {
 
   //construct query
   var r = rushConfig.request;
-  var url = r.endpoint 
-    + r.paramNames.APIKEY + encodeURIComponent(r.APIKEY)
-    + r.paramNames.start  + encodeURIComponent(lowerbound.toISOString())
-    + r.paramNames.end    + encodeURIComponent(upperbound.toISOString())
-    + r.paramNames.query  + encodeURIComponent(r.query_text);
-
+  r.urlParams.timeMin = lowerbound.toISOString();
+  r.urlParamNames.push('timeMin');
+  r.urlParams.timeMax = upperbound.toISOString();
+  r.urlParamNames.push('timeMax');
+  var url = r.endpoint + "?";
+  for(var i = 0; i < r.urlParamNames.length; i++) {
+    if(i) url += "&";
+    url += r.urlParamNames[i] + "=" + encodeURIComponent(r.urlParams[r.urlParamNames[i]]);
+  }
   CURLJSON(rushConfig.request.method, url, renderRushCalendarEvents);
 }
+
+
+
 
 //expects array of inputs (eventname, datetime, location) (see rushConfig.dates for more info)
 //expects array is the same size as fields

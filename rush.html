@@ -50,19 +50,18 @@
           "suffixes": ['th', 'st', 'nd', 'rd']
         },
         "request": {
-          "query_text": "tht-rush@umich.edu", //needs to be encoded
-          "APIKEY": "AIzaSyCHiMDmvdOicdMICskRep27PyCoGNvjz6w",
-          "endpoint": "https://www.googleapis.com/calendar/v3/calendars/7407kg1hjqo90so89cenlm25ns%40group.calendar.google.com/events",
-          "paramNames": {
-            "query": "&q=", // RAW
-            "start": "&timeMin=", //RAW
-            "end": "&timeMax=", // RAW
-            "APIKEY": "?key=" // RAW
+          "urlParams": {
+            "q": "tht-rush@umich.edu", //needs to be encoded
+            "key": "AIzaSyCHiMDmvdOicdMICskRep27PyCoGNvjz6w",
+            "orderBy": "startTime",
+            "singleEvents": "true"
           },
+          "endpoint": "https://www.googleapis.com/calendar/v3/calendars/7407kg1hjqo90so89cenlm25ns%40group.calendar.google.com/events",
+          "urlParamNames": ['key','q','orderBy','singleEvents'],
           "method": "GET"
         },
         "render": {
-          "html": "<div class='well col-xs-12'><div class='col-xs-4 summary'></div><div class='col-xs-4 datetime'></div><div class='col-xs-4 location'></div></div>",
+          "html": "<div class='well col-xs-12'><b><div class='col-xs-4 summary'></div></b><div class='col-xs-4 datetime'></div><div class='col-xs-4 location'></div></div>",
           "fields": ['summary', 'datetime', 'location'],
           "rendertarget": "#calendarevents",
           "defaultLocation": "TBD",
