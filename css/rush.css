@@ -1,0 +1,9 @@
+.poster-xs {
+	height: calc(54vh - 50px);
+	margin: 0 auto;
+}
+
+.poster-sm {
+	height: calc(100vh - 50px);
+	margin: 0 auto;
+}

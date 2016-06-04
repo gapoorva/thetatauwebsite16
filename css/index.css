@@ -1,0 +1,77 @@
+.masthead {
+	height: calc(100vh - 50px);
+	width: calc(100vw);
+	position: relative;
+}
+
+.masthead-img {
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+.masthead-img.mast0 {
+	background: url('../images/mast1.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.masthead-img.mast1 {
+	background: url('../images/mast2.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.masthead .row, 
+.masthead .quote-block,
+.masthead h4,
+.masthead h5 {
+	z-index: 12;
+}
+
+.show-masthead-img {
+	opacity: 1;
+}
+
+#quote {
+  padding-top: 10%;
+  padding-bottom: 30px;
+  width: 100%;
+  margin-left: 0;
+  
+}
+
+.quote-block {
+	background-color: rgba(160,5,5,0.55);
+	border-radius: 8px;
+	color: white;
+}
+
+.title-banner {
+	position: relative;
+	padding: 2% 0;
+	width: 100%;
+	margin-left:0;
+}
+
+.title-banner {
+	background-color: rgba(255,255,255,0.7);
+	color: #A80505;
+	font-weight: bold;
+	font-family: vollkorn;
+}
+
+.title-banner h1,
+.title-banner h2 {
+	word-wrap: break-word;
+}
