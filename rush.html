@@ -8,10 +8,13 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/rush.js"></script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/rush.css" rel="stylesheet">
 
     <meta name="author" content="Justin Parus, Apoorva Gupta, Diego Holt">
     <meta name="description" content="Theta Gamma Rush">
@@ -21,6 +24,52 @@
 
   <body>
   <!-- Content -->
+  <script type="text/javascript">
+    //reference google developers api console link:
+    //https://console.developers.google.com/apis/library?project=advance-stratum-132323
+
+    //config struct
+    var rushConfig = {
+        "dates": {
+          "winter": {
+            "lb_month": 0, //january
+            "lb_day": 1,  //1st
+            "ub_month": 1, //february
+            "ub_day": 28, //28th
+            "startingMonth": 10, // November
+            "endingMonth": 1, // february
+          },
+          "fall": {
+            "lb_month": 8, //September
+            "lb_day": 1,  //1st
+            "ub_month": 9, //October
+            "ub_day": 31 //31st
+          },
+          "days": ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+          "months": ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          "suffixes": ['th', 'st', 'nd', 'rd']
+        },
+        "request": {
+          "urlParams": {
+            "q": "tht-rush@umich.edu", //needs to be encoded
+            "key": "AIzaSyCHiMDmvdOicdMICskRep27PyCoGNvjz6w",
+            "orderBy": "startTime",
+            "singleEvents": "true"
+          },
+          "endpoint": "https://www.googleapis.com/calendar/v3/calendars/7407kg1hjqo90so89cenlm25ns%40group.calendar.google.com/events",
+          "urlParamNames": ['key','q','orderBy','singleEvents'],
+          "method": "GET"
+        },
+        "render": {
+          "html": "<div class='well col-xs-12'><b><div class='col-xs-4 summary'></div></b><div class='col-xs-4 datetime'></div><div class='col-xs-4 location'></div></div>",
+          "fields": ['summary', 'datetime', 'location'],
+          "rendertarget": "#calendarevents",
+          "defaultLocation": "TBD",
+          "loadDelay": 500,
+          "noEventsContent": "<p class='lead'>Looks like we haven't planned for rush yet. Check back a little later, or give us an email at <a href='mailto:tht-rush@umich.edu'>tht-rush@umich.edu</a>.</p>"
+        }
+      }
+  </script>
 
     <!-- navbar -->
     <nav class="navbar navbar-fixed-top">
@@ -65,7 +114,9 @@
           <p>Founded over 15 years ago in 1999, Theta Gamma Chapter is a group of people who are well rounded, come from all Engineering majors, and are eager to meet you!</p>
           <p>Interesting attending Rush events or learning more? <a href="mailto:tht-rush@umich.edu">Email our Rush chairs</a> or take a look at our Rush schedule below.</p>
           <br>
-          <p> **** ADD LIST GROUP OF CURRENT EVENTS FROM G-CAL HERE (PHP) **** </p>
+          <div class="row" id="calendarevents">
+            
+          </div>
         </div>
         
         
