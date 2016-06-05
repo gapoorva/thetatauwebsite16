@@ -1,6 +1,5 @@
 function getRushCalendarEvents() {
   var today = new Date();
-  //today.setMonth(rushConfig.dates.winter.startingMonth-1); //pretend it's just before winter rush
   var lowerbound = new Date();
   var upperbound = new Date();
   var thismonth = today.getMonth();
@@ -17,7 +16,7 @@ function getRushCalendarEvents() {
 
     if(thismonth >= rushConfig.dates.winter.startingMonth) { //November or December, adjust the year to next year
       lowerbound.setFullYear(today.getFullYear()+1)
-      upperbound.setFullYear(tody.getFullYear()+1)
+      upperbound.setFullYear(today.getFullYear()+1)
     }
   //It's not the winter, we want to see fall rush stuff
   } else {
@@ -85,8 +84,13 @@ function prettyDate(datestring) {
 function renderRushCalendarEvents(data) {
   var events = data.items;
   var container = $(rushConfig.render.rendertarget);
-  for(var i = 0; i < events.length; i++) {
-    container.append(createRushEventWell([events[i].summary, prettyDate(events[i].start.dateTime || events[i].start.date), events[i].location ? events[i].location : rushConfig.render.defaultLocation]));
+
+  if (events.length == 0) {
+    container.append(rushConfig.render.noEventsContent);
+  } else {
+    for(var i = 0; i < events.length; i++) {
+      container.append(createRushEventWell([events[i].summary, prettyDate(events[i].start.dateTime || events[i].start.date), events[i].location ? events[i].location : rushConfig.render.defaultLocation]));
+    }
   }
 }
 
