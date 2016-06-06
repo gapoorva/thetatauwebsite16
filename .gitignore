@@ -13,3 +13,13 @@
 
 # un-ignore all directories (including sub?)
 !*/
+
+# ignore vm files
+.bash_history
+.mysql_history
+.sudo_as_admin_successful
+.vagrant/
+.cache/
+
+# ignore all hidden files
+.*
