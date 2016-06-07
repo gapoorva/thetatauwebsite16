@@ -202,23 +202,25 @@ Now that you have a working environment, time to cover how you're actually going
 
 11. Once you create the branch and switch to it, make your changes and test in your local environment. Remember to commit changes often so you save your work in a way that it is retrievable.
 
-12. When you finish your feature, make a Merge (pull) request to master. Using the git CLI or GUI. Let someone else on the Web committee pull down your changes, take a look at them and approve the merge. 
+12. If all is well, run the build script as follows:
+  ```
+  # TODO: update README with directions for build script
+  ```
+  This will prepare your code for production and deploy it to the root namespace.
+
+13. When you finish your feature, make a Merge (pull) request to master. Using the git CLI or GUI. Let someone else on the Web committee pull down your changes, take a look at them and approve the merge. 
 
   If you have merge conflicts, you (or the dedicated resolver on the committee) will have to manually resolve the conflicts. This usually happens only when you change a file that someone else also changed during the time you were working on your branch. For this reason, try to communicate and avoid changing the same files. Merge conflicts are more work than they're worth :(
 
-13. When your work is successfully merged, you are ready to deploy to the server. SSH into the server using the instructions above in step 4. Then `cd` into `public_html/dev`.
+14. When your work is successfully merged, you are ready to deploy to the server. SSH into the server using the instructions above in step 4. Then `cd` into `public_html/dev`.
 
 14. Run `git pull` inside the `dev/` folder. This will pull down your changes stored in master.
 
 15. Open up http://www.thetatauthetagamma.com/dev/ in your web browser to see the updated changes. Navigate to the page(s) you changed to confirm your feature works properly on the server.
 
-  **NOTE: If something is wrong at this step, DON'T try to make fixes directly on the server. This will put the server ahead of the master branch. Instead, go back to your local machine, make another branch and try to figure out the there.**
+  **NOTE: If something is wrong at this step, DON'T try to make fixes directly on the server. This will put the server ahead of the master branch. Instead, go back to your local machine, make another branch and try to figure out the problem there.**
 
-16. If all is well, run the build script as follows:
-  ```
-  # TODO: update README with directions for build script
-  ```
-  This will prepare your code for production and deploy it to the root namespace. Now, the public internet should be able to see everything.
+
 
 ### Help
 
