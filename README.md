@@ -110,24 +110,13 @@ Once you have an idea of how to code, (or while you're learning) do the followin
 		  mysql/
 		  python/
 		  docs/
+      sh/
 		  index.php
 		  Vagrantfile
 		  (other php & html files & readme)
-		  dev/
-			  css/
-			  font/
-			  images/
-			  js/
-			  php/
-			  sh/
-			  mysql/
-			  python/
-			  index.php
-			  (other php & html files)
   ```
-  Notice that the `dev/` folder replicates the code folders that are under the main directory. This is on purpose. The `dev` folder is where you should do all your development and make changes. There is a build script (currently being built) that will compress the code and consolidate files to make "production" ready code. This setup namespaces new changes to the site to make a poor man's "staging" environment. Visitors to the site won't see updates to the site unless the build script is run (or if they visit the `dev/` namespace).
 
-  c. Another important file to note is the `Vagrantfile`. This is a configuration file for a program called Vagrant that lets us spin up a virtual machine on your local machine to start a server. The reason we'll need a server is because PHP files are really server-side script files that need to be interpreted by the PHP interpreter. 
+  c. An important file to note is the `Vagrantfile`. This is a configuration file for a program called Vagrant that lets us spin up a virtual machine on your local machine to start a server. The reason we'll need a server is because PHP files are really server-side script files that need to be interpreted by the PHP interpreter. 
 
   Virtual machines are what they sound like. They allocate a small bit of the resources on your computer to simulate a machine that you can control, but which thinks it's its own separate, physical entity. They're super convient because they protect your real machine from things going wrong (aka you). They are also good for simulating production environments on your local computer.
 
@@ -185,10 +174,10 @@ Once you have an idea of how to code, (or while you're learning) do the followin
   ```
   d. Shell Script Provisioning. This allows us to run a couple start up scripts when the VM is first started. In our case, since we're using the VM to run a LAMP stack, I wrote a short shell script: `dev/sh/vagrantInitLAMP.sh`. This just runs some `apt-get` commands to install Apache, MySQL and PHP on the VM. This way, you won't need to ssh to the machine and deal with configuring it - it'll work "out of the box". But that doesn't mean you can ssh in and change configs later.
   ```
-  config.vm.provision "shell", path: "./dev/sh/vagrantInitLAMP.sh"
+  config.vm.provision "shell", path: "./sh/vagrantInitLAMP.sh"
   ```
 
-9. At this point, after cloning the repo, downloading VirtualBox and Vagrant, and running `vagrant add box hashicorp/precise64` and `vagrant up`, your VM and server should be operational. Going to `http://localhost:8080/dev/` should show you the development version of website as it exists on your local computer. Yay! You can make edits to your files, reload the page, and see the effects of your changes. 
+9. At this point, after cloning the repo, downloading VirtualBox and Vagrant, and running `vagrant add box hashicorp/precise64` and `vagrant up`, your VM and server should be operational. Going to `http://localhost:8080/` should show you the development version of website as it exists on your local computer. Yay! You can make edits to your files, reload the page, and see the effects of your changes. 
 
 ### Understanding the Development Pipeline
 
@@ -202,24 +191,17 @@ Now that you have a working environment, time to cover how you're actually going
 
 11. Once you create the branch and switch to it, make your changes and test in your local environment. Remember to commit changes often so you save your work in a way that it is retrievable.
 
-12. If all is well, run the build script as follows:
-  ```
-  # TODO: update README with directions for build script
-  ```
-  This will prepare your code for production and deploy it to the root namespace.
-
 13. When you finish your feature, make a Merge (pull) request to master. Using the git CLI or GUI. Let someone else on the Web committee pull down your changes, take a look at them and approve the merge. 
 
   If you have merge conflicts, you (or the dedicated resolver on the committee) will have to manually resolve the conflicts. This usually happens only when you change a file that someone else also changed during the time you were working on your branch. For this reason, try to communicate and avoid changing the same files. Merge conflicts are more work than they're worth :(
 
-14. When your work is successfully merged, you are ready to deploy to the server. SSH into the server using the instructions above in step 4. Then `cd` into `public_html/dev`.
+14. When your work is successfully merged, you are ready to deploy to the server. Switch to the master branch on your local machine. Then run staging script (TODO: Insert clear script directions here). The script should pull your code onto the server, under a temporary, random directory.
 
-14. Run `git pull` inside the `dev/` folder. This will pull down your changes stored in master.
+15. Go to the website url `http://www.thetatauthetagamma.com/therandomdirectory/` to see your new version of the site. Test to make sure the feature(s) you added work properly. 
 
-15. Open up http://www.thetatauthetagamma.com/dev/ in your web browser to see the updated changes. Navigate to the page(s) you changed to confirm your feature works properly on the server.
+16. If everything looks right to you, run the merge script. (TODO: Insert clear script directions here). This will remove your random directory and perform some other optimizations so that the website is updated to your new version.
 
-  **NOTE: If something is wrong at this step, DON'T try to make fixes directly on the server. This will put the server ahead of the master branch. Instead, go back to your local machine, make another branch and try to figure out the problem there.**
-
+**NOTE:** If something goes wrong during the push to the server, use the undo script (TODO: Post clear directions about how to use undo script here). Don't try to SSH and and remove things, because remember - the server is "Pull Only"!
 
 
 ### Help
