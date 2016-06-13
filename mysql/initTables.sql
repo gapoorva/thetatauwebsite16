@@ -1,6 +1,26 @@
 # Initialize all tables in the database
 # Can be run to also clear tables to a cleared, empty state
 
+############### NOTE: ################
+/*
+ The formating is very important here,
+ because a script has dependencies on 
+ this file's format. It's way too much
+ effort to adopt the multiple formats,
+ so please use the following format:
+
+ //DROP TABLE IF EXISTS <the_table_name>
+ //CREATE TABLE <the_table_name> (
+ //	<col1>		<type>[,] [NOT NULL | DEFAULT <value>],
+	<col2>		<type>[,] [NOT NULL | DEFAULT <value>],
+	...
+	<coln>		<type>[,] [NOT NULL | DEFAULT <value>][,]
+	[PRIMARY KEY (<colx>)]
+ ); 
+
+ #####################################
+*/
+
 use thetatau_db;
 
 DROP TABLE IF EXISTS users;
@@ -11,7 +31,7 @@ CREATE TABLE users (
 	roll 		int 		NOT NULL,
 	verified	boolean		DEFAULT FALSE,
 	email		varchar(32) NOT NULL,
-	img			varchar(64) DEFAULT 'default_profile_img.png', # this could change
+	img			varchar(64) DEFAULT 'default_profile_img.png',
 	PRIMARY KEY (userid)
 );
 
@@ -42,8 +62,8 @@ CREATE TABLE jobs (
 	title		varchar(64),
 	company 	varchar(64),
 	description	varchar(512),
-	startT		int DEFAULT 0, # 0 means no time given
-	endT		int DEFAULT 0, # end==start means current
+	startT		int DEFAULT 0, 
+	endT		int DEFAULT 0,
 	link		varchar(256),
 	PRIMARY KEY (userid)
 );

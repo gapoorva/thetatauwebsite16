@@ -1,5 +1,8 @@
 # Update apt-get packages
 sudo apt-get update
+# vim install
+echo "vagrant-provisioning:[Installing vim]"
+sudo apt-get -y install vim
 # Apache install
 echo "vagrant-provisioning:[Installing Apache2]"
 sudo apt-get -y install apache2
@@ -22,3 +25,7 @@ echo "vagrant-provisioning:[Initiallizing MySQL]"
 #echo mysql-startup-credentials > ~/.my.cnf
 mysql < $HOME/mysql/initDB.sql
 mysql < $HOME/mysql/initTables.sql
+
+echo "vagrant-provisioning:[Modifiying php.ini]"
+sudo echo "\ndisplay_errors=On" >> /etc/php5/apache2/php.ini
+sudo apachectl restart
