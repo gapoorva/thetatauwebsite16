@@ -5,7 +5,7 @@
 	// setupMySQLDBConfig.py script in /python
 	$MySQLDBconfig = new DBconf();
 
-	$MySQLDBconfig->addScope("users")
+	$MySQLDBConfig->addScope("users")
 		->addDP("userid", "string", True)
 		->addDP("firstname", "string", True)
 		->addDP("lastname", "string", True)
@@ -15,7 +15,7 @@
 		->addDP("img", "string", False)
 		->declareKey("userid");
 
-	$MySQLDBconfig->addScope("profile")
+	$MySQLDBConfig->addScope("profile")
 		->addDP("userid", "string", True)
 		->addDP("major_ug", "string", False)
 		->addDP("major_m", "string", False)
@@ -34,68 +34,79 @@
 		->addDP("phone", "string", False)
 		->declareKey("userid");
 
-	$MySQLDBconfig->addScope("jobs")
+	$MySQLDBConfig->addScope("jobs")
 		->addDP("userid", "string", True)
-		->addDP("title", "string", False)
-		->addDP("company", "string", False)
+		->addDP("title", "string", True)
+		->addDP("company", "string", True)
 		->addDP("description", "string", False)
 		->addDP("startT", "integer", False)
 		->addDP("endT", "integer", False)
 		->addDP("link", "string", False)
-		->declareKey("userid");
+		->declareKey("userid")
+		->declareKey("title")
+		->declareKey("company");
 
-	$MySQLDBconfig->addScope("projects")
+	$MySQLDBConfig->addScope("projects")
 		->addDP("userid", "string", True)
-		->addDP("projectname", "string", False)
+		->addDP("projectname", "string", True)
 		->addDP("description", "string", False)
 		->addDP("startT", "integer", False)
 		->addDP("endT", "integer", False)
 		->addDP("link", "string", False)
-		->declareKey("userid");
+		->declareKey("userid")
+		->declareKey("projectname");
 
-	$MySQLDBconfig->addScope("hobbies")
+	$MySQLDBConfig->addScope("hobbies")
 		->addDP("userid", "string", True)
 		->addDP("hobby", "string", True)
-		->declareKey("userid");
+		->declareKey("userid")
+		->declareKey("hobby");
 
-	$MySQLDBconfig->addScope("skills")
+	$MySQLDBConfig->addScope("skills")
 		->addDP("userid", "string", True)
 		->addDP("skill", "string", True)
-		->declareKey("userid");
+		->declareKey("userid")
+		->declareKey("skill");
 
-	$MySQLDBconfig->addScope("thetataucareer")
+	$MySQLDBConfig->addScope("thetataucareer")
 		->addDP("userid", "string", True)
 		->addDP("role", "string", True)
-		->addDP("year", "integer", False)
-		->addDP("semester", "string", False)
-		->declareKey("userid");
+		->addDP("year", "integer", True)
+		->addDP("semester", "string", True)
+		->declareKey("userid")
+		->declareKey("role")
+		->declareKey("year")
+		->declareKey("semester");
 
-	$MySQLDBconfig->addScope("social_profile")
+	$MySQLDBConfig->addScope("social_profile")
 		->addDP("userid", "string", True)
 		->addDP("profiletype", "string", True)
 		->addDP("link", "string", True)
-		->declareKey("userid");
+		->declareKey("userid")
+		->declareKey("profiletype");
 
-	$MySQLDBconfig->addScope("auth")
+	$MySQLDBConfig->addScope("auth")
 		->addDP("userid", "string", True)
 		->addDP("pw", "string", True)
 		->addDP("token", "string", True)
 		->declareKey("userid");
 
-	$MySQLDBconfig->addScope("userroles")
+	$MySQLDBConfig->addScope("userroles")
 		->addDP("userid", "string", True)
 		->addDP("roleid", "string", True)
-		->declareKey("userid");
+		->declareKey("userid")
+		->declareKey("roleid");
 
-	$MySQLDBconfig->addScope("roles")
+	$MySQLDBConfig->addScope("roles")
 		->addDP("roleid", "string", True)
 		->addDP("title", "string", True)
 		->addDP("contact", "string", True)
 		->declareKey("roleid");
 
-	$MySQLDBconfig->addScope("permissions")
+	$MySQLDBConfig->addScope("permissions")
 		->addDP("roleid", "string", True)
 		->addDP("action", "string", True)
 		->addDP("kind", "integer", True)
-		->declareKey("roleid");
+		->declareKey("roleid")
+		->declareKey("action");
 ?>

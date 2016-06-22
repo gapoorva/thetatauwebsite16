@@ -39,21 +39,25 @@
 	z-index: 12;
 }
 
-.show-masthead-img {
+.show-masthead-img,
+.quote.show-quote {
 	opacity: 1;
+	display: inherit;
 }
 
-#quote {
-  padding-top: 10%;
-  padding-bottom: 30px;
+.quote {
+  left: 0;
+  bottom: 0;
   width: 100%;
-  margin-left: 0;
-  
+  margin-left: 0px;
+  opacity: 0;
+  display: none;
+  position: absolute;
 }
 
 .quote-block {
 	background-color: rgba(160,5,5,0.55);
-	border-radius: 8px;
+	border-radius: 0px;
 	color: white;
 }
 

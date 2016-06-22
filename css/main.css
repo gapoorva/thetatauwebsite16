@@ -54,3 +54,13 @@ nav {
 	color: #A80505;;
 }
 
+button.btn-tht {
+	background-color: #A80505;
+	border-radius: 0px;
+	color: white; 
+}
+
+input.input-tht {
+	border-radius: 0px;
+}
+

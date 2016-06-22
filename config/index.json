@@ -1,0 +1,9 @@
+{
+	"MastSlideShow": {
+		"CycleTime": 3700,
+		"MastImgClass": "masthead-img",
+		"ImgToggleClass": "show-masthead-img",
+		"QuoteClass": "quote",
+		"QuoteToggleClass": "show-quote"
+	}
+}

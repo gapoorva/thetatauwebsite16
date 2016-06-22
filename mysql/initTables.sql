@@ -1,26 +1,6 @@
 # Initialize all tables in the database
 # Can be run to also clear tables to a cleared, empty state
 
-############### NOTE: ################
-/*
- The formating is very important here,
- because a script has dependencies on 
- this file's format. It's way too much
- effort to adopt the multiple formats,
- so please use the following format:
-
- //DROP TABLE IF EXISTS <the_table_name>
- //CREATE TABLE <the_table_name> (
- //	<col1>		<type>[,] [NOT NULL | DEFAULT <value>],
-	<col2>		<type>[,] [NOT NULL | DEFAULT <value>],
-	...
-	<coln>		<type>[,] [NOT NULL | DEFAULT <value>][,]
-	[PRIMARY KEY (<colx>)]
- ); 
-
- #####################################
-*/
-
 use thetatau_db;
 
 DROP TABLE IF EXISTS users;
@@ -38,68 +18,62 @@ CREATE TABLE users (
 DROP TABLE IF EXISTS profile;
 CREATE TABLE profile (
 	userid 			varchar(32) NOT NULL,
-	major_ug		varchar(32),
-	major_m			varchar(32),
-	major_phd		varchar(32),
-	major_pd 		varchar(32),
-	address			varchar(72),
+	major   		varchar(32),
 	city			varchar(32),
 	state			varchar(5),
-	zip				int,
-	country			varchar(32),
 	grad_year		int,
-	grad_month		varchar(32),
+	grad_sem		varchar(32),
 	pledge_class	varchar(32),
 	nickname		varchar(32),
-	fullname		varchar(72),
 	phone			varchar(64),
+	biguserid		varchar(32),
 	PRIMARY KEY (userid)
 );
 
 DROP TABLE IF EXISTS jobs;
 CREATE TABLE jobs (
 	userid 		varchar(32) NOT NULL,
-	title		varchar(64),
-	company 	varchar(64),
+	title		varchar(64) NOT NULL,
+	company 	varchar(64) NOT NULL,
 	description	varchar(512),
 	startT		int DEFAULT 0, 
 	endT		int DEFAULT 0,
 	link		varchar(256),
-	PRIMARY KEY (userid)
+	PRIMARY KEY (userid,title,company)
 );
 
 DROP TABLE IF EXISTS projects;
 CREATE TABLE projects (
 	userid 		varchar(32) NOT NULL,
-	projectname	varchar(64),
+	projectname	varchar(64) NOT NULL,
 	description	varchar(512),
 	startT		int DEFAULT 0,
 	endT		int DEFAULT 0,
 	link		varchar(256),
-	PRIMARY KEY (userid)
+	PRIMARY KEY (userid,projectname)
 );
 
 DROP TABLE IF EXISTS hobbies;
 CREATE TABLE hobbies (
 	userid 	varchar(32) NOT NULL,
 	hobby	varchar(128) NOT NULL,
-	PRIMARY KEY (userid)
+	PRIMARY KEY (userid,hobby)
 );
 
 DROP TABLE IF EXISTS skills;
 CREATE TABLE skills (
 	userid 	varchar(32) NOT NULL,
 	skill 	varchar(64) NOT NULL,
-	PRIMARY KEY (userid)
+	PRIMARY KEY (userid,skill)
 );
 
 DROP TABLE IF EXISTS thetataucareer;
 CREATE TABLE thetataucareer (
 	userid 		varchar(32) NOT NULL,
 	role		varchar(34) NOT NULL,
-	year 		int,
-	semester	varchar(8),
-	PRIMARY KEY (userid)
+	year 		int NOT NULL,
+	semester	varchar(8) NOT NULL,
+	PRIMARY KEY (userid,role,year,semester)
 );
 
 DROP TABLE IF EXISTS social_profile;
@@ -107,7 +81,7 @@ CREATE TABLE social_profile (
 	userid 		varchar(32)  NOT NULL,
 	profiletype	varchar(32)  NOT NULL,
 	link		varchar(256) NOT NULL,
-	PRIMARY KEY (userid)
+	PRIMARY KEY (userid,profiletype)
 );
 
 DROP TABLE IF EXISTS auth;
@@ -122,7 +96,7 @@ DROP TABLE IF EXISTS userroles;
 CREATE TABLE userroles (
 	userid 	varchar(32) NOT NULL,
 	roleid	varchar(32) NOT NULL,
-	PRIMARY KEY (userid)
+	PRIMARY KEY (userid,roleid)
 );
 
 DROP TABLE IF EXISTS roles;
@@ -138,5 +112,12 @@ CREATE TABLE permissions (
 	roleid 	varchar(32)  NOT NULL,
 	action 	varchar(128) NOT NULL,
 	kind 	int 		 NOT NULL,
-	PRIMARY KEY (roleid)
+	PRIMARY KEY (roleid,action)
+);
+
+DROP TABLE IF EXISTS mastcontent;
+CREATE TABLE mastcontent (
+	mastimg	varchar(64) NOT NULL,
+	quote	varchar(512) NOT NULL,
+	credit 	varchar(32) NOT NULL
 );

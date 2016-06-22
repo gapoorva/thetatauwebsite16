@@ -24,7 +24,7 @@ while len(buf) != 0: # we haven't consumed the buffer up yet
 		continue
 	else:
 		# we found a table!
-		target.write("\n\n\t$MySQLDBconfig->addScope(\""+buf[2]+"\")")
+		target.write("\n\n\t$MySQLDBConfig->addScope(\""+buf[2]+"\")")
 		#print "discovered table: ", buf[2]
 		# remove things until the schema group
 		while "(" not in buf[0]:
@@ -47,8 +47,10 @@ while len(buf) != 0: # we haven't consumed the buffer up yet
 			# print "thecol is", thecol
 
 			if thecol.upper() == "PRIMARY": #primary key declaration
-				keyval = buf[2][1:-1] # assume the third item contains primary key value
-				target.write("\n\t\t->declareKey(\""+keyval+"\")")
+				keystr = buf[2][1:-1] # assume the third item contains primary key value
+				keys = keystr.split(",")
+				for key in keys:
+					target.write("\n\t\t->declareKey(\""+key.strip(" ")+"\")")
 				buf.pop(0) # the primary
 				buf.pop(0) # the key
 				buf.pop(0) # the value
