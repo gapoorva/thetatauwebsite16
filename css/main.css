@@ -63,10 +63,15 @@ nav {
 	color: #A80505;;
 }
 
-button.btn-tht {
+button.btn-tht,
+a.btn-tht {
 	background-color: #A80505;
 	border-radius: 0px;
 	color: white; 
+}
+
+a.btn-tht:hover {
+	color: white;
 }
 
 input.input-tht {
