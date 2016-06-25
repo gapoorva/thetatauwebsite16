@@ -55,9 +55,9 @@
             echo ' '.$indexConfig['MastSlideShow']['QuoteToggleClass'];
           echo "'>";
       ?>
-          <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
-            <h5 class="text-center lead">"<?php echo $slide['quote'];?>"</h5>
-            <h4 class="text-center"><?php echo $slide['credit'];?>, Member</h4>
+          <div class="col-xs-12">
+            <h5 class="text-center lead opensans">"<?php echo $slide['quote'];?>"</h5>
+            <h4 class="text-center opensans"><?php echo $slide['credit'];?>, Member</h4>
           </div>
         </div>
       <?php
@@ -78,13 +78,13 @@
       <!-- inner content (about/history) -->
       <div id="inner" class="row">
         <div class="col-sm-6">
-          <h3 class="text-center vollkorn">About</h3>
+          <h3 class="text-center">About</h3>
           <p>Theta Tau is Professional Engineering Fraternity. As a group, we are dedicated to the professional and social development of our members into professionals that will enter the industry as strong, contributing members. Our chapter is known as Theta Gamma Chapter and is one of the largest chapters in the Country.</p>
           <p>Theta Tau is made up of smart, driven engineers who come from a diverse range of backgrounds and majors. In fact, this is one of our greatest strengths, since students at the University of Michigan pride themselves in the diversity of their school. Our chapter holds events weekly designed to instill a brotherhood among our members and develop ourselves as well as our college and University.</p>
           <p> Are you interested in joining our chapter? Find more information on our <a href="rush.html">Rush Page</a>.</p>
         </div>
         <div class="col-sm-6">
-          <h3 class="text-center vollkorn">History</h3>
+          <h3 class="text-center">History</h3>
           <p>The Theta Tau Fraternity was orignally founded as the "Society of Hammer and Tongs" in 1904 by Erich J. Schrader, Elwin L. Vinal, William M. Lewis, and Issac B. Hanks at University of Minnesota -  Minneapolis. Theta Tau is the oldest and largest Engineering Fraternity in the United States. Today, Theta Tau has established 83 chapters at some of the most prestigious schools in the country.</p>
           <p>Theta Gamma Chapter was founded at the University of Michigan - Ann Arbor in Spring of 1999. Before that, it was known as Mu Theta Tau colony. In the beginning, there were 8 founders: Cullen Worthem Jr., Dan Jensen, Julian Broggio, Carl Fischer, Ryan Sekela, Derek Sorenson, Ryan Meder, Jason Bailey. Today the Fraternity includes over 70 members.</p>
         </div>

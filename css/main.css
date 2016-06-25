@@ -8,6 +8,15 @@ body {
 	src: url('vollkorn.ttf');
 }
 
+@font-face {
+	font-family: OpenSansGoogle;
+	src: url("../fonts/opensans.ttf");
+}
+
+.opensans {
+	font-family: OpenSansGoogle !important;
+}
+
 .vollkorn {
 	font-family: vollkorn;
 }

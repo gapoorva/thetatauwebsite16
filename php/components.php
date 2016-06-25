@@ -45,7 +45,7 @@
 	function nav_section() {
 ?>
 		<!-- navbar -->
-		<nav class="navbar navbar-fixed-top">
+		<nav class="navbar navbar-fixed-top opensans">
 		  <div class="container-fluid">
 		    
 		    <!-- navbar header with optional button -->
@@ -55,13 +55,13 @@
 		         <span class="icon-bar"></span>
 		         <span class="icon-bar"></span>                        
 		      </button>
-		      <a class="navbar-brand" href="index.php">Theta Tau</a>
+		      <a class="navbar-brand opensans" href="index.php">Theta Tau</a>
 		    </div>
 		    <!-- end header -->
 
 		    <!-- standard nav -->
 		    <div class="collapse navbar-collapse" id="navbar">
-		      <ul class="nav navbar-nav">
+		      <ul class="nav navbar-nav opensans">
 		        <li><a href="rush.php">Rush</a></li>
 		        <li><a href="members.php">Members</a></li>
 		        <li><a href="photogallery.php">Photo Gallery</a></li>

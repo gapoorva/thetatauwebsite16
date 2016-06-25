@@ -1,0 +1,30 @@
+{
+  "dates": {
+    "winter": {
+      "lb_month": 1,
+      "lb_day": 1,  
+      "ub_month": 2, 
+      "ub_day": 28, 
+      "startingMonth": 11,
+      "endingMonth": 2 
+    },
+    "fall": {
+      "lb_month": 9, 
+      "lb_day": 1,  
+      "ub_month": 10, 
+      "ub_day": 31 
+    },
+    "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    "suffixes": ["th", "st", "nd", "rd"]
+  },
+  "request":  "https://www.googleapis.com/calendar/v3/calendars/7407kg1hjqo90so89cenlm25ns%40group.calendar.google.com/events?q=tht-rush%40umich.edu&key=AIzaSyCHiMDmvdOicdMICskRep27PyCoGNvjz6w&orderBy=startTime&singleEvents=true",
+  "render": {
+    "html": "<div class='well col-xs-12'><b><div class='col-xs-4 summary'></div></b><div class='col-xs-4 datetime'></div><div class='col-xs-4 location'></div></div>",
+    "fields": ["summary", "datetime", "location"],
+    "rendertarget": "#calendarevents",
+    "defaultLocation": "TBD",
+    "loadDelay": 500,
+    "noEventsContent": "<p class='lead'>Looks like we haven't planned for rush yet. Check back a little later, or give us an email at <a href='mailto:tht-rush@umich.edu'>tht-rush@umich.edu</a>.</p>"
+  }
+}
