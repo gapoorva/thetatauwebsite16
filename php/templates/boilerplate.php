@@ -1,4 +1,11 @@
 <?php  
+
+	/*
+		HEAD SECTION 
+			Takes array of js files and css files
+			Sends computed head section as html
+	*/
+
 	function head_section($js_files = array(), $css_files = array()) {
 ?>
 	<head>
@@ -42,6 +49,11 @@
 <?php
 	}
 
+	/*
+		NAV SECTION 
+			Sends nav section as html
+	*/
+
 	function nav_section() {
 ?>
 		<!-- navbar -->
@@ -55,7 +67,7 @@
 		         <span class="icon-bar"></span>
 		         <span class="icon-bar"></span>                        
 		      </button>
-		      <a class="navbar-brand opensans" href="index.php">Theta Tau</a>
+		      <a class="navbar-brand opensans" href="index.php"><span style="display: inline">Theta Tau</span><img class="home-button" src="../images/tht-coat-of-arms.png"></a>
 		    </div>
 		    <!-- end header -->
 
@@ -76,6 +88,11 @@
 <?php 
 	}
 
+	/*
+		FOOTER SECTION 
+			Sends footer section as html
+	*/
+
 	function footer_section() {
 ?>
 		<!-- footer -->
@@ -87,8 +104,6 @@
 		    </div>
 		  </div>
 		</div>
-		<!-- End footer -->
 <?php
-
 	}
 ?>

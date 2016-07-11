@@ -1,12 +1,15 @@
 <?php 
-  include 'php/components.php';
-  include 'php/config.php';
-  include 'php/DB.php'
+  include 'php/templates/boilerplate.php';
+  include 'php/templates/mastheadcss.php';
+  include 'php/templates/mastheadcontent.php';
+  include 'php/services/config-service.php';
+  include 'php/services/mastdata-service.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <?php 
     head_section(array("js/index.js"), array("css/index.css"));
+    $content = mastdataservice();
   ?>
 
   <body>
@@ -14,23 +17,19 @@
   <script type="text/javascript">
     //# OF MAST SLIDES
 
-    <?php $indexConfig = get_config('config/index.json', 'index', true); ?>
+    <?php configservice('index', true); ?>
 
   </script>
 
   <style type="text/css">
+    .masthead-img {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
     <?php
-        $mastcontent = getMastContent();
-
-        foreach($mastcontent as $i => $slide) {
-          echo $indexConfig['MastSlideShow']['MastImgClass'].".mast".strval($i)." {\n".
-            "bacground: url('images/".$slide['img']."') no-repeat center center fixed;\n".
-            "-webkit-background-size: cover;\n".
-            "-moz-background-size: cover;\n".
-            "-o-background-size: cover;\n".
-            "background-size: cover;\n".
-            "}";
-        }
+        mastheadcss($content);
     ?>
   </style>
 
@@ -49,12 +48,7 @@
 
         <!-- Masthead Images -->
       <?php
-        foreach($mastcontent as $i => $slide) {
-          echo "<div class='".$indexConfig['MastSlideShow']['MastImgClass']." mast".$i;
-          if ($i==0) 
-            echo ' '.$indexConfig['MastSlideShow']['ImgToggleClass'];
-          echo "'></div>";
-        }
+        mastheadcontent(count($content));
       ?>
       </div>
       <!-- inner content (about/history) -->

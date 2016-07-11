@@ -1,14 +1,17 @@
 function cycleMastSlides() {
-  var mast_imgs = $('.'+indexConfig.MastSlideShow.MastImgClass);
-  var quotes = $('.'+indexConfig.MastSlideShow.QuoteClass);
+  var mast_imgs = $('.masthead-img');
+  var quotes = $('.quote');
 
   for(var i = 0; i < mast_imgs.size(); ++i) {
-    if(mast_imgs.eq(i).hasClass(indexConfig.MastSlideShow.ImgToggleClass)) {
+    // is this mast active?
+    if(mast_imgs.eq(i).hasClass('show-masthead-img')) {
       var nextmast = (i+1)%mast_imgs.size();
-      mast_imgs.eq(i).removeClass(indexConfig.MastSlideShow.ImgToggleClass);
-      quotes.eq(i).removeClass(indexConfig.MastSlideShow.QuoteToggleClass);
-      mast_imgs.eq(nextmast).addClass(indexConfig.MastSlideShow.ImgToggleClass);
-      quotes.eq(nextmast).addClass(indexConfig.MastSlideShow.QuoteToggleClass);
+      // hide it
+      mast_imgs.eq(i).removeClass('show-masthead-img');
+      quotes.eq(i).removeClass('show-quote');
+      // show next mast
+      mast_imgs.eq(nextmast).addClass('show-masthead-img');
+      quotes.eq(nextmast).addClass('show-quote');
       break;
     }
   }

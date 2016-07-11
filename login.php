@@ -20,8 +20,10 @@
 	}
 
 	// we know it's a GET REQUEST
-	include "php/components.php"; // saves some overhead including here
+	include "php/templates/boilerplate.php"; // saves some overhead including here
 ?>
+
+
 <!DOCTYPE html>
 <html>
 	<?php head_section(array(), array("css/login.css")); ?>
@@ -35,7 +37,7 @@
 				<?php
 					if ($login_failed) {
 				?>
-					<div class="alert alert-danger fade in">Your username and password don't match! <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
+					<div class="alert alert-danger fade in">Sorry, username or password incorrect.<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
 				<?php
 					}
 				?>

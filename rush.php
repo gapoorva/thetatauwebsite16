@@ -1,6 +1,8 @@
 <?php 
-  include 'php/components.php';
-  include 'php/config.php';
+  include 'php/templates/boilerplate.php';
+  include 'php/templates/rushevents.php';
+  include 'php/services/config-service.php';
+  include 'php/services/calendar-service.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +13,7 @@
   <body>
   <!-- Content -->
     <script type="text/javascript">
-      //reference google developers api console link:
-      //https://console.developers.google.com/apis/library?project=advance-stratum-132323
-      //config struct
-      <?php $rushConfig = get_config("config/rush.json", "rush", false); ?>
+      <?php $rushConfig = configservice("rush", false); ?>
     </script>
 <?php
   nav_section();
@@ -42,9 +41,8 @@
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
           <br>
-          <p>Theta Tau is first and foremost a <b>brotherhood</b> of engineers. Being a brother of Theta Tau means that you have a community not only on campus, but across the country that will see you as family. Being a brother means you hold a strong connection to a broad network of other engineers - a network that permeates through your academic, professional, and social life.</p>
-          <p> This network is a support structure that you can rely on in the face of struggles that you will face in your college career. However Theta Tau is a community which you can depend on beyond the campus and throughout your life. Being a brother means building deep relationships with a diverse group of people who hold vast reservoir of insight and experience in many areas of life. The wealth of these experiences enrich your life and teach you lessons that you can't learn from the classroom or even a job. Being a brother means building a college experience that is incredibly unique and valuable.
-          <p> Being a brother means enjoying your college experience with a group of friends that interested in many of the same things you are. As brothers of Theta Tau, we hold many social events, such as intramural sports, camping, and fraternity potluck dinners while still being focused on the engineering profession. All of these things foster brotherhood which in turn strengthens your relationship and commitment to your community. Brotherhood is a fulfilling collection of some of your closest friends who stand by you through your struggles and celebrate your triumphs. Few things come close to the belonging you will feel as a brother of Theta Tau.</p>
+          <p class="lead">Theta Tau is first and foremost a <b>brotherhood</b> of engineers. Being a brother of Theta Tau means that you have a community of brilliant men AND women not only on campus, but across the country that will see you as family. Being a brother means you hold a strong connection to a broad network of other engineers - a network that permeates through your academic, professional, and social life.</p>
+          <p class="lead"> This network is a support structure that you can rely on in the face of struggles that you will face in your college career. Being a brother means being part of a community that you can depend on beyond the campus and throughout your life. Being a brother means building deep relationships with a diverse group of people who hold vast reservoir of insight and experience in many areas of life. The wealth of these experiences enrich your life and teach you lessons that you can't learn from the classroom or even a job. Being a brother means building a college experience that is incredibly unique and valuable.
           <br>
           <p>Interesting attending Rush events or learning more? <a href="mailto:tht-rush@umich.edu">Email our Rush chairs</a> or take a look at our Rush schedule below.</p>
         </div>
@@ -52,95 +50,33 @@
       <div class="row events">
         <div class="col-xs-12 col-sm-9 col-sm-offset-1">
         <?php 
+          /*
+            Note that interest in the winter semester 
+            Usually spans from November - February.
+            If it's currently late-year, bump the year 
+            to next year so that we see the next year's
+            winter rush events.
+          */
+          $y = m() >= $rushConfig['dates']['winter']['interest_begin_month'] ? y()+1 : y();
+          $winter_season = 
+            m() >= $rushConfig['dates']['winter']['interest_begin_month'] ||
+            m() <= $rushConfig['dates']['winter']['interest_end_month'];
 
-          function d ($offset = 0) {
-            return intval(date('j', time()+$offset));
-          }
-          function m ($offset = 0) {
-            return intval(date('n', time()+$offset));
-          }
-          function y ($offset = 0) {
-            return intval(date('Y', time()+$offset));
-          }
-          function TimeOffsetFromNow($targetYear, $targetMonth, $targetDay, $now) {
-            // returns the offset (positive or negative) that, when added to
-            // now gives a timestamp for the 1st day of the the target month 
-            $yearDurationOffset = ($targetYear - y())*(60*60*24*365 + 60*60*24*intval(date('L')));
+          $semester = $winter_season ? "winter" : "fall";
+          $dates = $rushConfig['dates'][$semester];
 
-            $monthDurationOffset = 0;
-            $i = m();
-            $inc = $i < $targetMonth ? 1 : -1;
-            for ($i; $i != $targetMonth; $i += $inc) {
-              $daysInThisMonth = intval(date('t', $now+$monthDurationOffset));
-              $monthDurationOffset += 60*60*24*$daysInThisMonth;
-            }
+          $events = calendarservice(
+            time(),
+            $y, 
+            $dates['period_begin_month'], 
+            $dates['period_begin_day'],
+            $y, 
+            $dates['period_end_month'], 
+            $dates['period_end_day'],
+            "&q=".urlencode($rushConfig['api_query_string']) // Optional query parameter
+          );
 
-            $dayOffset = $targetDay - d();
-            $dayDurationOffset = $dayOffset*60*60*24;
-
-            return $yearDurationOffset + $monthDurationOffset + $dayDurationOffset; // offset in seconds from $now
-          }
-
-          $now = time();
-          $startDateOffset = 0;
-          $endDateOffset = 0;
-
-          $m = m();
-          $y = y();
-
-          // are we in the winter season?
-          if ($m >= $rushConfig["dates"]["winter"]["startingMonth"] ||
-              $m <= $rushConfig["dates"]["winter"]["endingMonth"]) {
-            // are in the previous year? (Nov or December)
-            $yearOffset = ($m >= $rushConfig["dates"]["winter"]["startingMonth"]) ? 1 : 0;
-            $startDateOffset = TimeOffsetFromNow($y + $yearOffset, 
-                $rushConfig["dates"]["winter"]["lb_month"],
-                $rushConfig["dates"]["winter"]["lb_day"], $now);
-            $endDateOffset = TimeOffsetFromNow($y + $yearOffset, 
-                $rushConfig["dates"]["winter"]["ub_month"],
-                $rushConfig["dates"]["winter"]["ub_day"], $now);
-          } else {
-            $startDateOffset = TimeOffsetFromNow($y, 
-                $rushConfig["dates"]["fall"]["lb_month"],
-                $rushConfig["dates"]["fall"]["lb_day"], $now);
-            $endDateOffset = TimeOffsetFromNow($y, 
-                $rushConfig["dates"]["fall"]["ub_month"],
-                $rushConfig["dates"]["fall"]["ub_day"], $now);
-          }
-          $url = $rushConfig["request"] . 
-            "&timeMin=" . urlencode(date(DateTime::ISO8601, $now + $startDateOffset)) .
-            "&timeMax=" . urlencode(date(DateTime::ISO8601, $now + $endDateOffset));
-          
-          $eventsjson = file_get_contents($url);
-          $events = json_decode($eventsjson, true);
-          $i = 0;
-          foreach ($events["items"] as $e) {
-            if ($i % 4 == 0) echo "<div class='row'>";
-        ?>
-          <div class="col-xs-10 col-xs-offset-1 event-card">
-            <div class="col-xs-12 col-sm-5"><h4> <?php echo $e['summary']; ?> </h4></div>
-            <?php 
-              if (array_key_exists("date", $e['start'])) { // day long event. Just give DOTW, Month Date
-                $ts = new DateTime($e['start']['date']);
-                echo "<div class='col-xs-12 col-sm-4'><p>" . date("l, F jS", $ts->getTimestamp()) . "</p></div>";
-              } else if (array_key_exists("dateTime", $e['start'])) {
-                $start = new DateTime($e['start']['dateTime']);
-                $end = new DateTime($e['end']['dateTime']);
-                echo "<div class='col-xs-12 col-sm-4'><p>" . date('l, F jS f\r\o\m g:i a ', $start->getTimestamp()) . date('\t\o g:i a', $end->getTimestamp()) . "</p></div>";
-              }
-            ?>
-            <div class='col-xs-12 col-sm-3'><p> <?php echo array_key_exists("location", $e) ? $e['location'] : "TBD"; ?> </p></div>
-          </div>
-        <?php
-            if ($i % 4 == 3) echo "</div>";
-            ++$i;
-          }
-          if (count($events["items"]) != 0 && $i % 4 != 3) echo "</div>";
-
-          if (count($events["items"]) == 0) {
-            echo "<p class='lead'>It looks like our Rush Chairs haven't created rush events for the upcoming semester yet. The best way to get the latest information about rush would be to <a href='mailto:tht-rush@umich.edu'>contact us.</a></p><hr class='divider'>";
-          } 
-  
+          rush_events_section($events);
         ?>
         </div>
       </div>
@@ -165,7 +101,7 @@
           <h4> What can I expect at Rush Events? </h4>
           <p>Rush is typically at the beginning of the academic semester. Rush events are low-stress, simple activities that are designed to help get exposure to the fraternity, and for Brothers to meet you. Our first rush events are typically Information Sessions where our Rush chairs will give you a in-depth explanation of the process to becoming a Brother of Theta Tau. Other Rush events will be a mix of fun and professional events that vary from Semester to Semester. You definitely want to introduce yourself to as many brothers and other Rushees as you can at every Rush event. This is the best way to show your interest in the fraternity. Relax and have fun! Many rushees walk away from Rush with some unexpected but important friendships.</p>
           <h4> What kind of time commitment is Theta Tau? </h4>
-          <p>Rush is intended to be low time commitment activity, and usually only about 4-6 hours (this is about the same as 1 credit class). Once you move further in the process and become a pledge, more commitment will be expected of you. Your time commitment may average closer to 8-10 hours, however your time will be well spent developing meaningful relationships with brothers and fellow pledges. Note that Rushing and Pledging are more rewarding the more time you invest in them. It is ultimately up to you to manage your time in a way to make the proper time commitment to the fraternity.</p>
+          <p>Rush is intended to be low time commitment activity, and usually only about 4-6 hours per week (this is about the same as 1 credit class). Once you move further in the process and become a pledge, more commitment will be expected of you. Your time commitment may average closer to 8-10 hours, however your time will be well spent developing meaningful relationships with brothers and fellow pledges. Note that Rushing and Pledging are more rewarding the more time you invest in them. It is ultimately up to you to manage your time in a way to make the proper time commitment to the fraternity.</p>
           <h4> Am I elligible to join? </h4>
           <p>As a quick checklist, you are elligible to join Theta Tau as long as long you can meet the following criteria at the time of your initiation:</p>
           <ul>
