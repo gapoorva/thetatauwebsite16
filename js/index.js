@@ -1,19 +1,25 @@
 function cycleMastSlides() {
-  var mast_imgs = $('.'+indexConfig.mastSlideShow.mastheadImgClass);
+  var mast_imgs = $('.masthead-img');
+  var quotes = $('.quote');
 
   for(var i = 0; i < mast_imgs.size(); ++i) {
-    if(mast_imgs.eq(i).hasClass(indexConfig.mastSlideShow.imgVisibilityToggleClass)) {
+    // is this mast active?
+    if(mast_imgs.eq(i).hasClass('show-masthead-img')) {
       var nextmast = (i+1)%mast_imgs.size();
-      mast_imgs.eq(i).removeClass(indexConfig.mastSlideShow.imgVisibilityToggleClass);
-      mast_imgs.eq(nextmast).addClass(indexConfig.mastSlideShow.imgVisibilityToggleClass);
+      // hide it
+      mast_imgs.eq(i).removeClass('show-masthead-img');
+      quotes.eq(i).removeClass('show-quote');
+      // show next mast
+      mast_imgs.eq(nextmast).addClass('show-masthead-img');
+      quotes.eq(nextmast).addClass('show-quote');
       break;
     }
   }
-  setTimeout(function() {cycleMastSlides();}, indexConfig.mastSlideShow.MAST_CYCLE_TIME);
+  setTimeout(function() {cycleMastSlides();}, indexConfig.MastSlideShow.CycleTime);
 }
 
 $(document).ready(
   function() {
-    setTimeout(function() {cycleMastSlides();}, indexConfig.mastSlideShow.MAST_CYCLE_TIME);
+    setTimeout(function() {cycleMastSlides();}, indexConfig.MastSlideShow.CycleTime);
   }
 );

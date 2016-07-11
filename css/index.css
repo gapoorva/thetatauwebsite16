@@ -1,3 +1,12 @@
+@font-face {
+	font-family: OpenSansGoogle;
+	src: url("../fonts/opensans.ttf");
+}
+
+.body {
+	font-family: OpenSansGoogle !important;
+}
+
 .masthead {
 	height: calc(100vh - 50px);
 	width: calc(100vw);
@@ -39,21 +48,25 @@
 	z-index: 12;
 }
 
-.show-masthead-img {
+.show-masthead-img,
+.quote.show-quote {
 	opacity: 1;
+	display: inherit;
 }
 
-#quote {
-  padding-top: 10%;
-  padding-bottom: 30px;
+.quote {
+  left: 0;
+  bottom: 0;
   width: 100%;
-  margin-left: 0;
-  
+  margin-left: 0px;
+  opacity: 0;
+  display: none;
+  position: absolute;
 }
 
 .quote-block {
 	background-color: rgba(160,5,5,0.55);
-	border-radius: 8px;
+	border-radius: 0px;
 	color: white;
 }
 
@@ -62,13 +75,14 @@
 	padding: 2% 0;
 	width: 100%;
 	margin-left:0;
+	margin-top: calc((100vh - 60%)/2);
 }
 
 .title-banner {
-	background-color: rgba(255,255,255,0.7);
-	color: #A80505;
+	/*background-color: rgba(25,25,25,0.1);*/
+	/*color: #A80505;*/
 	font-weight: bold;
-	font-family: vollkorn;
+	font-family: OpenSansGoogle;
 }
 
 .title-banner h1,

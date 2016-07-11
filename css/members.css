@@ -1,0 +1,71 @@
+.top-title {
+	margin-top: 60px; 
+}
+
+.stats-title {
+	padding: 0; 
+	padding-bottom: 20px;
+}
+
+.members-stats {
+	padding-bottom: 20px;
+	/*border-top: 2px solid #A80505;*/
+	color:  #A80505;
+}
+
+.stats-title.members-stats {
+	/*padding: 0px;*/
+	border-bottom: 2px solid #A80505;
+	/*border: none;*/
+}
+
+.alumni-stats {
+	padding-bottom: 20px;
+	/*border-top: 2px solid #008000;*/
+	color:  #cca300;
+}
+
+.stats-title.alumni-stats {
+	/*padding: 0px;*/
+	/*border: none;*/
+	border-bottom: 2px solid #cca300;
+}
+
+.chapter-stats {
+	padding-bottom: 20px;
+	/*border-top: 2px solid #008000;*/
+	color:  #A80505;
+}
+
+.stats-title.chapter-stats {
+	/*padding: 0px;*/
+	border-bottom: 2px solid #A80505;
+	/*border: none;*/
+}
+
+.statistic {
+	display: block;
+	text-align: center;
+	font-size: 128px;
+	margin-top: -10px; 
+}
+
+.statistic .percent {
+	font-size: 42px;
+}
+
+.statistic.statistic-minor {
+	font-size: 42px;
+	display: inline-block;
+}
+
+p.statistic-minor {
+	text-align: left;
+	margin-left: 20%; 
+}
+
+
+.statistic-name {
+	margin-bottom: 0;
+	text-align: center;
+}
