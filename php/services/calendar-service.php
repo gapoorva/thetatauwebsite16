@@ -51,11 +51,12 @@
 
     $start = TimeOffsetFromNow($startYear, $startMonth, $startDay, $now);
     $end = TimeOffsetFromNow($endYear, $endMonth, $endDay, $now);
-
+    
     $url = $endpoint . 
       "&timeMin=" . urlencode(date(DateTime::ISO8601, $now + $start)) .
       "&timeMax=" . urlencode(date(DateTime::ISO8601, $now + $end)) .
       $params;
+
 
     $respjson = file_get_contents($url);
     $resp = json_decode($respjson, true);
@@ -99,11 +100,13 @@
     $inc = $i < $targetMonth ? 1 : -1;
     for ($i; $i != $targetMonth; $i += $inc) {
       $daysInThisMonth = intval(date('t', $now+$monthDurationOffset));
-      $monthDurationOffset += 60*60*24*$daysInThisMonth;
+      $monthDurationOffset += 60*60*24*$daysInThisMonth * $inc;
     }
 
     $dayOffset = $targetDay - d();
     $dayDurationOffset = $dayOffset*60*60*24;
+
+
 
     return $yearDurationOffset + $monthDurationOffset + $dayDurationOffset; // offset in seconds from $now
   }

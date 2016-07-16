@@ -25,6 +25,7 @@ echo "vagrant-provisioning:[Initiallizing MySQL]"
 #echo mysql-startup-credentials > ~/.my.cnf
 mysql < $HOME/mysql/initDB.sql
 mysql < $HOME/mysql/initTables.sql
+mysql < $HOME/mysql/test-data.sql
 
 echo "vagrant-provisioning:[Modifiying php.ini]"
 sudo echo "\ndisplay_errors=On" >> /etc/php5/apache2/php.ini

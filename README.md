@@ -16,19 +16,22 @@ Welcome to the repo for the Theta Gamma Chapter of Theta Tau's Website. Theta Ga
 * Home Page About/History text
 * Rush Page text
 * Google calendar-backed Rush Agenda
+* Login page
+* Chapter stats
 
-## Planned Features: 
+## In progress:
+* Members page with "cards" for each member
+* Theta Gamma Family Tree page
+* Member pages with full profiles/resume uploads
+
+## Planned Features Wishlist: 
 
 
 (Not in any particular order)
 
 * Calendar that's backed by Google calendar
-* Members page with "cards" for each member
 * Tht-cities page (under login)
-* Theta Gamma Family Tree page
 * Photo Album Page
-* Login page
-* Member pages with full profiles/resume uploads
 * Event creation pages
 * Event sign-in pages
 * Eboard management panel (Scribe forms, attendance, Treasurer expense recording, Vice Regent Committee management tools [email lists, performance & planning, ])
@@ -43,38 +46,45 @@ Keep checking back for more updates! [Contact](tht-web.committee@umich.edu) the 
 
 By: [Apoorva Gupta](mailto:gapoorva@umich.edu)
 
-Thanks for offering to help develop and maintain the website! To start developing, you're going to need some setup. These instructions are going to assume almost no experience with Github and Software Development. As a result, it might get wordy, but it's important for future webchairs to know it. Feel free to skip over the parts you already know, and add more information to improve these instructions.
+Thanks for offering to help develop and maintain the website! To start developing, you're going to need some setup. These instructions are going to assume almost no experience with Github and software fevelopment. As a result, it might get wordy, but it's important for future webchairs to know it. Feel free to skip over the parts you already know, and add more information to improve these instructions.
 
-It's gonna be tough to do web development if you don't know how to code for Web environments. As a result, you probably want to learn the basics of HTML5, CSS3, and JS. Our code also uses PHP and MySQL which are good to know too. As we choose to add more functions, we may use yet other technologies which are also good to get a background in. [www.w3schools](http://www.w3schools.com) has some great tutorials for some of the most popular languages, and is where I started learning things.
+It's gonna be tough to do web development if you don't know how to code for Web environments. As a result, you probably want to learn the basics of HTML5, CSS3, and JS. Our code also uses PHP and MySQL which are good to know too. 
+
+For those of you who were just like "PHP?? Why did you use that?!?", sorry I didn't use the most up and coming web framework you wanted. PHP is good for a couple of reasons - it's really good for server-side rendering of html. PHP is cheap to learn, easy enough to write, and powerful enough for our usecases. Also PHP isn't going away anytime soon, there are __so__ many companies and sites that still depend on it. It's a mature ecosystem, and there's a garuntee that it'll be suported for a long time.
+
+Finally, the website has been designed in a way that it's easy to pull out pieces of functionality and write them wherever and however you choose. More on architecture below, but the simply answer is that PHP is "good enough", and good option for beginners to web development. (Remember that you personally are not going to maintain this thing forever...)
+
+Speaking of extensibile architecture, as we choose to add more functions, we may use yet other technologies which are also good to get a background in. [www.w3schools](http://www.w3schools.com) has some great tutorials for some of the most popular languages, and is where I started learning things.
 
 Once you have an idea of how to code, (or while you're learning) do the following to get yourself set up:
 
-### Getting Access:
+### Getting Access(es):
 
-0. I'm writing this assuming you have a Linux/Unix setup (Like OS X), since that's what I use. If you're a serious developer you'd use the same (lol jkjk). Windows 10 is supposed to have a Bash terminal pretty soon which would be pretty hype, but you could also use something like Cygwin, a disk partion with Linux, or a VM that runs Linux. Long story short, if you're using Windows you could run into some problems. If you refuse to adopt any of these options, you might be on your own. Defintely type up what you do for future reference.
+0. I'm writing this assuming you have a Linux/Unix setup (Like OS X), since that's what I use. If you're a serious developer you'd use the same (lol jkjk). Windows 10 is supposed to have a Bash terminal pretty soon which would be nice, but you could also use something like Cygwin, a disk partion with Linux, or a VM that runs Linux. Long story short, if you insist on developing purely in Windows, you could run into some problems. If you refuse to adopt any of these options, you might be on your own to solve them. However defintely type up what you do for future reference, cause people would benefit.
 
 1. Get added to the Web Slack by the Vice Regent (or just join?). The team will use the Slack to communicate important information to each other all in one place plus [insert Slack advertising pitch here]. The best part is the github integration which lets us all know whenever anyone does stuff with the repo.
 
-2. Learn about Git. There are a bunch of places to do this. You can choose to use the CLI (terminal) version or a GUI. Briefly, Git is a version-control tool that lets you use "repositories" (repos), to save projects in a central place. Then, you can clone (recreate) those projects on your local machine and make edits. Once you're at a point where you've accomplished a piece of work you want to save, you can "commit" and "push", which will persist your local changes to the central "master" copy. Git allows multiple people to work on a Software project in a controlled way. Read a LOT more at www.github.com.
+2. Learn about Git. There are a bunch of places to do this. You can choose to use the CLI (terminal) version or a GUI. Briefly, Git is a version-control tool that lets you use "repositories" (repos), to save projects in a central place. Then, you can clone (recreate) those projects on your local machine and make edits. Once you're at a point where you've accomplished a piece of work you want to save, you can "commit" and "push", which will persist your local changes to the central "master" copy. Git allows multiple people to work on a Software project in a controlled way.` GIT_TUTORIAL.md` in this repo has a quick tutorial that should get you up to speed with things. Be sure to still read a LOT more at www.github.com.
 
-3. Get added as a contributor to this repo. The repo is public, which means anyone can find it and clone it, but you need to be contributer to actually push and merge request to the repo. Any current contributor should be able to add you, or ask Apoorva. (gapoorva@umich.edu)
+3. Get added as a contributor to this repo. The repo is public, which means anyone can find it and clone it (make copies), but you need to be contributer to actually push and merge request to the repo (make updates). Any current contributor should be able to add you, or ask Apoorva. (gapoorva@umich.edu)
 
 4. Gain access to the server. 
-  a. We are (currently) hosting at Siteground. "Hosting" means the service that physically stores a copy of your code. When people try to go to your website, the hosting service sends back this copy to the client browser. Talk to current webchairs about where the Siteground credentials are.
-  b. Siteground uses ssh keys. `ssh` stands for "Secure Shell", and allows you to access other remote computers from your terminal - ssh keys use crypto to authenticate you. To generate your ssh keys, open up a terminal and type
+  * This is not required to get developing locally, but it would be nice to have access to the server so that you can make quick hotfixes and pull them onto the server.
+  * We are (currently) hosting at Siteground. "Hosting" means the service that physically stores a copy of your code. When people try to go to your website, the hosting service sends back this copy to the client browser. Talk to current webchairs about where/what the Siteground credentials are. 
+  * Siteground uses ssh keys. `ssh` stands for "Secure Shell", and allows you to access other remote computers from your terminal - ssh keys use crypto to authenticate you. To generate your ssh keys, open up a terminal and type
   ```
   $ ssh-keygen -t rsa -C "yourname@umich.edu"
   ```
-  c. This will generate your ssh keys under the `~/.ssh/` folder. You should be able to verify that `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`. Although not required, you can also set up an ssh profile for Siteground. This just makes it super easy to run ssh and saves the options you run ssh with. Do this by creating a file called `config` under your `~/.ssh/` directory. Then add the following to the file: 
+  * This will generate your ssh keys under the `~/.ssh/` folder. You should be able to verify that `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub` now exist. Although not required, you can also set up an ssh profile for Siteground. This just makes it super easy to run ssh and saves the options you run ssh with. Do this by creating the file `~/.ssh/config`. Then add the following to the file: 
   ```
   Host tht
       HostName thetatauthetagamma.com
       Port 18765
       User thetatau
   ```
-  This will add the name "tht" as profile. You can also add more profiles for other hosts you connect to frequently, like the CAEN servers.
+  This will add the name "tht" as profile. You can also add more profiles for other hosts you connect to frequently, like the CAEN servers. Now, to ssh into the server, all you need to do is type `ssh tht` :)
 
-  d. Next, you need to add the public key of the ssh key pair you generated to our Siteground account. To learn more about why, read about [Public Key Cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography). Once you login to Siteground, go to `My Accounts` > `Go to cPanel` > `Advanced` > `SSH/Shell Access`. Under __Upload SSH Key__, paste the contents of your key at `~/.ssh/id_rsa.pub` (p.s. you can get a quick output of the by doing `cat ~/.ssh/id_rsa.pub`). Leave the I.P address blank. Then hit upload.
+  * Next, you need to add the public key of the ssh key pair you generated to our Siteground account. To learn more about why, read about [Public Key Cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography). Once you login to Siteground, go to `My Accounts` > `Go to cPanel` > `Advanced` > `SSH/Shell Access`. Under __Upload SSH Key__, paste the contents of your key at `~/.ssh/id_rsa.pub` (p.s. you can get a quick output of the by doing `cat ~/.ssh/id_rsa.pub`. If you have a mac, you can do `cat ~/.ssh/id_rsa.pub | pbcopy`, which puts the key on your clipboard automatically). Leave the I.P address blank. Then hit upload.
 
   e. To verify everything worked, you can run this command in the terminal:
   ```
@@ -92,13 +102,13 @@ Once you have an idea of how to code, (or while you're learning) do the followin
 
 5. Time to set up a local environment on your computer. The first step is to clone the repo. `cd` into a directory that you want to keep the repo. I'm gonna call this directory `your/directory` from now on.
 
-  a. To clone the repo type
+  *. To clone the repo type
   ```
   $ git clone "https://github.com/gapoorva/thetatauwebsite16.git"
   ```
   this will create a folder called `thetatauwebsite16` in `/your/directory`. Type `cd thetatauwebsite16` to enter it.
 
-  b. The repo should look something like the following:
+  * The repo should look something like the following:
   ```
   your/directory/
 	  thetatauwebsite16/
@@ -116,17 +126,17 @@ Once you have an idea of how to code, (or while you're learning) do the followin
 		  (other php & html files & readme)
   ```
 
-  c. An important file to note is the `Vagrantfile`. This is a configuration file for a program called Vagrant that lets us spin up a virtual machine on your local machine to start a server. The reason we'll need a server is because PHP files are really server-side script files that need to be interpreted by the PHP interpreter. 
+  * An important file to note is the `Vagrantfile`. This is a configuration file for a program called Vagrant that lets us spin up a virtual machine on your local machine to start a server. The reason we'll need a server is because PHP files are really server-side script files that need to be interpreted by the PHP interpreter. 
 
-  Virtual machines are what they sound like. They allocate a small bit of the resources on your computer to simulate a machine that you can control, but which thinks it's its own separate, physical entity. They're super convient because they protect your real machine from things going wrong (aka you). They are also good for simulating production environments on your local computer.
+  Virtual machines are what they sound like. They allocate a small bit of the resources on your computer to simulate a machine that you can control, but which thinks it's its own separate, physical entity. They're super convienient because they protect your real machine from things going wrong (aka you). They are also good for simulating production environments on your local computer.
 
   Our Siteground has a real apache server, but in order to just test your code you'd have to push it to the server. Not only could someone accidently use your broken code, but this system doesn't work when you have multiple people developing on the repo and trying to test their version of the code. Therefore, we're going to set up a local VM that will run a LAMP stack (**L**inux, **A**pache, **M**sql, **P**HP).
 
-6. In order to set up the VM & server, you'll first need to download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads.html). Go to their sites and download them if don't have them already. VirtualBox is a bit hefty, but I garauntee that you'll use it in your career at some point, so it's a useful download.
+6. In order to set up the VM & server, you'll first need to download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads.html). Go to their sites and download them if you don't have them already. VirtualBox is a bit hefty, but I garauntee that you'll use it in your career at some point, so it's a useful download.
 
 7. Now that you have those, you should be ready to spin up the VM. First you need to get a "box" which is an "image" (aka template) of a whole computer. It sounds like a lot but it's not really much. Vagrant can spin up many separate machines for you based off this one template. To get your first box, run this:
   ```
-  $ cd /your/directory/thetatauwebsite16
+  $ cd your/directory/thetatauwebsite16
   $ vagrant add box hashicorp/precise64
   ```
   This will add the Hashicorp (creator of Vagrant) base box. The `Vagrantfile` in our repo is all set up, so you can just run
@@ -180,6 +190,8 @@ Once you have an idea of how to code, (or while you're learning) do the followin
 9. At this point, after cloning the repo, downloading VirtualBox and Vagrant, and running `vagrant add box hashicorp/precise64` and `vagrant up`, your VM and server should be operational. Going to `http://localhost:8080/` should show you the development version of website as it exists on your local computer. Yay! You can make edits to your files, reload the page, and see the effects of your changes. 
 
 ### Understanding the Development Pipeline
+
+TODO: Update this once there's actually a product. If you're reading this right now, ignore this section.
 
 Now that you have a working environment, time to cover how you're actually going to make changes to the code and bring your ideas to life. This needs to be structured so that any mistakes made are revertable and we take full advantage of version control and namespacing to ensure the end-user (our fraternity) doesn't experience problems.
 

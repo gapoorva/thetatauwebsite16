@@ -2,6 +2,13 @@
 	margin-top: 60px; 
 }
 
+.lead-text {
+	margin-bottom: 5%;
+}
+
+.stats {
+	margin-top: 70px; 
+}
 .stats-title {
 	padding: 0; 
 	padding-bottom: 20px;
@@ -68,4 +75,19 @@ p.statistic-minor {
 .statistic-name {
 	margin-bottom: 0;
 	text-align: center;
+}
+
+.lead-image {
+	left: 0;
+	right: 0;
+	margin-left:0;
+	height: 60vh;
+	width: 100vw;
+	position: relative;
+	background: url('../images/members.jpg') no-repeat center center fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }

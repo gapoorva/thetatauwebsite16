@@ -88,3 +88,7 @@ input.input-tht {
 	display: inline;
 	margin-top: -5px;
 }
+
+b {
+  font-weight: 10;
+}

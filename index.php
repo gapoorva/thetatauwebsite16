@@ -1,15 +1,23 @@
 <?php 
-  include 'php/templates/boilerplate.php';
-  include 'php/templates/mastheadcss.php';
-  include 'php/templates/mastheadcontent.php';
-  include 'php/services/config-service.php';
-  include 'php/services/mastdata-service.php'
+  include_once 'php/templates/boilerplate.php';
+  include_once 'php/templates/mastheadcontent.php';
+  include_once 'php/services/config-service.php';
+  include_once 'php/services/mastdata-service.php'
+
+  // If logged in, show landing page
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <?php 
-    head_section(array("js/index.js"), array("css/index.css"));
     $content = mastdataservice();
+    $path_string = "";
+    foreach($content as $i => $path) {
+      if($i != 0) $path_string .= " ";
+      $path_string .= $path['img'];
+    }
+    head_section(array('js/index.js'), array('css/index.css', 'css/mastheadcss.php?mastcontent='.urlencode($path_string)));
+    
   ?>
 
   <body>
@@ -20,18 +28,6 @@
     <?php configservice('index', true); ?>
 
   </script>
-
-  <style type="text/css">
-    .masthead-img {
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-    <?php
-        mastheadcss($content);
-    ?>
-  </style>
 
   <?php 
     nav_section();

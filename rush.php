@@ -8,7 +8,7 @@
 <html lang="en">
   <?php 
   // array of additional js files followed by array of additional css files
-    head_section(array("js/rush.js"), array("css/rush.css"));
+    head_section(array(), array("css/rush.css"));
   ?>
   <body>
   <!-- Content -->
@@ -18,7 +18,6 @@
 <?php
   nav_section();
 ?>
-    <div class="row lead-image"></div>
     <!-- Main Container -->
     <div class="container-fluid" id="container">
       <div class="row purpose-block">
@@ -35,11 +34,11 @@
     <div class="container-fluid" id="container">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1 title">
-          <h2> What does it mean to be a Brother of Theta Tau? </h2>
+          <h1 class="opensans"> What does it mean to be a Brother of Theta Tau? </h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
+        <div class="col-sm-10 col-sm-offset-1 opensans">
           <br>
           <p class="lead">Theta Tau is first and foremost a <b>brotherhood</b> of engineers. Being a brother of Theta Tau means that you have a community of brilliant men AND women not only on campus, but across the country that will see you as family. Being a brother means you hold a strong connection to a broad network of other engineers - a network that permeates through your academic, professional, and social life.</p>
           <p class="lead"> This network is a support structure that you can rely on in the face of struggles that you will face in your college career. Being a brother means being part of a community that you can depend on beyond the campus and throughout your life. Being a brother means building deep relationships with a diverse group of people who hold vast reservoir of insight and experience in many areas of life. The wealth of these experiences enrich your life and teach you lessons that you can't learn from the classroom or even a job. Being a brother means building a college experience that is incredibly unique and valuable.
@@ -47,7 +46,7 @@
           <p>Interesting attending Rush events or learning more? <a href="mailto:tht-rush@umich.edu">Email our Rush chairs</a> or take a look at our Rush schedule below.</p>
         </div>
       </div>
-      <div class="row events">
+      <div class="row events opensans">
         <div class="col-xs-12 col-sm-9 col-sm-offset-1">
         <?php 
           /*
@@ -80,9 +79,11 @@
         ?>
         </div>
       </div>
-      
+    </div>
+    <div class="rush-poster-swag"></div>
+    <div class="container-fluid FAQ" id="container">
       <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
+        <div class="col-sm-10 col-sm-offset-1 opensans">
           <h1> FAQ </h1>
           <h4> What are fraternities and sororities? </h4>
           <p>Fraternities and Sororities are what many people refer to "Greek Life", and are societies that induct members for lifetime membership. Sororities are all-female Greek Organizations, while Fraternities can be both all-male and Co-ed Organizations. Each organization has certain rules and values that make each one unique, however they are often considered either "Social" or "Professional" groups. Professional Greek Organizations have strong focus on Professionalism as well as Brotherhood or Sisterhood.</p>
