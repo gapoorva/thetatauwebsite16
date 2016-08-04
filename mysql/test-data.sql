@@ -1,7 +1,6 @@
 # This data imported from fraternity_data_sql_backup_2016-08-03.sql
 
 use thetatau_db;
-
 INSERT INTO roles (roleid, title, contact_email) VALUES
   ('regent','Regent','tht-pres@umich.edu'),
   ('viceregent','Vice Regent','tht-regents@umich.edu'),
@@ -75,7 +74,7 @@ INSERT INTO users (userid, firstname, lastname, roll, verified, email, img) VALU
   ('bethgles','Bethany','Glesner','161', FALSE, 'bethanyg27@gmail.com','images/member-profiles/default_profile_img.jpg'),
   ('yuanm','Molly','Ma','289', FALSE, 'yuanm@umich.edu','images/member-profiles/default_profile_img.jpg'),
   ('xiaobpan','Xiao Bin','Pan','288', FALSE, 'xiaobpan@umich.edu','images/member-profiles/default_profile_img.jpg'),
-  ('muskr','Julian','Broggio','4', FALSE, 'julian.broggio4@gmail.com','images/member-profiles/default_profile_img.jpg'),
+  ('muskr','Carl','Fischer','4', FALSE, 'julian.broggio4@gmail.com','images/member-profiles/default_profile_img.jpg'),
   ('jaiyeong','Jai','Koh','281', FALSE, 'jaiyeong@umich.edu','images/member-profiles/default_profile_img.jpg'),
   ('jjbailey08','Jason','Bailey','8', FALSE, 'jjbailey08@gmail.com','images/member-profiles/default_profile_img.jpg'),
   ('tkem','Tyler','Kemerer','283', FALSE, 'tkem@umich.edu','images/member-profiles/default_profile_img.jpg'),
