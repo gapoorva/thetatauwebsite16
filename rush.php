@@ -78,8 +78,8 @@
           <p>Rush is typically at the beginning of the academic semester. Rush events are low-stress, simple activities that are designed to help get exposure to the fraternity, and for Brothers to meet you. Our first rush events are typically Information Sessions where our Rush chairs will give you a in-depth explanation of the process to becoming a Brother of Theta Tau. Other Rush events will be a mix of fun and professional events that vary from Semester to Semester. You definitely want to introduce yourself to as many brothers and other Rushees as you can at every Rush event. This is the best way to show your interest in the fraternity. Relax and have fun! Many rushees walk away from Rush with some unexpected but important friendships.</p>
           <h4> What kind of time commitment is Theta Tau? </h4>
           <p>Rush is intended to be low time commitment activity, and usually only about 4-6 hours per week (this is about the same as 1 credit class). Once you move further in the process and become a pledge, more commitment will be expected of you. Your time commitment may average closer to 8-10 hours, however your time will be well spent developing meaningful relationships with brothers and fellow pledges. Note that Rushing and Pledging are more rewarding the more time you invest in them. It is ultimately up to you to manage your time in a way to make the proper time commitment to the fraternity.</p>
-          <h4> Am I elligible to join? </h4>
-          <p>As a quick checklist, you are elligible to join Theta Tau as long as long you can meet the following criteria at the time of your initiation:</p>
+          <h4> Am I eligible to join? </h4>
+          <p>As a quick checklist, you are eligible to join Theta Tau as long as long you can meet the following criteria at the time of your initiation:</p>
           <ul>
             <li>Enrolled at the College of Engineering</li>
             <li>Have at least 6 months before graduation</li>
