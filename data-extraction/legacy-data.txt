@@ -1,0 +1,310 @@
+userid	first_name	last_name	email_address	status	nickname	roll	position2	birthday_month	birthday_day	birthday_year	big_id	pledge_class
+3	Michael	Quinn	mjquinn@umich.edu	Alumnus		56	Web Chair	10	5	1983	24	12
+4	Maggie	(Reed) Myers	reedml@umich.edu	Alumnus	S&M	83	Pledge Chair	1	24	1985	69	14
+24	Kate	Gunberg	kate.gunberg@gmail.com	Alumnus	Chalky	53	Regent,Schrader Chair,Scribe,Social Chair,Vice Regent	8	28	1983	122	11
+25	Paul	Conlin	pconlin@umich.edu	Alumnus	Gilligan	49	Rush Chair	1	1	1983	128	10
+43	Greg	Fischer	Greg.A.Fischer@gmail.com	Alumnus	Mini-Carl	60	PD Chair,Treasurer	2	9	1984	135	12
+44	Monika	Patel	patelmn@umich.edu	Alumnus	JB	69	Rush Chair	4	22	1983	51	12
+57	Joe	Fairchild	jfairchi@umich.edu	Alumnus	The Flash	58	Scribe	4	5	1982	122	12
+45	Darrin	Tracy	darrin.tracy@gmail.com	Alumnus	Rain Man	39	PD Chair,Treasurer,Web Chair	10	19	1981	111	9
+46	Dan	Jensen	dbzero@umich.edu	Alumnus	Nacho	2	Corr Sec.,Pledge Chair,Rec Sports Chair,Scribe	3	2	1978	0	1
+141	Larisa	Ensign	ensignlm@umich.edu	Alumnus	Bubbles	81	Social Chair	7	24	1984	56	13
+49	Suzanne	Rauch	smrauch@gmail.com	Alumnus	Duct Tape	45	Academic Chair	3	25	1983	127	10
+50	Sara	Quintana	squintan@gmail.edu	Alumnus	Snowball	47	Advertising Chair,Historian,Philanthropy Chair,Diversity Chair	7	30	1983	128	10
+51	Justin	Washburn	jjwashbu@umich.edu	Alumnus	That Guy	48	PD Chair	10	6	1982	45	10
+132	Quan (Kevin)	Zhu	quanz@umich.edu	Alumnus		86		5	9	1984	45	14
+53	Russell	Burkhard	rburkhar@umich.edu	Alumnus	Corndogg	51	Rec Sports Chair	5	11	1983	45	10
+213	Kiran	Dashairya	kdashair@gmail.com	Alumnus	Dawg	62	Fundraising Chair	2	21	1983	115	12
+135	Patrick	Doll	pdoll@umich.edu	Alumnus		55		4	6	1983	128	11
+56	Amanda	Graor	angraor@umich.edu	Alumnus	Princess Commando	57	Advertising Chair,Corr Sec.,Historian,Pledge Chair,Regent,Regent	9	8	1984	136	12
+58	Jessica	Kron	jlkron@umich.edu	Alumnus	Yippy	59	Philanthropy Chair,Scribe,Vice Regent	8	23	1984	129	12
+59	David	Pinkney	dpinkney@umich.edu	Alumnus		61					53	12
+139	Erica	Schmidt	emschmid@umich.edu	Alumnus		52	PD Chair,Vice Regent	6	4	1982	142	11
+61	Jeff	Grimm	jcgrimm@umich.edu	Alumnus	WorstOTever	63	Academic Chair,Housing Chair,Regent,Traditions Chair,Vice Regent	3	24	1984	125	12
+62	Michelle	Albright	malbrigh@gmail.com	Alumnus	Righto	64	Fundraising Chair	11	13	1983	142	12
+63	Rebecca	Stoloff	stoloreb@umich.edu	Alumnus	Lefty	65	Philanthropy Chair	5	25	1984	139	12
+133	David	Preston	davemich@umich.edu	Alumnus	Big Dave	66		11	1	1984	127	12
+65	Aaron	Kluck	akluck@gmail.com	Alumnus	D.P.	67	Corr Sec.,Web Chair	12	3	1983	49	12
+66	Mark	Thomas	mark.thomas.jr@gmail.com	Alumnus	P.O.O.	68	Corr Sec.,E-Week,PD Chair,Vice Regent	2	9	1984	120	12
+212	Philip	Kofahl	kofahlum@umich.edu	Alumnus	Divine Wind	70	Rec Sports Chair	11	19	1983	45	12
+69	Becky	Sherman	rmsherm@gmail.com	Alumnus	Fry	71	Fundraising Chair,Regent,Scribe	12	31	1983	143	12
+70	Alex	Kotula	ahkotula@gmail.com	Alumnus	Pinch 'N' Run	72	Regent,Rush Chair,Scribe	4	12	1984	120	13
+71	Matt	Byom	mjbyom@umich.edu	Alumnus	The Magic Dragon	73	E-Week,Rec Sports Chair	6	11	1984	51	13
+72	Matt	Bowman	mmbowman@umich.edu	Alumnus	Byom	74		12	23	1983	142	13
+73	Adam	Schrems	schremsa@umich.edu	Alumnus	Holidae In	75	Housing Chair,PD Chair,Rube Chair,Treasurer				25	13
+131	Sarah	Barr	sbarr@umich.edu	Alumnus		77	Social Chair	2	27	1983	213	13
+76	Joel	Donoghue	jmdonogh@umich.edu	Alumnus		78		10	28	1982	24	13
+77	Danielle	Boyle (White)	danielle.parrott@gmail.com	Alumnus	Caulk Mobster	79	Pledge Chair,Schrader Chair	11	3	1983	49	13
+137	Kate	Maher	maherk@umich.edu	Alumnus		80	Social Chair	8	26	1993	129	13
+217	Andrew	Danielsky	andredan@umich.edu	Alumnus		132	PD Chair,PD Chair	10	27	1986	73	20
+138	Theodore	Ketai	tketai@gmail.com	Alumnus	Smooth	43		1	29	1982	103	9
+80	Jacob	Milliken	jamilliken@aep.com	Alumnus		82		9	22	1981	138	14
+81	Kathryn	Blodgett	katsb@gatech.edu	Alumnus	Envy	84		11	14	1984	56	14
+136	Erin	Robbins	robbins.erin@gmail.com	Alumnus	Skipper	50	Pledge Chair	5	13	1983	46	10
+86	Courtney	Martin	cmarti@umich.edu	Alumnus	Mom	89	Pledge Chair,PD Chair,Rube Chair,Traditions Chair,Vice Regent	5	21	1985	49	15
+87	Ben	Friedland	benfried@umich.edu	Alumnus	Clogger	90	Traditions Chair,Treasurer	4	19	1985	57	15
+88	Carl	Fischer	Carl.Fischer.IV@gmail.com	Alumnus	Lizard	4	Housing Chair,Regent	5	29	1978	0	1
+89	Cullen	Worthem Jr.	cworthem@umich.edu	Alumnus	Random	1	Philanthropy Chair,Treasurer	8	18	1978	0	1
+90	Julian	Broggio	jbroggio@hotmail.com	Alumnus	Ponch	3	Rush Chair				0	1
+93	Ryan	Sekela	rsekela1@visteon.com	Alumnus	Monkey	5	Web Chair				0	1
+94	Derek	Sorensen	derekdcs@umich.edu	Alumnus	Derek	6	Fundraising Chair	2	3	1977	0	1
+95	Ryan	Meder	rmeder@engin.umich.edu	Alumnus	Mr. Clean	7					0	1
+170	Jason	Bailey	jjbailey08@gmail.com	Alumnus	Chia	8	Regent,Vice Regent	12	27	1976	0	1
+97	Aaron	Furman	afurman@umich.edu	Alumnus	Goo	9					95	4
+98	Matt	Feustel	mfeustel@umich.edu	Alumnus	Butterknife Pete	10	PD Chair	6	23	1980	170	4
+100	Drew	Batchelder	andrew.c.batchelder@lmco.com	Alumnus	Spark	11	PD Chair,Regent,Schrader Chair	11	21	1978	46	4
+101	Mark	Ascione	mcascione@gmail.com	Alumnus	Fozzie	12	Advertising Chair,Rush Chair,Scribe	7	4	1980	90	4
+102	Angie	Olsofsky	aolosfsk@yahoo.com	Alumnus	Shady	13	Social Chair,Treasurer				94	4
+103	Julianne	Schaefer	jhschaef@yahoo.com	Alumnus	Bean	14	Social Chair,Vice Regent	7	3	1978	170	4
+104	Dave	Moenssen	david.moenssen@honeywell.com	Alumnus	Supa Dave	15	Philanthropy Chair				88	4
+105	Todd	Moilanen	todd_moilanen@hotmail.com	Alumnus	Tad	16					88	4
+106	Darin	Cepeda	decepda@austin.rr.com	Alumnus	Mad Dogg	17					90	4
+107	Stan	Bisgaier	stanb@ufl.edu	Alumnus	Biscuit	18	Schrader Chair,Web Chair	9	3	1980	89	4
+108	Beth	(Tuttle) Gardner	tuttleelizabeth@hotmail.com	Alumnus	Weezie	20	Pledge Chair	1	8	1979	46	5
+109	John	Myers	jpmyers@umich.edu	Alumnus	J.P. / Too Tall	21	Regent,Schrader Chair,Vice Regent	2	26	1980	104	5
+110	Dan	Allen	dwallen@umich.edu	Alumnus	Crispy	22	Scribe	12	19	1979	103	5
+111	Philip	Waligora	phil.waligora@gmail.com	Alumnus	Goose	24	Advertising Chair,Vice Regent				101	5
+112	Matthew	Olsofsky	molsofsk@umich.edu	Alumnus	Lil' O	25	Corr Sec.,Social Chair	3	21	1980	90	5
+113	Gregory	Sabo	gsabo@umich.edu	Alumnus	Staples	26					106	5
+114	Tanuj	Mehta	mehtat@hotmail.com	Alumnus	T-Bone	27	Rush Chair,Vice Regent	12	13	1979	102	5
+115	Mark	Giska	mgiska@umich.edu	Alumnus	Mother	28	Corr Sec.,Treasurer	2	21	1980	111	6
+116	Jack	Stepanian	stepania@umich.edu	Alumnus		30	Academic Chair	10	4	1979	108	6
+117	Andy	Valiquett	avalique@umich.edu	Alumnus		31	Historian				170	6
+118	Nityanan	Tapia	nityanantapia@hotmail.com	Alumnus	Nit	32		4	24	1981	101	6
+119	Javed	Jinnah	jjinnah@umich.edu	Alumnus		35	Corr Sec.	9	25	1978	111	7
+120	Jonas	Daunoravicius	jdaunora@gmail.com	Alumnus		36	Philanthropy Chair,Web Chair	5	6	1982	117	8
+143	Latha	Mellentine	lravindr@gmail.com	Alumnus	Scandalous	38		6	29	1980	100	9
+122	Ray	Tervol	jrtervol@yahoo.com	Alumnus		41	Regent,Vice Regent	1	4	1981	107	9
+123	Christopher	Van Ittersum	cvanitt@umich.edu	Alumnus		42					114	9
+124	Mark	Peraino	mperaino@umich.edu	Alumnus		44					108	9
+125	Beth	Kilbourne	bkilbour@umich.edu	Alumnus		46	Fundraising Chair				110	10
+142	James	Mellentine	umichjim@gmail.com	Alumnus		29	Fundraising Chair,Regent	11	13	1980	103	6
+127	Marvin	Riley	mracer314@yahoo.com	Alumnus	Bob / Mack	34		10	20	1980	108	7
+128	Reid	Bronson	rbronson@umich.edu	Alumnus	B.J. Eunichre	37	Regent	3	15	1982	119	8
+129	Bayly	Wheeler	bsw@duke.edu	Alumnus	Shaft	40	Historian,Regent,Scribe,Vice Regent	8	17	1982	110	9
+146	Christina	Sadler	cdsadler@umich.edu	Alumnus		93	Historian	7	1	1986	62	16
+169	Eli	Busen	ebusen@gmail.com	Alumnus	Magellan	95		7	21	1986	45	16
+177	Patrick	Liu	ltrick@umich.edu	Alumnus	Floater	109		1	1	1986	73	17
+254	Megan	Brown	meganelb@umich.edu	Alumnus		156	Pledge Chair,Rec Sports Chair,Scribe,College Relations Chair,Diversity Chair	12	29	1988	231	23
+151	Francis	Szalay	fszalay@gmail.com	Alumnus	Cyclone	98	Vice Regent	5	10	1982	138	16
+168	Lauren	Furlong	furlongl@umich.edu	Alumnus	Dynamite	103		11	22	1985	56	16
+154	James	Bloomsburgh	jamesbl@umich.edu	Alumnus	B.U.M.	91		9	30	1983	57	16
+156	Jennifer	Dolan	jldolan@umich.edu	Alumnus		92	Rush Chair	7	2	1986	141	16
+157	Jennifer	Sutherland	jsuther@umich.edu	Alumnus		101	Social Chair	2	14	1985	61	16
+158	Michelle	Zenczak	mezen@umich.edu	Alumnus		97		10	17	1984	131	16
+174	Heetal	Patel	hnpatel@umich.edu	Alumnus	No Pants	107		10	26	1986	66	17
+175	Kurt	Oster	kurt.oster@gmail.com	Alumnus		108	PD Chair	10	2	1983	49	17
+173	Hillary	Kast	hkast@umich.edu	Alumnus		105	Advertising Chair	8	21	1986	24	17
+368	James	Glantz	jamesrg@umich.edu	Brother		237	Fundraising Chair,Schrader Chair,College Relations Chair	3	30	1993	326	32
+161	Matthew	Rodriguez	mwrod@umich.edu	Alumnus	Father Rod	94	Academic Chair,Fundraising Chair,Fundraising Chair,Historian,Historian,Treasurer	8	7	1986	213	16
+162	Nicole	Kizy	nkizy@umich.edu	Alumnus	Beads	100	Academic Chair,Fundraising Chair,Scribe	6	12	1986	58	16
+163	Kendra	Sass	sassyk@umich.edu	Alumnus		96	Rush Chair	8	8	1984	49	16
+165	Stephanie	Iatrow	smiatrow@umich.edu	Alumnus		102	Philanthropy Chair,Scribe	2	10	1986	24	16
+176	Kelly	Sanderson	kjsand@umich.edu	Alumnus		104		9	7	1985	136	17
+167	Nate	LaFave	nathan.lafave@gmail.com	Alumnus		99	Housing Chair,Philanthropy Chair,Philanthropy Chair,Rec Sports Chair,Regent	12	12	1985	73	16
+181	Jim	Freeman	freemaja@gmail.com	Alumnus		121		1	4	1985	70	18
+183	AJ	Frantz	ajfrantz@umich.edu	Alumnus	Supple	113	Rec Sports Chair,Web Chair	8	31	1986	71	18
+184	Eily	Clemens	clemense@umich.edu	Alumnus	Pinball	114	Fundraising Chair,Fundraising Chair,PD Chair,PD Chair	10	30	1986	69	18
+187	Jennifer	Gehle	jengehle@umich.edu	Alumnus	D'Over	110		12	13	1985	77	18
+188	Miriam	Scherkenbach	mirim@umich.edu	Alumnus		116	Academic Chair,Pledge Chair	6	1	1987	156	18
+189	Cindy	Wang	weitung@umich.edu	Alumnus	Money Shot	117	Philanthropy Chair,PD Chair,PD Chair	3	20	1987	146	18
+190	Nick	McGrail	grailo@umich.edu	Alumnus	Peaches	120	Advertising Chair,E-Week,Historian,Historian,PD Chair,Traditions Chair,Traditions Chair,Vice Regent	11	23	1986	216	18
+200	Vincent	Verdeschi	vinnyv@umich.edu	Alumnus	F.T.	112	Academic Chair,Pledge Chair	12	10	1986	4	18
+196	Tanvi	Singh	stanvi@umich.edu	Alumnus		119	Academic Chair,Scribe,Social Chair	9	21	1986	154	18
+197	Phillip	Clark	phillip.a.clark@gmail.com	Alumnus	Tiger	118	Rush Chair,College Relations Chair	7	7	1987	169	18
+255	Kristin	Dannemiller	kadann@umich.edu	Alumnus		157		2	27	1998	86	23
+256	Alex	Mead	armead@umich.edu	Guest	M.J.	0	Advertising Chair	5	27	1989	200	23
+199	Christopher	Muhich	cmuhich@gmail.com	Alumnus	Cheese	111	Corr Sec.,Housing Chair,Housing Chair,Pledge Chair,Schrader Chair	7	6	1987	132	18
+202	Karan	Patel	khpatel@umich.edu	Alumnus	Swiss Miss	122	Advertising Chair,Housing Chair,Rush Chair,Treasurer	9	25	1986	151	19
+203	Kristopher	Schilling	kjschill@umich.edu	Alumnus		125		4	29	1986	73	19
+204	Karen	Hall	kphall@umich.edu	Alumnus		124	Regent,Rube Chair,Vice Regent,College Relations Chair,College Relations Chair	1	8	1986	141	19
+210	Phillip	Poisson	ppoisson@umich.edu	Alumnus		123	E-Week,PD Chair,PD Chair,Treasurer	9	4	1986	70	19
+216	Rosa	Abani	rabani@umich.edu	Alumnus	Too Big	88	Philanthropy Chair,Regent,Schrader Chair,Scribe	12	1	1985	58	15
+218	Brittany	Flaherty	britflah@umich.edu	Alumnus		130	Philanthropy Chair	4	21	1987	146	20
+226	Chelsea	Ellis	chelseae@umich.edu	Alumnus	BFF	126	E-Week,Pledge Chair,Traditions Chair,Treasurer	11	17	1987	86	20
+220	Casady	Wyckoff	cwyckoff@umich.edu	Alumnus		128	PD Chair,PD Chair,Rec Sports Chair,Scribe,College Relations Chair	6	12	1987	162	20
+280	Asha	D'Cunha	adcunha@umich.edu	Alumnus		176	E-Week,Historian,Historian,Schrader Chair,Schrader Chair	10	27	1989	224	25
+222	David	Genevich	genevich@umich.edu	Alumnus	Road Runner	131	Pledge Chair,Regent,Rush Chair,Schrader Chair,Vice Regent	9	8	1988	188	20
+224	Stephanie	Praus	smpraus@umich.edu	Alumnus	Scruffy	127	Regent,Rush Chair,Vice Regent	7	6	1987	156	20
+225	Todd	Bueschen	tabuesch@umich.edu	Alumnus	Mango	129	E-Week,PD Chair,Vice Regent	5	28	1987	199	20
+253	Robert	Appel	rgappel@gmail.com	Alumnus	Scooby Doo	155	PD Chair,Rec Sports Chair	1	7	1988	167	23
+227	Jessica	Rilly	jrilly@umich.edu	Alumnus	Panch	135	Academic Chair,Advertising Chair,Pledge Chair	11	18	1988	4	21
+228	Jessica	Fong	jwfong@umich.edu	Alumnus	Sniper	134	Historian,PD Chair,Schrader Chair,Social Chair,Social Chair	11	30	1988	156	21
+229	Steven	Batchelor	sbatch@umich.edu	Alumnus		136		1	10	1988	61	21
+230	Marcus	Lewis	marcmarc@umich.edu	Alumnus	Crackerus Maximus	137	Web Chair	4	19	1988	65	21
+231	Rachel	Eggert	rmeggert@umich.edu	Alumnus	The Admiral	139	Advertising Chair,Corr Sec.,Regent,Social Chair,Social Chair	7	6	1988	204	21
+232	Ryan	McKee	ryanmckee87@gmail.com	Alumnus	Pool Boy	140	Diversity Chair	7	1	1987	169	21
+233	Audra	Osborne	audosbo@umich.edu	Alumnus	RBT	138	Social Chair	8	13	1987	86	21
+235	Rohan	Biswas	rbiswas@umich.edu	Alumnus		151					202	22
+236	Liz	Boettner	eaboett@umich.edu	Alumnus		148	Academic Chair,Fundraising Chair,Philanthropy Chair,Philanthropy Chair,Pledge Chair,Vice Regent	3	20	1989	210	22
+238	Margaret	Chang	changmar@umich.edu	Alumnus		144	Philanthropy Chair,Rush Chair,Traditions Chair	5	29	1988	225	22
+239	Nicholas	Clay	nclay@umich.edu	Alumnus	RELAX	145	Academic Chair,Corr Sec.,Housing Chair,Philanthropy Chair	9	11	1989	200	22
+240	Jeremy	Dall	dallj@umich.edu	Alumnus		150		1	2	1989	183	22
+241	Ryan	Ethier	ryaneth@umich.edu	Alumnus	Heinie	147	Academic Chair,PD Chair,PD Chair	7	23	1986	50	22
+257	Veronica	Ward	vward@umich.edu	Alumnus		154	E-Week,Regent,Regent,Social Chair	2	14	1989	220	23
+245	Shannon	McDevitt	samcdev@umich.edu	Alumnus		153	Advertising Chair,Traditions Chair,College Relations Chair	6	15	1989	222	22
+246	Rachel	Peterson	rapete@umich.edu	Alumnus		141	Fundraising Chair,Pledge Chair,Scribe	2	16	1988	227	22
+247	Philip	Rose	rosephi@umich.edu	Alumnus		146	Historian,Regent,Regent,Rush Chair,Traditions Chair,Vice Regent	8	7	1987	87	22
+248	Ishaan	Shah	ishaanjs@umich.edu	Alumnus		152	Housing Chair,Housing Chair,Rec Sports Chair,Schrader Chair	7	5	1989	190	22
+250	Kathryn	Siuniak	siukathr@umich.edu	Alumnus	Nana	149	Academic Chair,Fundraising Chair,Philanthropy Chair	1	8	1988	156	22
+251	Jillian	VandePutte	jmvan@umich.edu	Alumnus	Handsy Flowerpot	143	Fundraising Chair,Social Chair	3	2	1988	165	22
+252	Maggie	Hwang	hwangm@umich.edu	Alumnus		142	Advertising Chair,Rush Chair	1	14	1988	224	22
+262	Aaron	Avila	aavila@umich.edu	Alumnus		170	Rec Sports Chair	3	10	1988	204	24
+265	Jason	Fernandez	jgfernan@umich.edu	Alumnus	Graaapedraaank 911	159	Fundraising Chair,Fundraising Chair	10	12	1988	241	24
+267	Bethany	Glesner	bethanyg27@gmail.com	Alumnus	Leader	161	Rush Chair,Scribe,Scribe	8	12	1989	251	24
+268	Meghan	Joki	megjoki@gmail.com	Alumnus		164	Academic Chair,Pledge Chair,Regent,Social Chair	8	14	1988	238	24
+269	Max	Kotula	maxkotu@umich.edu	Alumnus	AB Neg Potato Chip Candyp	167	Corr Sec.,Housing Chair,Pledge Chair,Traditions Chair	8	2	1989	167	24
+270	Waiman	Liu	waimanl@umich.edu	Alumnus		166	PD Chair	11	14	1989	190	24
+271	Kunal	Mehta	kunalm@umich.edu	Alumnus	The First Lady	163	College Relations Chair	1	10	1990	202	24
+273	Catherine	Patterson	catpat@umich.edu	Alumnus		162	Academic Chair,Philanthropy Chair	6	21	1989	252	24
+274	Lyndsey	Pohl	lapohl@umich.edu	Alumnus	Hitch	165	E-Week	5	20	1989	224	24
+276	Caitlin	Schultz	ccschul@umich.edu	Alumnus	Goldfish	160	Philanthropy Chair	10	14	1988	231	24
+278	Ethan	Stark	emstark@umich.edu	Alumnus	Wrecking Ball	168	Historian,Pledge Chair,PD Chair,Rush Chair	12	1	1989	196	24
+279	Michael	Qin	mikeqin@umich.edu	Alumnus	2 Girls, 1 Football	169	Academic Chair,Rec Sports Chair,Rush Chair,Schrader Chair	1	19	1990	197	24
+282	Andy	Brown	andybrwn@umich.edu	Alumnus		173	Philanthropy Chair,PD Chair,Vice Regent	5	7	1985	235	25
+285	A.J.	Carter	carteraj@umich.edu	Alumnus	Bingo	177	Corr Sec.,Fundraising Chair,Fundraising Chair,Housing Chair,Vice Regent,Web Chair	6	27	1989	250	25
+286	Doug	McEwan	dmcewan@umich.edu	Alumnus	Barcans	182	PD Chair,PD Chair,Rush Chair	12	7	1988	253	25
+289	Heather	Dorer	hdorer@umich.edu	Alumnus		175	PD Chair,Rush Chair	3	30	1990	252	25
+290	Josh	Miyamoto	jtmi@umich.edu	Alumnus		179	Pledge Chair,Pledge Chair,Treasurer,Web Chair,Web Chair	6	17	1988	199	25
+291	Laura	Crookston	lcrook@umich.edu	Alumnus		178	Advertising Chair	6	26	1988	254	25
+293	Mary	Winsemius	mwinsemi@umich.edu	Alumnus	Tonya	172	Scribe	6	2	1988	188	25
+298	Abby	Grajek	aagrajek@umich.edu	Alumnus		189	Treasurer,Brother Perks	11	21	1991	222	26
+299	Aarthi	Arab	aarthara@umich.edu	Alumnus		188	Academic Chair,Advertising Chair,Philanthropy Chair	8	14	1991	257	26
+300	Antonio	Osorio	aosorio@umich.edu	Alumnus		191		9	8	1983	255	26
+302	Molly	Flynn	flynnmo@umich.edu	Alumnus		187	Advertising Chair,Pledge Chair,Scribe,Social Chair				265	26
+304	Jason	Brendel	jbrendel87@gmail.com	Alumnus		185	Rec Sports Chair,Rush Chair,Rush Chair	7	17	1987	247	26
+305	James	Swift	jrswift@umich.edu	Alumnus		190	Regent,Treasurer	7	27	1991	282	26
+307	Nicholas	Montes	njmontes@umich.edu	Alumnus		184	Academic Chair,PD Chair,PD Chair,Scribe,Social Chair				293	26
+308	Nathan	Klamerus	nklamerus@gmail.com	Alumnus		186	E-Week,PD Chair,Rec Sports Chair	12	4	1989	227	26
+311	Thomas	Indeck	tindeck@umich.edu	Alumnus	Pizza 'n Stuff	183	E-Week,College Relations Chair	6	22	1991	250	26
+392	Marc	Hensel	mhensel@umich.edu	Alumnus		248	Fundraising Chair,PD Chair,PD Chair,Treasurer				307	34
+391	Kristina	Kim	kriskim@umich.edu	Brother		247	Corr Sec.,Housing Chair,Philanthropy Chair,Regent,Rush Chair,Brother Buddies	6	9	1993	318	34
+314	Caitlin	Cramer	ccram@umich.edu	Alumnus		196	Corr Sec.,Philanthropy Chair,Schrader Chair,Social Chair	9	19	1990	268	28
+315	Cameron	Miller	cmillera@umich.edu	Alumnus		195	Academic Chair,PD Chair	2	15	1991	250	28
+316	Eda	Soybay	esoybay@umich.edu	Alumnus		200	Academic Chair,Advertising Chair,Traditions Chair	2	25	1991	267	28
+317	Greg	McEwan	gmcewan@umich.edu	Alumnus	AMURICAH!!	201	PD Chair	10	16	1991	250	28
+318	Kamal	Knight	kamalk@umich.edu	Alumnus		202	Scribe,Social Chair,Vice Regent	4	12	1990	262	28
+319	Kyle	Faircloth	kfairc@umich.edu	Alumnus		194	Social Chair	4	25	1987	291	28
+320	Melanie	Faibish	mfaibish@umich.edu	Alumnus		197	Academic Chair,Rush Chair,Brother Buddies	11	15	1991	289	28
+321	Michelle	Fernandes	michfern@umich.edu	Alumnus		198	Fundraising Chair,Historian,PD Chair,Schrader Chair,Social Chair,Traditions Chair	9	23	1991	251	28
+324	Malvika	Bhatia	malvikab@umich.edu	Alumnus		199	PD Chair,Social Chair,Social Chair	10	19	1989	248	28
+326	George	Ajine-Basil	ajinebge@umich.edu	Alumnus		208	Advertising Chair,Pledge Chair,Pledge Chair,Regent,Web Chair,Web Chair	8	30	1990	290	30
+351	Abigail	Senyk	asenyk@umich.edu	Alumnus	Jaws	192	Academic Chair,Corr Sec.,Regent,Vice Regent	2	21	1990	267	26
+328	Breanna	Luckett	coolbre@umich.edu	Alumnus		203	Academic Chair	7	19	1990	279	30
+329	Celine	Saucier	csaucier@umich.edu	Alumnus		217	Advertising Chair,PD Chair	3	28	1990	314	30
+331	Geetika	Bhatia	gbhatia@umich.edu	Alumnus		214	Advertising Chair,Fundraising Chair,Social Chair,Social Chair,College Relations Chair	11	18	1992	254	30
+332	Rianna	Harris	harrisri@umich.edu	Alumnus		210	Philanthropy Chair,Rush Chair	12	7	1991	351	30
+333	Joseph	Martoglio	jmartog@umich.edu	Alumnus	Poker Face	212	Fundraising Chair,Traditions Chair	7	1	1990	311	30
+353	Alexander	Ng	alexng@umich.edu	Alumnus		218	Rush Chair,Rush Chair,Schrader Chair,Traditions Chair,Web Chair	6	8	1992	270	31
+354	Carolyn	Price	ccprice@umich.edu	Alumnus	Jason Bourne	221	Pledge Chair,Scribe,Web Chair,Brother Buddies	11	10	1990	321	31
+355	Charlotte	Campbell	cecamp@umich.edu	Alumnus		219	Historian,Scribe,Traditions Chair	6	7	1990	280	31
+338	Mara	Watson	maramae@umich.edu	Alumnus		204	PD Chair,Social Chair	6	11	1991	280	30
+339	Nina	Abani	nabani@umich.edu	Alumnus		205	E-Week,Philanthropy Chair,PD Chair,Vice Regent	11	21	1990	245	30
+340	Nathaniel	Blase	nataaron@umich.edu	Alumnus	Professor BroHo	207	Rec Sports Chair,Social Chair	5	2	1990	257	30
+341	Naz	Ozen	ncozen@umich.edu	Alumnus		215	Advertising Chair,Pledge Chair,Pledge Chair,Social Chair	7	25	1992	302	30
+343	Rahul	Lakhani	rlakhani@umich.edu	Alumnus		209	Academic Chair,Traditions Chair	11	21	1991	197	30
+344	Rohan	Sawalka	rohansaw@umich.edu	Alumnus		216	PD Chair,PD Chair,Schrader Chair	9	14	1990	269	30
+345	Scott	Deittrick	shdeitt@umich.edu	Alumnus		211	Fundraising Chair	11	20	1991	286	30
+346	Brandon	Sims	simsbl@umich.edu	Alumnus		213	Housing Chair,Schrader Chair,Scribe,Social Chair,College Relations Chair,Pass the Gavel,Brother Buddies	3	11	1992	236	30
+348	Vivek	Thanabal	thanav@umich.edu	Alumnus	MVP	206	PD Chair,Rec Sports Chair,Vice Regent,Brother Perks	7	2	1991	271	30
+356	Dominic	Lanni	domlanni@umich.edu	Alumnus		224	Fundraising Chair	2	9	1991	278	31
+357	Erek	Walker	erekn@umich.edu	Alumnus		229	Fundraising Chair	6	14	1991	319	31
+359	Kathleen	Chou	kachou@umich.edu	Alumnus		220	Advertising Chair,Historian,PD Chair	3	17	1992	320	31
+360	Kristin	Lemley	kelemley@umich.edu	Alumnus		225	Corr Sec.,Social Chair,Traditions Chair	8	1	1991	269	31
+361	Kyle	Wolok	kwolok@umich.edu	Alumnus		226	Fundraising Chair,Housing Chair,Rec Sports Chair	2	23	1992	315	31
+362	Elizabeth	DeMonte	ldemonte@umich.edu	Alumnus		222	Academic Chair,Academic Chair,Philanthropy Chair,PD Chair	3	1	1992	316	31
+363	Lisandra	Pagan	lispag@umich.edu	Alumnus	Charmin	223		2	1	1991	308	31
+364	Natalie	Brown	natbrwn@umich.edu	Alumnus		228	Academic Chair,Fundraising Chair,Historian	5	8	1991	239	31
+365	Sara	Ali	saraali@umich.edu	Alumnus		230	College Relations Chair	11	1	1991	285	31
+366	Astrid	Santiago	stridas@umich.edu	Alumnus	Astrid	227	Historian,Social Chair	12	28	1991	351	31
+367	Sylvia	Chen	siya101@gmail.com	Alumnus		231	Rush Chair	10	27	1991	248	31
+370	Alison	Banka	albanka@umich.edu	Alumnus		239	Academic Chair,Schrader Chair,Social Chair	4	8	1991	331	32
+371	Yanet	Zepeda	zepeda@umich.edu	Alumnus		241	Advertising Chair	8	28	1991	328	32
+376	Chrissy	Looney	clooney@umich.edu	Alumnus		242	Academic Chair,Philanthropy Chair	10	24	1992	321	32
+378	Ryan	Kreiter	rkreiter@umich.edu	Alumnus		238	Fundraising Chair,Rec Sports Chair,Web Chair,Web Chair	1	28	1993	344	32
+379	Ryan	Bell	ryanbell@umich.edu	Alumnus		232	Philanthropy Chair,Philanthropy Chair	8	28	1992	315	32
+380	Ellen	Horste	ehorste@umich.edu	Alumnus		244					299	32
+381	Richard	Ozdowy	reozdowy@umich.edu	Alumnus		234					348	32
+383	Rebecca	Malinas	malinare@umich.edu	Alumnus		245		5	17	1992	329	32
+384	Mitchell	Thumme	thumme@umich.edu	Alumnus		236	PD Chair,Rush Chair,Web Chair	7	3	1991	311	32
+385	Jackie	Jo	jackiejiao3@gmail.com	Alumnus		240	Academic Chair	9	21	1990	341	32
+386	Meredith	Monticello	monticme@umich.edu	Brother		233	Corr Sec.,Fundraising Chair,Pledge Chair,Pledge Chair,College Relations Chair	8	1	1993	345	32
+387	Justin	Koehler	justingk@umich.edu	Brother		243	Philanthropy Chair,Pledge Chair,Regent,Vice Regent	5	31	1993	353	32
+388	Julia	Zarina	jumilton@umich.edu	Alumnus		235	Fundraising Chair				316	32
+389	Alan	Duanmu	duanmua@umich.edu	Alumnus		246	Social Chair,Web Chair	12	14	1991	354	34
+395	Tanay	Nerurkar	tanayn@umich.edu	Brother	Aquaman	249	Academic Chair,Advertising Chair,PD Chair	9	6	1992	340	34
+397	Matthew	Land	meland@umich.edu	Alumnus		163.163 DG	Academic Chair,Housing Chair				0	35
+398	Allie	Czubko	aczubko@umich.edu	Alumnus		254	Housing Chair,Housing Chair,Philanthropy Chair,Treasurer,Vice Regent,Vice Regent	2	16	1992	298	36
+399	Alexandros	Lancaster	alancast@umich.edu	Alumnus	xionmao (Panda)	259	Rec Sports Chair,Social Chair,Web Chair	3	18	1994	387	36
+400	Austin	Rovinski	rovinski@umich.edu	Brother		251	Academic Chair	11	3	1993	361	36
+401	Christa	Gibara	christag@umich.edu	Alumnus		255	Historian,Philanthropy Chair,Regent,Regent,Scribe	1	11	1992	388	36
+403	Daoxia	Ding	dingding@umich.edu	Alumnus		262	Web Chair,Web Chair	12	4	1988	326	36
+404	Emily	Burns	emjburns@umich.edu	Brother		256	Corr Sec.,Historian,Vice Regent,College Relations Chair,Brother Buddies	5	24	1993	366	36
+405	Jesse	Streicher	jessewst@umich.edu	Brother	Karate Kid	252	Housing Chair,Housing Chair,Philanthropy Chair,Pledge Chair,Vice Regent,Vice Regent,Brother Buddies	5	13	1994	389	36
+406	Ki-Joo	Sung	sungkj@umich.edu	Brother		250	Advertising Chair,Philanthropy Chair,PD Chair,Regent,Schrader Chair,Scribe,Traditions Chair,Brother Buddies	11	7	1992	355	36
+408	Kunal	Naik	kunaln@umich.edu	Brother		261	Housing Chair,PD Chair,Rush Chair,Brother Perks	9	11	1993	379	36
+409	Lauren	Pollard	lcpol@umich.edu	Brother		258	Advertising Chair,Rec Sports Chair	10	14	1994	376	36
+413	Nicholas	Simopoulos	isaak@umich.edu	Brother		260	Fundraising Chair,Housing Chair,Rec Sports Chair,Brother Buddies	9	19	1994	332	36
+414	Robin	Choi	rhchoi@umich.edu	Brother	FTK	253	Pledge Chair,PD Chair,PD Chair,Rush Chair,Brother Perks				370	36
+416	Ritong	Han	rhsunnie@umich.edu	Brother	Sunnie	257	Advertising Chair,Social Chair	1	6	1993	302	36
+419	Krishnan	Manivannan	nkhm@umich.edu	Brother		276	Rec Sports Chair	5	12	1995	344	37
+420	Sijie	Ruan	ruansj@umich.edu	Brother		268	Academic Chair	6	15	1995	405	37
+422	Srishti	Pillutla	srishtip@umich.edu	Brother		270		11	26	1994	416	37
+423	Cassandra	Cook	cascook@umich.edu	Brother		273	Philanthropy Chair				383	37
+424	Minnae	Chabwera	minnaepc@umich.edu	Brother		269	Philanthropy Chair,Philanthropy Chair	4	25	1992	359	37
+425	Kimberly	Louie	louk@umich.edu	Brother		277	Corr Sec.,Rush Chair,Traditions Chair,College Relations Chair	7	2	1994	406	37
+426	Ryan	Patin	repatin@umich.edu	Brother		266	Advertising Chair,Social Chair	12	18	1994	414	37
+427	Jai	Koh	jaiyeong@umich.edu	Brother		281	Rec Sports Chair				413	37
+428	Corryn	Cawley	cawleyc@umich.edu	Brother		280	College Relations Chair				341	37
+429	Gabrielle	Belok	gabelok@umich.edu	Brother		265		1	29	1993	362	37
+430	Bo-ying	Fu	botatoes@umich.edu	Brother		264	Advertising Chair,Treasurer	2	19	1994	398	37
+431	Zachary	Klaver	zmklav@umich.edu	Brother		272	Pledge Chair,Treasurer	11	24	1992	356	37
+432	Jiaxin	Wang	jiaxin@umich.edu	Brother		275	Rush Chair,Schrader Chair,Scribe,Scribe				395	37
+433	Marie	Angle	mmangle@umich.edu	Brother		267	Historian,Historian,Philanthropy Chair,Philanthropy Chair,Social Chair	7	28	1995	332	37
+434	Emily	Chang	emichang@umich.edu	Brother		271	PD Chair,Web Chair,Web Chair	5	15	1994	401	37
+435	Emily	Klouda	ebklouda@umich.edu	Brother		282	Social Chair	5	13	1992	404	37
+436	Apoorva	Gupta	gapoorva@umich.edu	Brother		263	Academic Chair,Academic Chair,PD Chair,Web Chair,Web Chair	5	15	1995	392	37
+437	Sachin	Jain	sachinkj@umich.edu	Brother		278					408	37
+438	Brianna	Juhrend	bjuhrend@umich.edu	Alumnus		262.21 LD		1	3	1991	326	35
+439	Kiah	Lowe	lowekiah@umich.edu	Brother	Tickle Me Elmo	290	Philanthropy Chair,Philanthropy Chair	9	2	1993	378	37
+440	Dan	Lee	jimsiang@umich.edu	Brother		279	Academic Chair,Advertising Chair,Traditions Chair	8	1	1994	353	37
+442	Andrew	Ao	aoaoaoa@umich.edu	Brother		287		6	14	1995	400	38
+445	Howard	Hsu	haohsu@umich.edu	Brother		285	Rush Chair,Rush Chair,Social Chair	2	5	1995	343	38
+447	Tyler	Kemerer	tkem@umich.edu	Brother		283	Academic Chair,Rec Sports Chair	4	2	1995	431	38
+448	Jason	Leung	jasleung@umich.edu	Brother		284	Advertising Chair	4	18	1994	430	38
+449	Molly	Ma	yuanm@umich.edu	Brother		289	PD Chair,Rush Chair				331	38
+451	Kristina	Pan	xiaobpan@umich.edu	Brother		288	Social Chair	11	14	1995	386	38
+453	Srividhya (Srivdi)	Sridhar	vidhyasr@umich.edu	Brother		286	Fundraising Chair				401	38
+460	Andrew	McCaughna	andyjm@umich.edu	Brother	Cosby Sweaters	298		5	17	1995	406	41
+461	Chanmee	Chung	chanmeec@umich.edu	Brother	Gollum Jenner	303	Advertising Chair,Advertising Chair	5	1	1995	391	41
+463	Christopher	McDonald	cmmcd@umich.edu	Brother	Buzzcut	306		9	22	1994	430	41
+464	Clarissa	Baumgarten	cmbaums@umich.edu	Brother	BM	297	Fundraising Chair,Fundraising Chair				433	41
+465	David	Hodgson	dahodge@umich.edu	Brother	3D	301	PD Chair,PD Chair	2	26	1994	429	41
+466	Derin	Ozen	derino@umich.edu	Brother	Piano Man	296					386	41
+467	Emily	Upton	emiupton@umich.edu	Pledge		0					449	41
+468	John	Damrath IV	damjohn@umich.edu	Brother	Megadeath	294	Academic Chair,Academic Chair				433	41
+469	Jordan	Ridenour	jordandr@umich.edu	Brother	Rally	293	Social Chair,Web Chair	7	1	1995	447	41
+470	Joseph	Gussert	jgussert@umich.edu	Brother	A Log of Drums	292	Rec Sports Chair,Rec Sports Chair	3	16	1994	431	41
+471	Kevin	Jou	kevinjou@umich.edu	Pledge		0					398	41
+474	Nathan	Louie	nxlouie@umich.edu	Brother	Sleepy Dwarf	304	Traditions Chair,Traditions Chair,Web Chair				453	41
+475	Nicholas	Ricci	nricci@umich.edu	Pledge		0					426	41
+476	Patrick	Wan	patwan@umich.edu	Brother	Kung Fu Panda	299	Web Chair,Web Chair	7	24	1994	434	41
+477	Rachel	Levenson	ralevens@umich.edu	Brother	The Porcelain Assassin	302					435	41
+478	Steven	Do	sjdo@umich.edu	Brother	Mr. 300	300					161	41
+479	Travis	Burch	trburch@umich.edu	Brother	Blow Sober	291	Social Chair,Social Chair	11	7	1994	425	41
+481	Vikas	Venugopal	venugovi@umich.edu	Brother	Jaeger Fairy	305		1	31	1995	440	41
+482	Yusun	Kim	kimyusun@umich.edu	Brother	BCC	295		5	22	1995	424	41
+483	Zachary	Lask	zlask@umich.edu	Pledge		0					422	41
+484	Jeremy	Chen	jeremylc@umich.edu	Pledge		0					436	42
+485	Jamie	Gaulzetti	jgaulzet@umich.edu	Pledge		0					409	42
+486	Liz	Goulston	lizsgoul@umich.edu	Pledge		0					439	42
+487	Will	Horner	willhorn@umich.edu	Pledge		0					466	42
+488	Jenny	Huh	jennyhuh@umich.edu	Pledge		0					425	42
+489	Cigdem	Kokenoz	ckokenoz@umich.edu	Pledge		0					423	42
+490	Lucas	Marks	lhmarks@umich.edu	Pledge		0					405	42
+491	Jared	Molesky	jmolesky@umich.edu	Pledge		0		5	23	1996	479	42
+492	Francine	Penikis	fpenikis@umich.edu	Pledge		0					434	42
+494	Sanjay	Subramanian	sanjsub@umich.edu	Pledge		0		10	18	1996	442	42
+495	Aditya	Tammana	atammana@umich.edu	Pledge		0					451	42
+496	Matthew	Waldman	mwald@umich.edu	Pledge		0					470	42
+497	Troyer	Wallace-Evans	troywe@umich.edu	Pledge		0		6	4	1996	445	42

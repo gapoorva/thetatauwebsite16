@@ -76,7 +76,7 @@
 		      <ul class="nav navbar-nav opensans">
 		        <li><a href="rush.php">Rush</a></li>
 		        <li><a href="members.php">Members</a></li>
-		        <li><a href="photogallery.php">Photo Gallery</a></li>
+		        <!--<li><a href="photogallery.php">Photo Gallery</a></li>-->
 		        <li><a href="login.php">Login</a></li>
 		      </ul>
 		    </div>

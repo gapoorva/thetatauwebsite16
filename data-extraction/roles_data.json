@@ -1,0 +1,147 @@
+[
+    {
+        "contact": "tht-pres@umich.edu",
+        "roleid": "regent",
+        "title": "Regent"
+    },
+    {
+        "contact": "tht-regents@umich.edu",
+        "roleid": "viceregent",
+        "title": "Vice Regent"
+    },
+    {
+        "contact": "tht-scribe@umich.edu",
+        "roleid": "scribe",
+        "title": "Scribe"
+    },
+    {
+        "contact": "tht-treasurer@umich.edu",
+        "roleid": "treasurer",
+        "title": "Treasurer"
+    },
+    {
+        "contact": "tht-corsec@umich.edu",
+        "roleid": "corsec",
+        "title": "Corresponding Secretary"
+    },
+    {
+        "contact": "tht-pledge@umich.edu",
+        "roleid": "pledgemaster",
+        "title": "Pledge Chair"
+    },
+    {
+        "contact": "tht-rush@umich.edu",
+        "roleid": "rush",
+        "title": "Rush Chair"
+    },
+    {
+        "contact": "tht-pd@umich.edu",
+        "roleid": "pd",
+        "title": "Professional Development Chair"
+    },
+    {
+        "contact": "tht-philanthropy@umich.edu",
+        "roleid": "philanthropy",
+        "title": "Philanthropy Chair"
+    },
+    {
+        "contact": "tht-socialcom@umich.edu",
+        "roleid": "social",
+        "title": "Social Chair"
+    },
+    {
+        "contact": "tht-funds@umich.edu",
+        "roleid": "fundraising",
+        "title": "Fundraising Chair"
+    },
+    {
+        "contact": "tht-web.committee@umich.edu",
+        "roleid": "web",
+        "title": "Web Chair"
+    },
+    {
+        "contact": "tht-advertising@umich.edu",
+        "roleid": "advertising",
+        "title": "Advertising Chair"
+    },
+    {
+        "contact": "tht-recsports@umich.edu",
+        "roleid": "recsports",
+        "title": "Recreational Sports Chair"
+    },
+    {
+        "contact": "tht-traditions@umich.edu",
+        "roleid": "traditions",
+        "title": "Traditions Chair"
+    },
+    {
+        "contact": "tht-historian@umich.edu",
+        "roleid": "historian",
+        "title": "Historian"
+    },
+    {
+        "contact": "tht-pfc@umich.edu",
+        "roleid": "pfcdelgate",
+        "title": "PFC Delgate"
+    },
+    {
+        "contact": "tht-apoorva@umich.edu",
+        "roleid": "apoorva",
+        "title": "Tht-Apoorva"
+    },
+    {
+        "contact": "tht-academic@umich.edu",
+        "roleid": "academic",
+        "title": "Academic Chair"
+    },
+    {
+        "contact": "tht-bylaws@umich.edu",
+        "roleid": "bylawreview",
+        "title": "Bylaw Review Chair"
+    },
+    {
+        "contact": "tht-brobonding@umich.edu",
+        "roleid": "brobonding",
+        "title": "Brother Bonding Chair"
+    },
+    {
+        "contact": "tht-corporate@umich.edu",
+        "roleid": "corpspons",
+        "title": "Corporate Sponsorship Chair"
+    },
+    {
+        "contact": "tht-housing@umich.edu",
+        "roleid": "housing",
+        "title": "Housing Chair"
+    },
+    {
+        "contact": "tht-schrader@umich.edu",
+        "roleid": "schrader",
+        "title": "Schrader"
+    },
+    {
+        "contact": "tht-wellness@umich.edu",
+        "roleid": "wellness",
+        "title": "Wellness Chair"
+    },
+    {
+        "contact": null,
+        "roleid": "pledge",
+        "title": "Pledge"
+    },
+    {
+        "contact": null,
+        "roleid": "active",
+        "title": "Active Brother"
+    },
+    {
+        "contact": null,
+        "roleid": "alumni",
+        "title": "Alumni"
+    },
+    {
+        "contact": null,
+        "roleid": "rushee",
+        "title": "Rushee"
+    }
+]

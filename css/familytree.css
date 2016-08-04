@@ -1,0 +1,47 @@
+#treenodetemplate {
+  display: none;
+}
+
+.treenode .membernode {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #DDD;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.treenode .membernode:hover {
+  background-color: #CCC;
+}
+
+.treenode .membernode p {
+  margin-bottom: 5px;
+}
+
+.treenode .membernode .lead.name {
+  font-weight: bold;
+}
+
+.non-mobile .littles > .row {
+  padding-left: 10px;
+}
+
+.treenode .littles {
+  display: none;
+}
+
+.littles > div {
+  padding: 0px;
+  margin-left: 5%;
+}
+
+.treenode.open > .littles {
+  display: block;
+}
+
+.row .treenode,
+.row .treenode > .row {
+  margin-right: 0;
+  margin-left: 0;
+}

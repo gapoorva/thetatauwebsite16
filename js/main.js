@@ -1,3 +1,4 @@
+"use strict";
 //assumes url is properly encoded
 function CURLJSON(method, url, cb) {
 	var xmlhttp = new XMLHttpRequest();

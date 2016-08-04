@@ -11,7 +11,7 @@ CREATE TABLE users (
 	roll 				int 				NOT NULL,
 	verified		boolean			DEFAULT FALSE,
 	email				varchar(32) NOT NULL,
-	img					varchar(64) DEFAULT 'default_profile_img.png',
+	img					varchar(64) DEFAULT 'images/member-profiles/default_profile_img.jpg',
 	PRIMARY KEY (userid)
 );
 
@@ -71,10 +71,10 @@ CREATE TABLE skills (
 DROP TABLE IF EXISTS thetataucareer;
 CREATE TABLE thetataucareer (
 	userid 		varchar(32) NOT NULL,
-	role			varchar(34) NOT NULL,
+	roleid		varchar(34) NOT NULL,
 	year 			int 				NOT NULL,
 	semester	varchar(8)	NOT NULL,
-	PRIMARY KEY (userid,role,year,semester)
+	PRIMARY KEY (userid,roleid,year,semester)
 );
 
 DROP TABLE IF EXISTS social_profile;

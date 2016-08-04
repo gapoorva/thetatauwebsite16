@@ -20,7 +20,7 @@
     $login_stmt = $conn->prepare("UPDATE auth SET token=? WHERE userid=? AND pw=?");
     $now = time();
     $pw = salted_pw($userid, $pw);
-    $token = hash("sha256", $pw . hash("sha256", strval($now)));
+    $token = hash("sha256", $pw . strval($now));
 
     $login_stmt->bind_param("sss", $token, $userid, $pw);
     $login_stmt->execute();
@@ -31,7 +31,7 @@
     else {
       // set cookie before returning true
       setcookie("token", $token, $time()+12*3600); // Login is good for 12 hrs.
-      setcookie("token", $userid, $time()+12*3600); // Login is good for 12 hrs.
+      setcookie("userid", $userid, $time()+12*3600); // Login is good for 12 hrs.
       return true;
     }
   }

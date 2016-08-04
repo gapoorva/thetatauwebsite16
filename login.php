@@ -1,10 +1,11 @@
 <?php 
-	include "php/DB.php";
+	include 'php/services/login-service.php';
+	include 'php/services/tokenauth-service.php';
 
 
 	// already logged in and token is set.
 	if (isset($_COOKIE['token'])) {
-		$auth = validate_token();
+		$auth = tokenauthservice();
 		if ($auth) header("Location: members.php");
 	}
 
@@ -14,7 +15,7 @@
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$userid = $_REQUEST['userid'];
 		$pw = $_REQUEST['password'];
-		$auth = login($userid, $pw); // authenticates and then sets token and other important info
+		$auth = loginservice($userid, $pw); // authenticates and then sets token and other important info
 		if ($auth) header("Location: members.php");
 		else $login_failed = true; // couldn't authenticate
 	}

@@ -1,3 +1,4 @@
+"use strict";
 function cycleMastSlides() {
   var mast_imgs = $('.masthead-img');
   var quotes = $('.quote');
@@ -18,8 +19,6 @@ function cycleMastSlides() {
   setTimeout(function() {cycleMastSlides();}, indexConfig.MastSlideShow.CycleTime);
 }
 
-$(document).ready(
-  function() {
-    setTimeout(function() {cycleMastSlides();}, indexConfig.MastSlideShow.CycleTime);
-  }
-);
+$(document).ready(function() {
+    setTimeout(cycleMastSlides, indexConfig.MastSlideShow.CycleTime);
+});

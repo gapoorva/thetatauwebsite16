@@ -1,8 +1,8 @@
 <?php 
-  include_once 'php/templates/boilerplate.php';
-  include_once 'php/templates/mastheadcontent.php';
   include_once 'php/services/config-service.php';
-  include_once 'php/services/mastdata-service.php'
+  include_once 'php/services/mastdata-service.php';
+  include_once 'php/templates/boilerplate.php';
+  include_once 'php/templates/masthead-template.php';
 
   // If logged in, show landing page
 
@@ -44,7 +44,7 @@
 
         <!-- Masthead Images -->
       <?php
-        mastheadcontent(count($content));
+        mastheadtemplate(count($content));
       ?>
       </div>
       <!-- inner content (about/history) -->

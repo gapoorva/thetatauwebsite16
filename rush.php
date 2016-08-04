@@ -1,8 +1,8 @@
 <?php 
   include 'php/templates/boilerplate.php';
-  include 'php/templates/rushevents.php';
+  include 'php/templates/rushevents-template.php';
   include 'php/services/config-service.php';
-  include 'php/services/calendar-service.php';
+  include 'php/services/rushcalendar-service.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,33 +49,8 @@
       <div class="row events opensans">
         <div class="col-xs-12 col-sm-9 col-sm-offset-1">
         <?php 
-          /*
-            Note that interest in the winter semester 
-            Usually spans from November - February.
-            If it's currently late-year, bump the year 
-            to next year so that we see the next year's
-            winter rush events.
-          */
-          $y = m() >= $rushConfig['dates']['winter']['interest_begin_month'] ? y()+1 : y();
-          $winter_season = 
-            m() >= $rushConfig['dates']['winter']['interest_begin_month'] ||
-            m() <= $rushConfig['dates']['winter']['interest_end_month'];
-
-          $semester = $winter_season ? "winter" : "fall";
-          $dates = $rushConfig['dates'][$semester];
-
-          $events = calendarservice(
-            time(),
-            $y, 
-            $dates['period_begin_month'], 
-            $dates['period_begin_day'],
-            $y, 
-            $dates['period_end_month'], 
-            $dates['period_end_day'],
-            "&q=".urlencode($rushConfig['api_query_string']) // Optional query parameter
-          );
-
-          rush_events_section($events);
+          $events = rushcalendarservice($rushConfig);
+          rusheventstemplate($events);
         ?>
         </div>
       </div>
