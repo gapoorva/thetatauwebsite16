@@ -69,6 +69,10 @@
 	font-family: OpenSansGoogle;
 }
 
+.title-banner img.img-responsive {
+  margin: 0 auto;
+}
+
 .title-banner h1,
 .title-banner h2 {
 	word-wrap: break-word;

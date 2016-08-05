@@ -40,7 +40,7 @@
             <div class="col-sm-4 chapter-stats">
               <h4 class="stats-title chapter-stats text-center">CHAPTER</h4>
               <span class="statistic"><?php echo $stats['chapter_age'] ?></span><p class="statistic-name lead">Years Old</p>
-              <span class="statistic"><?php echo $stats['chapter_number'] ?><span class="percent">st</span></span><p class="statistic-name lead">Chapter Nationally</p>
+              <span class="statistic"><?php echo $stats['chapter_number'] ?><span class="percent">st</span></span><p class="statistic-name lead">Chapter Established</p>
               <span class="statistic"><?php echo $stats['events_this_semester'] ?></span><p class="statistic-name lead">Events this semester</p>
             </div>
           </div>
