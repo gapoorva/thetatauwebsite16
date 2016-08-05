@@ -85,12 +85,12 @@
         "current_company": "MIT / Lincoln Laboratory",
         "current_title": "",
         "email": "julian.broggio4@gmail.com",
-        "firstname": "Carl",
+        "firstname": "Julian",
         "gender": true,
         "grad_sem": "Fall",
         "grad_year": 2000,
         "img": "images/member-profiles/default_profile_img.jpg",
-        "lastname": "Fischer",
+        "lastname": "Broggio",
         "major": "Electrical Engineering",
         "nickname": "Lizard",
         "past_companies": [
@@ -3787,7 +3787,7 @@
             "regent",
             "social"
         ],
-        "userid": "vward",
+        "userid": "vward@umich.edu",
         "verified": false
     },
     "155": {
@@ -4525,7 +4525,7 @@
         "verified": false
     },
     "188": {
-        "biguserid": "vward",
+        "biguserid": "vward@umich.edu",
         "city": "Novi",
         "current_company": "",
         "current_title": "",
@@ -5014,7 +5014,7 @@
         "verified": false
     },
     "207": {
-        "biguserid": "vward",
+        "biguserid": "vward@umich.edu",
         "city": "waukesha",
         "current_company": "",
         "current_title": "",
@@ -6550,10 +6550,10 @@
         ],
         "phone": "(530)-91-805",
         "pledge_class": "",
-        "roll": 262,
+        "roll": 0,
         "state": "CA",
         "tht_roles": [],
-        "userid": "bjuhrend",
+        "userid": "",
         "verified": false
     },
     "263": {
@@ -8583,6 +8583,29 @@
         "verified": false
     },
     "350.0": {
+        "biguserid": "trburch",
+        "city": "Ann Arbor",
+        "current_company": "",
+        "current_title": "",
+        "email": "libbyej@umich.edu",
+        "firstname": "Elizabeth",
+        "gender": false,
+        "grad_sem": "",
+        "grad_year": 0,
+        "img": "images/member-profiles/default_profile_img.jpg",
+        "lastname": "Erickson",
+        "major": "Mechanical Engineering",
+        "nickname": "Libby",
+        "past_companies": [],
+        "phone": "(313)-595-0391",
+        "pledge_class": "Nu Beta",
+        "roll": "350",
+        "state": "MI",
+        "tht_roles": [],
+        "userid": "libbyej",
+        "verified": false
+    },
+    "351.0": {
         "biguserid": "rachneal",
         "city": "Ann Arbor",
         "current_company": "",
@@ -8599,7 +8622,7 @@
         "past_companies": [],
         "phone": "",
         "pledge_class": "Nu Beta",
-        "roll": "350",
+        "roll": "351",
         "state": "MI",
         "tht_roles": [],
         "userid": "reider",
@@ -8651,6 +8674,29 @@
         "userid": "jordzhu",
         "verified": false
     },
+    " 262.21 LD": {
+        "biguserid": "ajinebge",
+        "city": "Ann Arbor",
+        "current_company": "",
+        "current_title": "",
+        "email": "bjuhrend@umich.edu",
+        "firstname": "Brianna",
+        "gender": false,
+        "grad_sem": "Fall",
+        "grad_year": 2013,
+        "img": "images/member-profiles/default_profile_img.jpg",
+        "lastname": "Juhrend",
+        "major": "MS Environmental Engineering ",
+        "nickname": "",
+        "past_companies": [],
+        "phone": "(530)-91-805",
+        "pledge_class": "Transfer",
+        "roll": " 262.21 LD",
+        "state": "MI",
+        "tht_roles": [],
+        "userid": "bjuhrend",
+        "verified": false
+    },
     "163.163 DG": {
         "biguserid": "",
         "city": "Ann Arbor",
@@ -8668,7 +8714,7 @@
         "past_companies": [],
         "phone": "",
         "pledge_class": "Transfer",
-        "roll": "163",
+        "roll": "163.163 DG",
         "state": "MI",
         "tht_roles": [
             "housing",
