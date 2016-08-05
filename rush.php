@@ -22,7 +22,7 @@
     <div class="container-fluid" id="container">
       <div class="row purpose-block">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 purpose">
-          <h4><strong>THE PURPOSE OF THETA TAU IS TO DEVELOP AND MAINTAIN A HIGH STANDARD OF PROFESSIONAL INTEREST AMONG IT'S MEMBERS AND TO UNITE THEM IN STRONG BOND OF FRATERNAL FELLOWSHIP.</strong></h4>
+          <h4><strong>THE PURPOSE OF THETA TAU IS TO DEVELOP AND MAINTAIN A HIGH STANDARD OF PROFESSIONAL INTEREST AMONG ITS MEMBERS AND TO UNITE THEM IN A STRONG BOND OF FRATERNAL FELLOWSHIP.</strong></h4>
           <br>
         </div>
         <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">

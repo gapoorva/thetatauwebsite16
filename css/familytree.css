@@ -3,10 +3,10 @@
 }
 
 .treenode .membernode {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   background-color: #DDD;
-  padding: 10px 0 10px 0;
+  padding: 3px 0 1px 0;
   cursor: pointer;
   z-index: 10;
 }
@@ -21,6 +21,7 @@
 
 .treenode .membernode .lead.name {
   font-weight: bold;
+  font-size: 16px;
 }
 
 .non-mobile .littles > .row {
@@ -38,6 +39,10 @@
 
 .treenode.open > .littles {
   display: block;
+}
+
+.treenode.open {
+  border-left: 1px solid #BBB;
 }
 
 .row .treenode,
