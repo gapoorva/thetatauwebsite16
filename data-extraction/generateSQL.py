@@ -78,10 +78,14 @@ thtcareer_insert_stmt = thtcareer_insert_stmt[:-2] + ';\n\n'
 
 sql.write(thtcareer_insert_stmt)
 
+def sh(input):
+  return hashlib.sha256(input).hexdigest()
 
 auth_insert_stmt = "INSERT INTO auth (userid, pw, token) VALUES\n"
 for k, p in fdata.iteritems():
-  auth_insert_stmt += "\t('"+ p['userid'] +"','"+ hashlib.sha256(p['userid']).hexdigest()[:10] +"','NOTLOGGEDIN'),\n"
+  pw = p['userid']+sh(p['userid'])[:10]
+  h = sh(sh(pw)+p['userid'])
+  auth_insert_stmt += "\t('"+ p['userid'] +"','"+ h +"','NOTLOGGEDIN'),\n"
 auth_insert_stmt = auth_insert_stmt[:-2] + ';\n\n'
 
 sql.write(auth_insert_stmt)

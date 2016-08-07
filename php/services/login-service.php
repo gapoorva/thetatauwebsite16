@@ -30,8 +30,8 @@
     if ($auths != 1) return false; // didn't properly execute
     else {
       // set cookie before returning true
-      setcookie("token", $token, $time()+12*3600); // Login is good for 12 hrs.
-      setcookie("userid", $userid, $time()+12*3600); // Login is good for 12 hrs.
+      setcookie("token", $token, $now+12*3600); // Login is good for 12 hrs.
+      setcookie("userid", $userid, $now+12*3600); // Login is good for 12 hrs.
       return true;
     }
   }

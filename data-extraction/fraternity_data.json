@@ -6531,31 +6531,6 @@
         "userid": "dingding",
         "verified": false
     },
-    "262.21": {
-        "biguserid": "",
-        "city": "Cameron Park",
-        "current_company": "",
-        "current_title": "",
-        "email": "bjuhrend@umich.edu",
-        "firstname": "Brianna",
-        "gender": null,
-        "grad_sem": "",
-        "grad_year": 0,
-        "img": "images/member-profiles/default_profile_img.jpg",
-        "lastname": "Juhrend",
-        "major": "",
-        "nickname": "",
-        "past_companies": [
-            ""
-        ],
-        "phone": "(530)-91-805",
-        "pledge_class": "",
-        "roll": 0,
-        "state": "CA",
-        "tht_roles": [],
-        "userid": "",
-        "verified": false
-    },
     "263": {
         "biguserid": "mhensel",
         "city": "Ann Arbor",

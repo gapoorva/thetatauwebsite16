@@ -5,6 +5,7 @@
 			Takes array of js files and css files
 			Sends computed head section as html
 	*/
+  include_once "php/services/tokenauth-service.php";
 
 	function head_section($js_files = array(), $css_files = array()) {
 ?>
@@ -77,7 +78,17 @@
 		        <li><a href="rush.php">Rush</a></li>
 		        <li><a href="members.php">Members</a></li>
 		        <!--<li><a href="photogallery.php">Photo Gallery</a></li>-->
-		        <li><a href="login.php">Login</a></li>
+<?php
+		if(tokenauthservice()) {
+?>
+						<li><a href="logout.php">Logout</a></li>
+<?php
+		} else {
+?>
+						<li><a href="login.php">Login</a></li>
+<?php
+		}
+?>
 		      </ul>
 		    </div>
 		    <!-- end standard nav -->
