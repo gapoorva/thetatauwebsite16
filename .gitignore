@@ -3,6 +3,8 @@
 
 # un-ignore all files with extensions
 !*.*
+!Vagrantfile
+!mysql-startup-credentials
 
 # ignore .swp
 *.swp
