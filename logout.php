@@ -2,5 +2,5 @@
   include "php/services/logout-service.php";
 
   logoutservice();
-  header("Location: index.php");
+  header("Location: login.php");
 ?>
