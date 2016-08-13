@@ -28,11 +28,11 @@
     $typestring = resolveType($value);
     if ($typestring == "" || !isset($_COOKIE['userid'])) return false;
     if (gettype($value) == "boolean") $value = intval($value);
-
     $conn = mysqlconnectionservice();
     $qstring = "UPDATE " . $table . " SET " . $attribute . "=?" . " WHERE userid=? " . resolveKeys($keys);
     $stmt = $conn->prepare($qstring);
     $stmt->bind_param($typestring."s", $value, $_COOKIE['userid']);
+    
     return $stmt->execute();
   }
 
@@ -54,7 +54,7 @@
 
   function resolveKeys($keys) {
     $out = array();
-    foreach ($keys as $constraint) {
+    foreach ($keys as $i => $constraint) {
       $type = resolveType($constraint["value"]);
       if(gettype($constraint["value"]) == "boolean") 
         $constraint["value"] = intval($constraint["value"]);
@@ -67,6 +67,6 @@
           $out[] = $constraint["key"] . "=" . $constraint["value"];
       }
     }
-    return join(" AND ", $out);
+    return "AND " . join(" AND ", $out);
   }
 ?>
