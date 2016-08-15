@@ -57,10 +57,10 @@
 
 
   function userschemaservice() {
-    if (!isset($_COOKIE['userid'])) {
-      // user is unauthenticated, return empty and trust caller to check & handle
-      return array();
-    }
+    // if (!isset($_COOKIE['userid'])) {
+    //   // user is unauthenticated, return empty and trust caller to check & handle
+    //   return array();
+    // }
     $conn = mysqlconnectionservice();
     // TODO: Replace this static variable with a efficient, dynamically loaded solution from SQL. I'm doing this now, because making requests to msql to desc each table would just add a bunch of latency to this service. For the current small list of data points, it's not too bad to just list them statically in a file.
     $colnames = array(
@@ -79,7 +79,8 @@
     foreach ($colnames as $tbl => $cols) {
       $qstring = 'SELECT ' . join(',', $cols) . ' FROM ' . $tbl . ' WHERE userid=?';
       $stmt = $conn->prepare('SELECT ' . join(',', $cols) . ' FROM ' . $tbl . ' WHERE userid=?');
-      $stmt->bind_param('s', $userid);
+      $userid = "gapoorva";
+      $stmt->bind_param('s', /*$_COOKIE['userid']*/$userid);
       $stmt->execute();
       $schemaData[$tbl] = get_result($stmt);
       $stmt->close();
@@ -102,6 +103,10 @@
       foreach($fields as $name => $value) $row[$name] = $value;
       $result[] = $row;
     }
+    if(count($result) == 1) {
+      return $result[0];
+    }
     return $result;
   }
+
 ?>
