@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php 
-    head_section(array("js/familytree.js", "js/searchable.js", "js/members.js"), array("css/members.css", "css/familytree.css"));
+    head_section(array("js/familytree.js", "js/members.js"), array("css/members.css", "css/familytree.css"));
     
   ?>
 
@@ -59,10 +59,19 @@
         <p class="lead opensans">Explore our family tree by searching for brothers below or by clicking on each member to see their littles and trace the lineage!</p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
   <?php 
-    searchabletemplate('','family-tree-searchable');
+    $searchable_deps = searchabletemplate('family-tree-searchable');
+    foreach($searchable_deps as $dep) {
+  ?>
+    <script type="text/javascript" src="<?php echo $dep; ?>"></script>
+  <?php
+    }
     familytreetemplate($founders);
   ?>
+      </div>
+    </div>
   </div>
 
   <?php footer_section(); ?>
