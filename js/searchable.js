@@ -6,6 +6,10 @@
   component identified by the passed id. 
 
   All options are passed in as an object. The ID and search function are required.
+  Other optionals are not required (and thus truly optional lol).
+
+  You can overide the css of searchable on a per-instance basis by including an
+  object called 'css' in your options map that is a simple key-value map of styles.
 
   Searchable implements the control interface of setThenEnable & disableThenGet
 
@@ -73,6 +77,8 @@ function Searchable(opts) {
   this.input = this.searchComponent.find('input')
     .attr('placeholder', opts.placeholder)
     .prop('disabled', opts.disabled);
+  if (opts.css)
+    this.input.css(opts.css);
 
   this.resultSet = [];
 
