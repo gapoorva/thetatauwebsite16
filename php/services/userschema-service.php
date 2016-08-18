@@ -3,7 +3,6 @@
     USER SCHEMA SERVICE
     Assumes:
       The user is logged in and the 'userid' cookie set to the logged in user. The token has already been authenticated.
-      No output has been sent to the client yet. This method relies on redirecting to login service if the user is unauthenticated.
     Takes:
       nothing
     Returns (on error):
@@ -12,11 +11,8 @@
       A PHP assocative array describing all known data of the logged in user. The following format will be followed:
       [
         'user' => [
-          'first_name' => [
-            'value' => 'example_name',
-            'table' => 'users'
-          ],
-          'last_name' => [...],
+          'first_name' => 'example_name',
+          'last_name' => "example_name",
           ...
         ]
         'profile' => [...],
@@ -49,9 +45,8 @@
           ...
         ],
         'roles' => [
-          'role1',
-          'role2',
-          ....
+          [0] => [...],
+          ...
         ]
       ]
     Notes:
@@ -66,7 +61,6 @@
     //   // user is unauthenticated, return empty and trust caller to check & handle
     //   return array();
     // }
-    $userid = "gapoorva";
     $conn = mysqlconnectionservice();
     // TODO: Replace this static variable with a efficient, dynamically loaded solution from SQL. I'm doing this now, because making requests to msql to desc each table would just add a bunch of latency to this service. For the current small list of data points, it's not too bad to just list them statically in a file.
     $colnames = array(
@@ -85,14 +79,10 @@
     foreach ($colnames as $tbl => $cols) {
       $qstring = 'SELECT ' . join(',', $cols) . ' FROM ' . $tbl . ' WHERE userid=?';
       $stmt = $conn->prepare('SELECT ' . join(',', $cols) . ' FROM ' . $tbl . ' WHERE userid=?');
-      $stmt->bind_param('s', $userid);
+      $userid = "gapoorva";
+      $stmt->bind_param('s', /*$_COOKIE['userid']*/$userid);
       $stmt->execute();
-      $result = get_result($stmt);
-      if (count($result) == 1) {
-        $schemaData[$tbl] = format_single_result($result[0], $cols, $tbl);
-      } else {
-        $schemaData[$tbl] = format_result_data($result, $cols, $tbl);
-      }
+      $schemaData[$tbl] = get_result($stmt);
       $stmt->close();
     }
     return $schemaData;
@@ -113,18 +103,10 @@
       foreach($fields as $name => $value) $row[$name] = $value;
       $result[] = $row;
     }
+    if(count($result) == 1) {
+      return $result[0];
+    }
     return $result;
   }
 
-  function format_single_result($row, $cols, $tbl) {
-    $data = array();
-    foreach ($cols as $col) $data[$col] = array("value" => $row[$col], "table" => $tbl);
-    return $data;
-  }
-
-  function format_result_data($result, $cols, $tbl) {
-    $datapoints = array();
-    foreach($result as $row) $datapoints[] = format_single_result($row, $cols, $tbl);
-    return $datapoints;
-  }
 ?>
