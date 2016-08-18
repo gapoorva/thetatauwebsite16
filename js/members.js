@@ -32,5 +32,12 @@ function searchHitToggleNode(result) {
 $(document).ready(function(){
   // set click handler on membernodes
   $('.treenode .membernode').click(toggleNode);
-  var searchable = new Searchable('family-tree-searchable', search, searchHitToggleNode, resolveId);
+  var opts = {
+    "id": "family-tree-searchable",
+    "searchFunction": search,
+    "hitFunction": searchHitToggleNode,
+    "renderFunction": resolveId,
+    "disabled": false
+  }
+  var searchable = new Searchable(opts);
 }); 

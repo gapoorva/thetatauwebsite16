@@ -5,6 +5,10 @@
   When called, Searchable will set up an event listener on the searchbox
   component identified by the passed id. 
 
+  All options are passed in as an object. The ID and search function are required.
+
+  Searchable implements the control interface of setThenEnable & disableThenGet
+
  => Will call the searchFunction passed to get search results to display. 
   The signature for searchFunction is as follows:
 
@@ -51,23 +55,24 @@
 
   
 
-  DEPENDENCIES: Requires jquery library!!  :(
+  DEPENDENCIES: Requires jquery library!!  :( for now...
 
 */
-function Searchable(id, searchFunction, hitFunction, renderFunction, opts) {
+function Searchable(opts) {
   // validate search component
-  this.searchComponent = validConstruction(id, searchFunction);
+  this.searchComponent = validConstruction(opts.id, opts.searchFunction);
   // intialize the opts
   opts = buildOpts(opts);
   // set required varibles
-  this.id = id;
-  this.search = searchFunction;
-  this.render = renderFunction || function (result) {return result;};
-  this.hit = hitFunction || function () {}; // no-op
+  this.id = opts.id;
+  this.search = opts.searchFunction;
+  this.render = opts.renderFunction;
+  this.hit = opts.hitFunction; // no-op
 
   // set configured options on input
   this.input = this.searchComponent.find('input')
-    .attr('placeholder', opts.placeholder);
+    .attr('placeholder', opts.placeholder)
+    .prop('disabled', opts.disabled);
 
   this.resultSet = [];
 
@@ -176,6 +181,19 @@ Searchable.prototype.unLockSuggestionBox = function () {
   this.suggestionBoxLocked = false;
 }
 
+//////// CONTROL INTERFACE //////
+
+Searchable.prototype.setThenEnable = function (value) {
+  this.input.val(value);
+  this.resultSet = [];
+  this.input.prop('disabled', false);
+}
+
+Searchable.prototype.disableThenGet = function () {
+  this.input.prop('disabled', true);
+  return this.input.val();
+}
+
 ////// HELPERS ///////
 
 function validConstruction(id, searchFunction) {
@@ -183,6 +201,8 @@ function validConstruction(id, searchFunction) {
   // assert we have valid params
   if (!id || !searchComponent) 
     throw 'id '+id+' does not identify a searchComponent on this page';
+  if(!searchFunction)
+    throw 'searchFunction is a required option and cannot be ' + searchFunction;
   if (!searchFunction || typeof searchFunction !== 'function')
     throw 'searchFunction '+searchFunction+' is not a function';
   return searchComponent;
@@ -194,10 +214,13 @@ function buildOpts(opts) {
   var defaults = {
     placeholder: 'Search',
     debounceInterval: 500,
+    disabled: true,
+    hitFunction: function(result) {},
+    renderFunction: function(result) {return result;}
   };
   // move through defaults if option undefined
   Object.keys(defaults).forEach(function(key) {
-    opts[key] = opts[key] || defaults[key];
+    opts[key] = opts[key] == undefined ? defaults[key] : opts[key];
   });
   return opts
 }
