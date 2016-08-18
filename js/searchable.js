@@ -91,6 +91,17 @@ function Searchable(opts) {
   this.input.keyup($.proxy(this.inputEventHandler, this));
   this.input.focusin($.proxy(this.renderSuggestions, this));
   this.input.focusout($.proxy(this.hideSuggestions, this));
+
+  // Check if CSS is loaded --
+
+  var foundcss = false;
+
+  for(var i = 0; i < document.styleSheets.length; ++i) {
+    var path = document.styleSheets[i].href.split('/');
+    if(path[path.length-1] == "searchable.css") foundcss = true;
+  }
+  if(!foundcss) 
+    console.warn("Warning: searchable.css is missing! Searchable components may not work as expected without this dependency");
 }
 
 // handle key press events on the input

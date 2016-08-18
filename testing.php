@@ -13,14 +13,20 @@
 
   <body>
 
-  <div class="input-group">
-    <input class="form-control" type="text" placeholder="Click to choose date">
-    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2">
+      
+    </div>
   </div>
 
-  <script type="text/javascript">
+  <!-- <div class="input-group">
+    <input class="form-control" type="text" placeholder="Click to choose date">
+    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+  </div> -->
+
+  <!-- <script type="text/javascript">
     $('input').datepicker({"minViewMode":"months","viewMode":"months", "format":"mm/yyyy"});
-  </script>
+  </script> -->
  
     <?php 
       footer_section();

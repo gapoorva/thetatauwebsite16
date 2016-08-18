@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php 
-    head_section(array("js/familytree.js", "js/members.js"), array("css/members.css", "css/familytree.css"));
+    head_section(array("js/familytree.js", "js/members.js"), array("css/members.css", "css/familytree.css", "css/searchable.css"));
     
   ?>
 
