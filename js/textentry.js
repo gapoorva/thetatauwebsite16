@@ -14,6 +14,7 @@
 function TextEntry(opts) {
   if (!opts.id) throw 'id is a required option when constructing a TextEntry component';
   this.input = $('#'+opts.id);
+  this.id = opts.id;
   if(!this.input.length) throw 'id ' + opts.id + " does not identify a TextEntry component on this page";
 
   if (opts.css)
@@ -23,8 +24,12 @@ function TextEntry(opts) {
 ////// CONTROL INTERFACE //////
 
 TextEntry.prototype.setThenEnable = function(value) {
-  this.input.val(value);
-  this.input.prop('disabled', false);
+  this.input
+    .val(value)
+    .prop('disabled', false);
+  var id = this.id;
+  // use a delay because you can't put focus on a hidden element - kinda hacky but ohwell
+  setTimeout(function() {document.getElementById(id).focus();},100);
 }
 
 TextEntry.prototype.disableThenGet = function() {

@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php 
-    head_section(array("js/textentry.js", "js/editable.js"),array("css/loader.css", "css/editable.css"));
+    head_section(array("js/textentry.js", "js/editable.js"),array("css/loader.css", "css/editable.css", "css/main.css"));
   ?>
 
   <body>

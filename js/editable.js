@@ -24,6 +24,7 @@ function Editable(opts) {
   opts = Editable.buildOpts(opts);
 
   this.id = opts.id;
+  this.fadeTime;
 
   this.controlInstance = new opts.controlConstructor(opts.controlOpts);
   this.control = this.editableComponent.find('.control');
@@ -40,8 +41,7 @@ function Editable(opts) {
   this.displayValue = opts.initialValue;
 
   this.display = this.editableComponent.find('.display-value p');
-  console.log(this.display);
-  this.display.text(this.displayValue);
+  this.display.html(this.displayValue);
 
   var foundcss = false;
 
@@ -54,27 +54,73 @@ function Editable(opts) {
 }
 
 Editable.prototype.editHandler = function(e) {
-  this.display.fadeOut(200, $.proxy(function () {
+  this.display.fadeOut(this.fadeTime, $.proxy(function () {
     this.controlInstance.setThenEnable(this.displayValue);
-    this.control.fadeIn(200);
+    this.control.fadeIn(this.fadeTime);
   }, this));
-  this.editButton.fadeOut(200, $.proxy(function() {
-    this.saveButton.fadeIn(200);
+  this.editButton.fadeOut(this.fadeTime, $.proxy(function() {
+    this.saveButton.fadeIn(this.fadeTime);
   }, this));
 }
 
 Editable.prototype.saveHandler = function(e) {
   var value = this.controlInstance.disableThenGet();
-  this.saveButton.fadeOut(200, $.proxy(function () {
-    this.editableComponent.find('.loader').fadeIn(200);
-    setTimeout($.proxy(function () {
-      this.editableComponent.find('.loader').fadeOut(200, $.proxy(function () {
-        this.editableComponent.find('.glyphicon-ok').fadeIn(200);
-      }, this));
-    }, this), 1000);
+  this.saveButton.fadeOut(this.fadeTime, $.proxy(function () {
+    this.editableComponent.find('.loader').fadeIn(this.fadeTime);
+    this.serverSend(value);
+
   }, this))
 }
 
+Editable.prototype.serverSend = function(value) {
+  var data = new FormData();
+  data.append('table', this.table);
+  data.append('attribute', this.attribute);
+  data.append('value', value);
+  var conn = new XMLHttpRequest();
+  conn.open('POST', this.endpoint, true);
+  conn.withCredentials = true;
+  conn.setRequestHeader('Cookie', document.cookie); // send cookies with request
+  conn.onload = $.proxy(function() {
+    if (conn.status == 200) {
+      this.successfulSave(conn.responseText);
+    } else {
+      this.unsuccessfulSave();
+    }
+  }, this);
+  conn.send(data);
+}
+
+Editable.prototype.successfulSave = function(resp) {
+  this.displayValue = resp;
+  this.display.html(this.displayValue);
+  this.control.fadeOut(this.fadeTime, $.proxy(function () {
+    this.display.fadeIn(this.fadeTime);
+  }, this));
+  this.editableComponent.find('.loader').fadeOut(this.fadeTime, $.proxy(function() {
+    this.editableComponent.find('.glyphicon-ok').fadeIn(this.fadeTime);
+    setTimeout(1000, function() {console.log("should show up NOW!");});
+    setTimeout(this.messageTime, $.proxy(this.transitionToDisplay, this));
+
+  }, this));
+}
+
+Editable.prototype.unsuccessfulSave = function() {
+  this.control.fadeOut(this.fadeTime, $.proxy(function () {
+    this.display.fadeIn(this.fadeTime);
+  }, this));
+  this.editableComponent.find('.loader').fadeOut(this.fadeTime, $.proxy(function() {
+    this.editableComponent.find('.glyphicon-remove').fadeIn(this.fadeTime);
+    setTimeout(this.messageTime+2000, $.proxy(this.transitionToDisplay));
+  }, this));
+}
+
+Editable.prototype.transitionToDisplay = function() {
+  console.log("called this");
+  this.editableComponent.find('.glyphicon').fadeOut(this.fadeTime, $.proxy(function(){
+    this.editButton.fadeIn(this.fadeTime);
+  }, this));
+}
 
 Editable.validConstruction = function(opts) {
   // run a bunch of checks for required options:
@@ -93,7 +139,9 @@ Editable.validConstruction = function(opts) {
 Editable.buildOpts = function(opts) {
   opts = opts || {};
   var defaults = {
-    initialValue: "--"
+    initialValue: "--",
+    fadeTime: 200,
+    messageTime: 1000
   }
   Object.keys(defaults).forEach(function(key) {
     opts[key] = opts[key] == undefined ? defaults[key] : opts[key];
