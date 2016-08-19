@@ -68,10 +68,10 @@
     <script type="text/javascript" src="<?php echo $dep; ?>"></script>
   <?php
     }
-    familytreetemplate($founders);
   ?>
       </div>
     </div>
+  <?php familytreetemplate($founders); ?>
   </div>
 
   <?php footer_section(); ?>

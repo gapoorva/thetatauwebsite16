@@ -26,7 +26,7 @@
     (function () {
       var foundcss = false;
       for(var i = 0; i < document.styleSheets.length; i++) {
-        if(document.styleSheets.href) {
+        if(document.styleSheets[i].href) {
           var path = document.styleSheets[i].href.split('/');
           if (path[path.length - 1] == 'loader.css') foundcss = true;
         }

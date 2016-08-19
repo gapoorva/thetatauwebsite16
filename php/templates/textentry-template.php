@@ -18,7 +18,7 @@
 ?>  
     <div class="row">
       <div class="col-xs-12">
-        <input class="form-control" id="<?php echo $textentryid; ?>">
+        <input class="form-control" disabled="disabled" id="<?php echo $textentryid; ?>">
       </div>
     </div>
 <?php

@@ -64,9 +64,9 @@
 */
 function Searchable(opts) {
   // validate search component
-  this.searchComponent = validConstruction(opts.id, opts.searchFunction);
+  this.searchComponent = Searchable.validConstruction(opts.id, opts.searchFunction);
   // intialize the opts
-  opts = buildOpts(opts);
+  opts = Searchable.buildOpts(opts);
   // set required varibles
   this.id = opts.id;
   this.search = opts.searchFunction;
@@ -213,7 +213,7 @@ Searchable.prototype.disableThenGet = function () {
 
 ////// HELPERS ///////
 
-function validConstruction(id, searchFunction) {
+Searchable.validConstruction = function(id, searchFunction) {
   var searchComponent = $('#' + id);
   // assert we have valid params
   if (!id || !searchComponent) 
@@ -225,7 +225,7 @@ function validConstruction(id, searchFunction) {
   return searchComponent;
 }
 
-function buildOpts(opts) {
+Searchable.buildOpts = function(opts) {
   opts = opts || {};
 
   var defaults = {

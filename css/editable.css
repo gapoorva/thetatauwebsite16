@@ -1,0 +1,60 @@
+/* STATES */
+
+.editable.display-state {
+
+}
+
+.editable.edit-state {
+
+}
+
+.editable.send-state {
+
+}
+
+.editable.success-state {
+
+}
+
+.editable.failed-state {
+
+}
+
+.editable .btn {
+  color: #1a75ff;
+  background-color: transparent;
+  border: 1px solid #1a75ff;
+}
+
+.editable .btn:hover {
+}
+
+.editable .btn:focus {
+  outline: none;
+}
+
+.editable .btn:active {
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+.editable .glyphicon-ok,
+.editable .glyphicon-remove {
+  font-size: 30px;
+}
+
+.editable .glyphicon-ok {
+  color: #00b359;
+}
+
+.editable .glyphicon-remove {
+  color: #cc0000;
+}
+
+.editable .btn,
+.editable .glyphicon,
+.editable .loader,
+.editable .control {
+  display: none;
+}
+
