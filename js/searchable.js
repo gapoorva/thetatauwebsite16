@@ -79,6 +79,8 @@ function Searchable(opts) {
     .prop('disabled', opts.disabled);
   if (opts.css)
     this.input.css(opts.css);
+  if (opts.lg)
+    this.searchComponent.addClass('search-lg');
 
   this.resultSet = [];
 
@@ -129,7 +131,8 @@ Searchable.prototype.inputEventHandler = function(e) {
       break;
     case 27:
       // escape
-      this.removeSuggestions();
+      this.unLockSuggestionBox();
+      this.hideSuggestions();
       break;
     default:
       // typed a character
@@ -232,6 +235,7 @@ Searchable.buildOpts = function(opts) {
     placeholder: 'Search',
     debounceInterval: 500,
     disabled: true,
+    lg: false,
     hitFunction: function(result) {},
     renderFunction: function(result) {return result;}
   };

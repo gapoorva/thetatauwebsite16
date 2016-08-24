@@ -98,10 +98,12 @@ Editable.prototype.successfulSave = function(resp) {
     this.display.fadeIn(this.fadeTime);
   }, this));
   this.editableComponent.find('.loader').fadeOut(this.fadeTime, $.proxy(function() {
-    this.editableComponent.find('.glyphicon-ok').fadeIn(this.fadeTime);
-    setTimeout(1000, function() {console.log("should show up NOW!");});
-    setTimeout(this.messageTime, $.proxy(this.transitionToDisplay, this));
-
+    this.editableComponent.find('.glyphicon-ok')
+      .fadeIn(this.messageTime)
+      .delay(this.messageTime)
+      .fadeOut(this.fadeTime, $.proxy(function () {
+        this.editButton.fadeIn(this.fadeTime);
+      }, this));
   }, this));
 }
 
@@ -110,15 +112,19 @@ Editable.prototype.unsuccessfulSave = function() {
     this.display.fadeIn(this.fadeTime);
   }, this));
   this.editableComponent.find('.loader').fadeOut(this.fadeTime, $.proxy(function() {
-    this.editableComponent.find('.glyphicon-remove').fadeIn(this.fadeTime);
-    setTimeout(this.messageTime+2000, $.proxy(this.transitionToDisplay));
+    this.editableComponent.find('.glyphicon-remove')
+      .fadeIn(this.messageTime)
+      .delay(this.messageTime)
+      .fadeOut(this.fadeTime, $.proxy(function () {
+        this.editButton.fadeIn(this.fadeTime);
+      }, this));
   }, this));
 }
 
 Editable.prototype.transitionToDisplay = function() {
   console.log("called this");
   this.editableComponent.find('.glyphicon').fadeOut(this.fadeTime, $.proxy(function(){
-    this.editButton.fadeIn(this.fadeTime);
+    
   }, this));
 }
 
@@ -141,7 +147,7 @@ Editable.buildOpts = function(opts) {
   var defaults = {
     initialValue: "--",
     fadeTime: 200,
-    messageTime: 1000
+    messageTime: 3000
   }
   Object.keys(defaults).forEach(function(key) {
     opts[key] = opts[key] == undefined ? defaults[key] : opts[key];

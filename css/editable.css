@@ -1,23 +1,5 @@
-/* STATES */
-
-.editable.display-state {
-
-}
-
-.editable.edit-state {
-
-}
-
-.editable.send-state {
-
-}
-
-.editable.success-state {
-
-}
-
-.editable.failed-state {
-
+.editable {
+  margin: 10px 0;
 }
 
 .editable .btn {

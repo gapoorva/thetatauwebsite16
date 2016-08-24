@@ -37,7 +37,8 @@ $(document).ready(function(){
     "searchFunction": search,
     "hitFunction": searchHitToggleNode,
     "renderFunction": resolveId,
-    "disabled": false
+    "disabled": false,
+    "lg": true
   }
   var searchable = new Searchable(opts);
 }); 

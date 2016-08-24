@@ -1,37 +1,54 @@
 .search {
   position: relative;
-  margin-bottom: 30px;
-  margin-top: 30px;
   z-index: 50;
 }
 .search input {
-  height: 50px;
-  font-size: 24px;
   border-radius: 0px;
   padding-right: 0;
 }
+
+.search.search-lg input {
+  height: 50px;
+  font-size: 24px;
+}
+
 .search.row > div {
   position: relative;
 }
 .search p {
-  padding: 20px;
+  padding: 6px;
   font-weight: bold;
   margin: 0px; 
 }
+
+.search.search-lg p {
+  padding: 20px;
+}
+
 .search .suggestion-box {
   position: absolute;
   background-color: white;
-  font-size 16px;
-  top: 50px;
+  font-size: 14px;
+  top: 34px;
   display: none;
   padding: 0;
   width: calc(100% - 30px);
 }
+
+.search.search-lg .suggestion-box {
+  top: 50px;
+}
+
 .search .suggestion {
   background-color: white;
   cursor: pointer;
+  font-size: 14px;
 }
 .search .suggestion:hover {
   background-color: #003cb3;
   color: white;
+}
+
+.search.search-lg .suggestion {
+  font-size: 21px;
 }

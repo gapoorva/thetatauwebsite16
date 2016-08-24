@@ -80,6 +80,8 @@ a.btn-tht:hover {
 
 input.input-tht {
 	border-radius: 0px;
+  margin: 0;
+  border: 0;
 }
 
 .navbar .navbar-brand .home-button {
