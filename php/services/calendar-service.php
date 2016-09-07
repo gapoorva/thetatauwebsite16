@@ -47,7 +47,7 @@
 
   function calendarservice($now, $startYear, $startMonth, $startDay, $endYear, $endMonth, $endDay, $params = null) {
 
-    $endpoint = "https://www.googleapis.com/calendar/v3/calendars/7407kg1hjqo90so89cenlm25ns%40group.calendar.google.com/events?&key=AIzaSyCHiMDmvdOicdMICskRep27PyCoGNvjz6w&orderBy=startTime&singleEvents=true";
+    $endpoint = "https://www.googleapis.com/calendar/v3/calendars/7407kg1hjqo90so89cenlm25ns%40group.calendar.google.com/events?&key=AIzaSyCHiMDmvdOicdMICskRep27PyCoGNvjz6w&orderBy=startTime&singleEvents=true&timeZone=America%2FNew_York";
 
     $start = TimeOffsetFromNow($startYear, $startMonth, $startDay, $now);
     $end = TimeOffsetFromNow($endYear, $endMonth, $endDay, $now);
