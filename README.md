@@ -6,7 +6,7 @@ Welcome to the repo for the Theta Gamma Chapter of Theta Tau's Website. Theta Ga
 
 
 * [Apoorva Gupta](http://www.apoorvagupta.com)
-* Justin Parus
+* [Justin Parus](http://jparus.com)
 * Diego Holt
 * Nathan Louie (also VR)
 
@@ -38,7 +38,7 @@ Welcome to the repo for the Theta Gamma Chapter of Theta Tau's Website. Theta Ga
 * Admin management & configuration editing panel
 * Pledge progress panel
 * Slack integration
-* AND MORE...
+* AND MORE... call right now and we will double our offer!!
 
 Keep checking back for more updates! [Contact](tht-web.committee@umich.edu) the current Web Chairs directly for bug reports, feature requests, and other general info!
 
@@ -137,7 +137,7 @@ Once you have an idea of how to code, (or while you're learning) do the followin
 7. Now that you have those, you should be ready to spin up the VM. First you need to get a "box" which is an "image" (aka template) of a whole computer. It sounds like a lot but it's not really much. Vagrant can spin up many separate machines for you based off this one template. To get your first box, run this:
   ```
   $ cd your/directory/thetatauwebsite16
-  $ vagrant add box hashicorp/precise64
+  $ vagrant box add hashicorp/precise64
   ```
   This will add the Hashicorp (creator of Vagrant) base box. The `Vagrantfile` in our repo is all set up, so you can just run
   ```

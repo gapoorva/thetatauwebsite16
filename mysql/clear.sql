@@ -41,3 +41,5 @@ delete from permissions where 1=1;
 
 delete from mastcontent where 1=1;
 
+
+delete from lineage where 1=1;
