@@ -76,6 +76,7 @@
 		    <div class="collapse navbar-collapse" id="navbar">
 		      <ul class="nav navbar-nav opensans">
 		        <li><a href="rush.php">Rush</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
 		        <li><a href="members.php">Members</a></li>
 		        <!--<li><a href="photogallery.php">Photo Gallery</a></li>-->
 <?php

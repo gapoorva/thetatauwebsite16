@@ -18,7 +18,7 @@ CREATE TABLE users (
 DROP TABLE IF EXISTS profile;
 CREATE TABLE profile (
 	userid 				varchar(32) NOT NULL,
-	major   			varchar(32),
+	major   			varchar(64),
 	city					varchar(32),
 	state					varchar(5),
 	grad_year			int,
@@ -118,9 +118,9 @@ CREATE TABLE permissions (
 
 DROP TABLE IF EXISTS mastcontent;
 CREATE TABLE mastcontent (
-	mastimg	varchar(64) 	NOT NULL,
-	quote		varchar(512) 	NOT NULL,
-	credit 	varchar(32)		NOT NULL
+	mastimg	varchar(64) 	NOT NULL DEFAULT '',
+	quote		varchar(512) 	NOT NULL DEFAULT '',
+	credit 	varchar(32)		NOT NULL DEFAULT ''
 );
 
 DROP TABLE IF EXISTS lineage;
