@@ -1,6 +1,6 @@
 <?php 
   include 'php/templates/boilerplate.php';
-  include 'php/templates/rushevents-template.php';
+  include 'php/templates/events-template.php';
   include 'php/services/config-service.php';
   include 'php/services/rushcalendar-service.php';
 ?>
@@ -49,8 +49,8 @@
       <div class="row events opensans">
         <div class="col-xs-12 col-sm-9 col-sm-offset-1">
         <?php 
-          $events = rushcalendarservice($rushConfig);
-          rusheventstemplate($events);
+          $events = rushcalendarservice($rushConfig, "rush");
+          eventstemplate($events, "rush");
         ?>
         </div>
       </div>
