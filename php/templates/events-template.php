@@ -51,7 +51,7 @@
     else if (count($events) == 0 && $page == "corporate") {
 ?> 
     <p class='lead'>
-      It looks like we have no upcoming corporate events. If you wish to get in touch with us, please<a href='mailto:tht-rush@umich.edu'>contact us.</a> 
+      It looks like we have no upcoming corporate events. 
     </p>
     <hr class='divider'>   
 <?php
