@@ -3,12 +3,19 @@
 Welcome to the repo for the Theta Gamma Chapter of Theta Tau's Website. Theta Gamma is located in the University of Michigan. This website is intended to be a landing page for rush candidates to learn about our chapter and fraternity and for Members to conduct certain business functions.
 
 ## Current Webchairs:
+* Jordan Zhu
+* Yuang "Jerry" Meng
+* Brendan Campbell
+* Noah Rucker
+
+## Past Webchairs:
 
 
 * [Apoorva Gupta](http://www.apoorvagupta.com)
 * [Justin Parus](http://jparus.com)
 * Diego Holt
 * Nathan Louie (also VR)
+
 
 ## Completed Features:
 
@@ -19,7 +26,14 @@ Welcome to the repo for the Theta Gamma Chapter of Theta Tau's Website. Theta Ga
 * Login page
 * Chapter stats
 
+## Current Bugs:
+
+* Family Tree Issues: Certain Brothers not in big-little database
+* Julian Broggio is entered over Carl Fischer
+
 ## In progress:
+* Contact Page
+* ECRC and Corporate Sponsorship Events
 * Members page with "cards" for each member
 * Theta Gamma Family Tree page
 * Member pages with full profiles/resume uploads
@@ -38,6 +52,7 @@ Welcome to the repo for the Theta Gamma Chapter of Theta Tau's Website. Theta Ga
 * Admin management & configuration editing panel
 * Pledge progress panel
 * Slack integration
+* PhpUnit testing for database
 * AND MORE... call right now and we will double our offer!!
 
 Keep checking back for more updates! [Contact](tht-web.committee@umich.edu) the current Web Chairs directly for bug reports, feature requests, and other general info!

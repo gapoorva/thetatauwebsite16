@@ -1,6 +1,6 @@
 <?php 
   /*
-    RUSH CALENDAR SERVICE
+    CORPORATE CALENDAR SERVICE
       Takes:
         config: A php array that implements at least the following format:
           [
@@ -38,7 +38,7 @@
   */
   include_once 'calendar-service.php';
 
-  function rushcalendarservice($config) {
+  function corporatecalendarservice($config) {
     $y = m() >= $config['dates']['winter']['interest_begin_month'] ? y()+1 : y();
     $winter_season = 
       m() >= $config['dates']['winter']['interest_begin_month'] ||

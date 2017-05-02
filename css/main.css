@@ -29,6 +29,13 @@ body {
   padding-bottom: 50px;
 }
 
+#inner p {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: left;
+  font-size: 20px;
+}
+
 .footer {
   background: rgba(160, 160, 160, .30);
 }
@@ -69,9 +76,15 @@ nav {
 
 button.btn-tht,
 a.btn-tht {
+  display: block;
+  margin: 0 auto;
 	background-color: #A80505;
-	border-radius: 0px;
+	border-radius: 5px;
+  line-height: 25px;
+  height: 40px;
+  width: 175px;
 	color: white; 
+  font-size: 16px;
 }
 
 a.btn-tht:hover {

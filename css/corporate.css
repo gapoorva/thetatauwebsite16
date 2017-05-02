@@ -1,0 +1,17 @@
+.events {
+	margin-top:5vh;
+	margin-bottom: 5vh;
+}
+
+.event-card {
+	padding-top: 2vh;
+	border-left: 15px solid #A80505
+}
+
+.event-title {
+	padding-right: 30px;
+}
+
+.divider {
+	border: 5px solid #A80505;
+}

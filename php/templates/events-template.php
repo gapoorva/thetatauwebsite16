@@ -17,7 +17,7 @@
   */
 
 
-  function rusheventstemplate($events) {
+  function eventstemplate($events, $page) {
     /*
       Note that interest in the winter semester 
       Usually spans from November - February.
@@ -40,13 +40,21 @@
     </div>
 <?php
     }
-    if (count($events) == 0) {
+    if (count($events) == 0 && $page == "rush") {
 ?>
     <p class='lead'>
-      It looks like our Rush Chairs haven't created rush events for the upcoming semester yet. The best way to get the latest information about rush would be to <a href='mailto:tht-rush@umich.edu'>contact us.</a>
+      It looks like our Rush Chairs haven't created rush events for the upcoming semester yet or rush has already ended. The best way to get the latest information about rush would be to <a href='mailto:tht-rush@umich.edu'>contact us.</a>
     </p>
     <hr class='divider'>
 <?php
     }
-  } 
+    else if (count($events) == 0 && $page == "corporate") {
+?> 
+    <p class='lead'>
+      It looks like we have no upcoming corporate events. 
+    </p>
+    <hr class='divider'>   
+<?php
+    } 
+  }
 ?>
